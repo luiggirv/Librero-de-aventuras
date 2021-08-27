@@ -33,6 +33,11 @@ public class HealthSistema : MonoBehaviour
             {
                 Destroy(clone);
             }
+            var clonesObjetos = GameObject.FindGameObjectsWithTag("Objeto");
+            foreach (var clone in clonesObjetos)
+            {
+                Destroy(clone);
+            }
             NotaFinal.GetComponent<Text>().text = "Perdiste toda tu vida.";
             GameOverUI.SetActive(true);
             Time.timeScale = 0f;

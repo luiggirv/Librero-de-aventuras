@@ -12,6 +12,7 @@ public class VirusGlobal : MonoBehaviour
     public int InternalScore;
     public int numVirusDeleted;
     public GameObject explosion;
+    public ParticleSystem particulas;
 
     private void Start()
     {
@@ -43,16 +44,19 @@ public class VirusGlobal : MonoBehaviour
         if (LevelSelect.lvl4Entrar == true || LevelSelect.lvl5Entrar == true)
         {
             yield return new WaitForSeconds(4);
+            particulas.Play();
             HealthSistema.currentHealth -= 15;
         }
         else if (LevelSelect.lvl6Entrar == true)
         {
             yield return new WaitForSeconds(3);
+            particulas.Play();
             HealthSistema.currentHealth -= 15;
         }
         else
         {
             yield return new WaitForSeconds(5);
+            particulas.Play();
             HealthSistema.currentHealth -= 10;
         }
     }
@@ -70,7 +74,7 @@ public class VirusGlobal : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Sprite Clicked");
+        StartCoroutine(ScaleObject(gameObject.transform, new Vector2(0.15f, 0.15f), 0.2f, 0));
         vidaVirus -= 1;
         if (vidaVirus == 0)
         {
@@ -80,6 +84,24 @@ public class VirusGlobal : MonoBehaviour
             SScoreGlobal.ScoreCount += InternalScore;
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator ScaleObject(Transform obj, Vector2 end, float time, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Vector2 originalScale = obj.localScale;
+
+        float rate = 1.0f / time;
+        float i = 0.0f;
+
+        while (i < 0.5f)
+        {
+            i += Time.deltaTime * rate;
+            obj.localScale = Vector2.Lerp(originalScale, end, i);
+            yield return new WaitForEndOfFrame();
+        }
+        obj.localScale = Vector2.Lerp(end, originalScale, i);
     }
 
 }

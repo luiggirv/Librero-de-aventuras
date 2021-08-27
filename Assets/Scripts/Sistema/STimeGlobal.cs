@@ -12,6 +12,7 @@ public class STimeGlobal : MonoBehaviour
     public  GameObject finNivelUI;
     public GameObject puntajeNivelFinal;
     public GameObject puntajeTotal;
+    public static int LvlIngresado;
 
     void Start()
     {
@@ -49,31 +50,25 @@ public class STimeGlobal : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(8);
         timeStart = 999;
-        if (LevelSelect.lvl1Entrar == true)
+        if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < SScoreGlobal.ScoreCount)
         {
-            LevelSelect.lvl1Superado = true;
+            PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", SScoreGlobal.ScoreCount);
+            PlayerPrefs.SetInt(LvlIngresado.ToString() + "b", SScoreGlobal.EliminadosCount);
         }
-        else if (LevelSelect.lvl2Entrar == true)
-        {
-            LevelSelect.lvl2Superado = true;
-        }
-        else if (LevelSelect.lvl3Entrar == true)
-        {
-            LevelSelect.lvl3Superado = true;
-        }
-        else if (LevelSelect.lvl4Entrar == true)
-        {
-            LevelSelect.lvl4Superado = true;
-        }
-        else if (LevelSelect.lvl5Entrar == true)
-        {
-            LevelSelect.lvl5Superado = true;
-        }
-        else if (LevelSelect.lvl6Entrar == true)
-        {
-            LevelSelect.lvl6Superado = true;
-        }
-    }
+        LevelSelect.lvl1Entrar = false;
+        LevelSelect.lvl2Entrar = false;
+        LevelSelect.lvl3Entrar = false;
+        LevelSelect.lvl4Entrar = false;
+        LevelSelect.lvl5Entrar = false;
+        LevelSelect.lvl6Entrar = false;
+
+        LevelSelect.lvl1EntrarCirculatorio = false;
+        LevelSelect.lvl2EntrarCirculatorio = false;
+        LevelSelect.lvl3EntrarCirculatorio = false;
+        LevelSelect.lvl4EntrarCirculatorio = false;
+        LevelSelect.lvl5EntrarCirculatorio = false;
+        LevelSelect.lvl6EntrarCirculatorio = false;
+}
 
     public void RegresarMenu()
     {
