@@ -65,6 +65,7 @@
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\Helper Scripts\GameplayManager.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+    <Compile Include="Assets\Scripts\Sistema\DataLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Foggy Mountains Background\Demo\BackgroundHelper.cs" />
     <Compile Include="Assets\Scripts\CatchGame\Restart.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Assets\2D Physics Puzzle Kit\Scripts\C#\Objects\ObjectBase.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Sistema\ButtonHit.cs" />
     <Compile Include="Assets\Scripts\CatchGame\DestroyOnContact.cs" />
     <Compile Include="Assets\Scripts\Sistema\HealthSistema.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\Item Scripts\ItemScript.cs" />
@@ -167,8 +169,9 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\Sistema\ButtonHit.cs" />
-    <Compile Include="Assets\Scripts\Sistema\DataLevel.cs" />
+    <Compile Include="Assets\Scripts\Sistema\TutorialScript.cs" />
+    <Compile Include="Assets\Scripts\Sistema\EventController.cs" />
+    <Compile Include="Assets\Scripts\Sistema\Event.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />
