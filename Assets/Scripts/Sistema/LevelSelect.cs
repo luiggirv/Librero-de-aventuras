@@ -110,7 +110,7 @@ public class LevelSelect : MonoBehaviour
     {
         lvl1EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl1Circ;
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(25);
     }
 
     public void Level2Circulatorio()

@@ -18,7 +18,7 @@ public class SistemaSelect : MonoBehaviour
     }
     public void Circulatorio()
     {
-
+        SceneManager.LoadScene(26);
     }
     public void Nervioso()
     {

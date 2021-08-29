@@ -80,4 +80,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sistema/RespiratorioNivelTutorial.unity
     guid: 1890d2c6591488840834348227eecd3e
+  - enabled: 1
+    path: Assets/Scenes/Sistema/CirculatorioNivel1.unity
+    guid: 623a8d31686853343b02b68c6cd30c83
+  - enabled: 1
+    path: Assets/Scenes/Sistema/LevelSelectCirculatorio.unity
+    guid: 7de98ea7a77ba644abc1d38694cdd632
   m_configObjects: {}

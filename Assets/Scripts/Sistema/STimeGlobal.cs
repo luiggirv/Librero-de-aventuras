@@ -72,6 +72,11 @@ public class STimeGlobal : MonoBehaviour
 
     public void RegresarMenu()
     {
+        if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < SScoreGlobal.ScoreCount)
+        {
+            PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", SScoreGlobal.ScoreCount);
+            PlayerPrefs.SetInt(LvlIngresado.ToString() + "b", SScoreGlobal.EliminadosCount);
+        }
         timeStart = 999;
         Time.timeScale = 1f;
         SceneManager.LoadScene(4);

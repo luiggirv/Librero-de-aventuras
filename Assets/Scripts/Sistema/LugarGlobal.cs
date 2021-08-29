@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class LugarGlobal : MonoBehaviour
 {
-    public int lugarVirus;
-    public int numLugar = 3;
+    int lugarEscenario;
+    public int numLugar;
     public bool entroNivel = false;
     public GameObject enemigosUI;
     public GameObject sistemaRespiratorioUI;
@@ -38,41 +38,48 @@ public class LugarGlobal : MonoBehaviour
             advertenciaUI.GetComponent<Text>().text = "Has eliminado a todos los virus de este lugar.\n¡Revisa los otros lugares!";
             advertenciaUI.SetActive(true);
             var exclude = new HashSet<int>() { numLugar };
-            var range = Enumerable.Range(1, 4).Where(i => !exclude.Contains(i));
+            var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
 
             var rand = new System.Random();
-            int index = rand.Next(0, 3 - exclude.Count);
+            int index = rand.Next(0, 4 - exclude.Count);
             numLugar = range.ElementAt(index);
             Debug.Log("NumLugar: " + numLugar);
             numVirusRequeridos = numVirusRequeridos * 2;
         }
     }
-    public void PulmonDer()
+    public void Escenario1()
     {
         regresarButton.SetActive(true);
-        lugarVirus = 3;
+        lugarEscenario = 1;
         entroNivel = true;
         lugarCorrecto();
     }
-    public void PulmonIzq()
+    public void Escenario2()
     {
         regresarButton.SetActive(true);
         entroNivel = true;
-        lugarVirus = 2;
+        lugarEscenario = 2;
         lugarCorrecto();
     }
-    public void Tronco()
+    public void Escenario3()
     {
         regresarButton.SetActive(true);
         entroNivel = true;
-        lugarVirus = 1;
+        lugarEscenario = 3;
+        lugarCorrecto();
+    }
+    public void Escenario4()
+    {
+        regresarButton.SetActive(true);
+        entroNivel = true;
+        lugarEscenario = 4;
         lugarCorrecto();
     }
 
     public void lugarCorrecto()
     {
         sistemaRespiratorioUI.SetActive(false);
-        if (lugarVirus == numLugar)
+        if (lugarEscenario == numLugar)
         {
             enemigosUI.SetActive(true);
         }
