@@ -77,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Metodo/PostLevel1.unity
     guid: 7f45672bd1e16ee46b4afb985399051a
+  - enabled: 1
+    path: Assets/Scenes/Sistema/RespiratorioNivelTutorial.unity
+    guid: 1890d2c6591488840834348227eecd3e
   m_configObjects: {}

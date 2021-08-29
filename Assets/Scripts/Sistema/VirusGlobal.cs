@@ -74,7 +74,7 @@ public class VirusGlobal : MonoBehaviour
 
     void OnMouseDown()
     {
-        StartCoroutine(ScaleObject(gameObject.transform, new Vector2(0.15f, 0.15f), 0.2f, 0));
+        StartCoroutine(ScaleObject(gameObject.transform, new Vector2(0.01f, 0.01f), 0.2f, 0));
         vidaVirus -= 1;
         if (vidaVirus == 0)
         {
@@ -93,14 +93,10 @@ public class VirusGlobal : MonoBehaviour
         Vector2 originalScale = obj.localScale;
 
         float rate = 1.0f / time;
-        float i = 0.0f;
+        float i = 1.0f;
 
-        while (i < 0.5f)
-        {
-            i += Time.deltaTime * rate;
-            obj.localScale = Vector2.Lerp(originalScale, end, i);
-            yield return new WaitForEndOfFrame();
-        }
+        obj.localScale = Vector2.Lerp(originalScale, end, i);
+        yield return new WaitForSeconds(0.05f);
         obj.localScale = Vector2.Lerp(end, originalScale, i);
     }
 

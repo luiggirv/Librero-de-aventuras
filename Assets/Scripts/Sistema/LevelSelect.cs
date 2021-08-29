@@ -153,4 +153,9 @@ public class LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene(11);
     }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(24);
+    }
 }

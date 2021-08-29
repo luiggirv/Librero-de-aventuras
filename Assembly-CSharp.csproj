@@ -70,6 +70,7 @@
     <Compile Include="Assets\Foggy Mountains Background\Demo\BackgroundHelper.cs" />
     <Compile Include="Assets\Scripts\CatchGame\Restart.cs" />
     <Compile Include="Assets\Scripts\LevelSelectMountain.cs" />
+    <Compile Include="Assets\Scripts\Sistema\EventController.cs" />
     <Compile Include="Assets\2D Physics Puzzle Kit\Scripts\C#\Managers\InputManager.cs" />
     <Compile Include="Assets\2D Physics Puzzle Kit\Scripts\C#\Objects\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\PanAndZoom.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Sistema\VirusGlobal.cs" />
     <Compile Include="Assets\2D Physics Puzzle Kit\Scripts\C#\Objects\RcCar.cs" />
+    <Compile Include="Assets\Scripts\Sistema\TutorialScript.cs" />
     <Compile Include="Assets\Scripts\Metodo\MetodoPosNivel.cs" />
     <Compile Include="Assets\Scripts\CatchGame\Score.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\Benchmark03.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Assets\Scripts\LevelGeneration.cs" />
     <Compile Include="Assets\Scripts\Sistema\STimeGlobal.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Scripts\Sistema\Event.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\2D Physics Puzzle Kit\Scripts\C#\Toolbox\ToolboxItemType.cs" />
@@ -169,9 +172,6 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\Sistema\TutorialScript.cs" />
-    <Compile Include="Assets\Scripts\Sistema\EventController.cs" />
-    <Compile Include="Assets\Scripts\Sistema\Event.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />
