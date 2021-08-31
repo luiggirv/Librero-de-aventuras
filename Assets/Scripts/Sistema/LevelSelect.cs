@@ -27,6 +27,13 @@ public class LevelSelect : MonoBehaviour
     public static bool lvl5EntrarCirculatorio = false;
     public static bool lvl6EntrarCirculatorio = false;
 
+    public static bool lvl1EntrarNervioso = false;
+    public static bool lvl2EntrarNervioso = false;
+    public static bool lvl3EntrarNervioso = false;
+    public static bool lvl4EntrarNervioso = false;
+    public static bool lvl5EntrarNervioso = false;
+    public static bool lvl6EntrarNervioso = false;
+
     public int lvl1Resp = 101;
     public int lvl2Resp = 102;
     public int lvl3Resp = 103;
@@ -40,6 +47,13 @@ public class LevelSelect : MonoBehaviour
     public int lvl4Circ = 204;
     public int lvl5Circ = 205;
     public int lvl6Circ = 206;
+
+    public int lvl1Ner = 301;
+    public int lvl2Ner = 302;
+    public int lvl3Ner = 303;
+    public int lvl4Ner = 304;
+    public int lvl5Ner = 305;
+    public int lvl6Ner = 306;
 
     public GameObject Lock2;
     public GameObject Lock3;
@@ -117,35 +131,77 @@ public class LevelSelect : MonoBehaviour
     {
         lvl2EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl2Circ;
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(27);
     }
 
     public void Level3Circulatorio()
     {
         lvl3EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl3Circ;
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(28);
     }
 
     public void Level4Circulatorio()
     {
         lvl4EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl4Circ;
-        SceneManager.LoadScene(16);
+        SceneManager.LoadScene(29);
     }
 
     public void Level5Circulatorio()
     {
         lvl5EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl5Circ;
-        SceneManager.LoadScene(17);
+        SceneManager.LoadScene(30);
     }
 
     public void Level6Circulatorio()
     {
         lvl6EntrarCirculatorio = true;
         STimeGlobal.LvlIngresado = lvl6Circ;
-        SceneManager.LoadScene(18);
+        SceneManager.LoadScene(31);
+    }
+
+    public void Level1Nervioso()
+    {
+        lvl1EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl1Ner;
+        SceneManager.LoadScene(34);
+    }
+
+    public void Level2Nervioso()
+    {
+        lvl2EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl2Ner;
+        SceneManager.LoadScene(35);
+    }
+
+    public void Level3Nervioso()
+    {
+        lvl3EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl3Ner;
+        SceneManager.LoadScene(36);
+    }
+
+    public void Level4Nervioso()
+    {
+        lvl4EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl4Ner;
+        SceneManager.LoadScene(37);
+    }
+
+    public void Level5Nervioso()
+    {
+        lvl5EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl5Ner;
+        SceneManager.LoadScene(38);
+    }
+
+    public void Level6Nervioso()
+    {
+        lvl6EntrarNervioso = true;
+        STimeGlobal.LvlIngresado = lvl6Ner;
+        SceneManager.LoadScene(39);
     }
 
 
@@ -157,5 +213,14 @@ public class LevelSelect : MonoBehaviour
     public void Tutorial()
     {
         SceneManager.LoadScene(24);
+    }
+    public void TutorialCirculatorio()
+    {
+        SceneManager.LoadScene(32);
+    }
+
+    public void TutorialNervioso()
+    {
+        SceneManager.LoadScene(32);
     }
 }

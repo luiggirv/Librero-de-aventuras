@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaCelula: 1
   InternalScore: 200
+  speed: 4
   explosion: {fileID: 100000, guid: c105dee33a109384a8348a5c72bfefd0, type: 3}
 --- !u!60 &7358096638023944109
 PolygonCollider2D:

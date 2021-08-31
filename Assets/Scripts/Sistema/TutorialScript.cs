@@ -223,7 +223,7 @@ public class TutorialScript : MonoBehaviour
         audioClick.Play();
         button12.SetActive(false);
         button13.SetActive(true);
-        objectToMove.GetComponent<SpriteRenderer>().sprite = sprites[3];
+        objectToMove.GetComponent<SpriteRenderer>().sprite = sprites[4];
         virus3.SetActive(false);
         virus4.SetActive(true);
         informaciónText3.SetActive(false);

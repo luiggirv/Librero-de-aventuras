@@ -25,18 +25,66 @@ public class DataLevel : MonoBehaviour
         //If the level is not always unlocked, it means the level id is between 5 and 8
         else
         {
-            //Loop trought the save data for level 1-4
-            for (int i = 101; i < levelNumber; i++)
+            switch (levelNumber)
             {
-                //If a level is not completed, lock this level
-                if (PlayerPrefs.GetInt(i.ToString()+"a") == 0 || !PlayerPrefs.HasKey(i.ToString()+"a"))
-                {
-                    Locked();
-                    return;
-                }
+                case 101:
+                case 102:
+                case 103:
+                case 104:
+                case 105:
+                case 106:
+                    //Loop trought the save data for level 1-4
+                    for (int i = 101; i < levelNumber; i++)
+                    {
+                        //If a level is not completed, lock this level
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //If every level between 1 and 4 is completed, unlock this
+                    Unlocked();
+                    break;
+                case 201:
+                case 202:
+                case 203:
+                case 204:
+                case 205:
+                case 206:
+                    //Loop trought the save data for level 1-4
+                    for (int i = 201; i < levelNumber; i++)
+                    {
+                        //If a level is not completed, lock this level
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //If every level between 1 and 4 is completed, unlock this
+                    Unlocked();
+                    break;
+                case 301:
+                case 302:
+                case 303:
+                case 304:
+                case 305:
+                case 306:
+                    //Loop trought the save data for level 1-4
+                    for (int i = 301; i < levelNumber; i++)
+                    {
+                        //If a level is not completed, lock this level
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //If every level between 1 and 4 is completed, unlock this
+                    Unlocked();
+                    break;
             }
-            //If every level between 1 and 4 is completed, unlock this
-            Unlocked();
         }
     }
 

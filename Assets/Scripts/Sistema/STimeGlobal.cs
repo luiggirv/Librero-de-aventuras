@@ -48,13 +48,25 @@ public class STimeGlobal : MonoBehaviour
     public void ContinuarNivel()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(8);
-        timeStart = 999;
         if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < SScoreGlobal.ScoreCount)
         {
             PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", SScoreGlobal.ScoreCount);
             PlayerPrefs.SetInt(LvlIngresado.ToString() + "b", SScoreGlobal.EliminadosCount);
         }
+        if (LevelSelect.lvl1Entrar|| LevelSelect.lvl2Entrar|| LevelSelect.lvl3Entrar|| LevelSelect.lvl4Entrar|| LevelSelect.lvl5Entrar|| LevelSelect.lvl6Entrar)
+        {
+            SceneManager.LoadScene(8);
+        }
+        else if (LevelSelect.lvl1EntrarCirculatorio|| LevelSelect.lvl2EntrarCirculatorio|| LevelSelect.lvl3EntrarCirculatorio|| LevelSelect.lvl4EntrarCirculatorio|| LevelSelect.lvl5EntrarCirculatorio|| LevelSelect.lvl6EntrarCirculatorio)
+        {
+            SceneManager.LoadScene(26);
+        }
+        else if (LevelSelect.lvl1EntrarNervioso|| LevelSelect.lvl2EntrarNervioso|| LevelSelect.lvl3EntrarNervioso|| LevelSelect.lvl4EntrarNervioso|| LevelSelect.lvl5EntrarNervioso|| LevelSelect.lvl6EntrarNervioso)
+        {
+            SceneManager.LoadScene(33);
+        }
+        timeStart = 999;
+
         LevelSelect.lvl1Entrar = false;
         LevelSelect.lvl2Entrar = false;
         LevelSelect.lvl3Entrar = false;
@@ -68,7 +80,14 @@ public class STimeGlobal : MonoBehaviour
         LevelSelect.lvl4EntrarCirculatorio = false;
         LevelSelect.lvl5EntrarCirculatorio = false;
         LevelSelect.lvl6EntrarCirculatorio = false;
-}
+
+        LevelSelect.lvl1EntrarNervioso = false;
+        LevelSelect.lvl2EntrarNervioso = false;
+        LevelSelect.lvl3EntrarNervioso = false;
+        LevelSelect.lvl4EntrarNervioso = false;
+        LevelSelect.lvl5EntrarNervioso = false;
+        LevelSelect.lvl6EntrarNervioso = false;
+    }
 
     public void RegresarMenu()
     {

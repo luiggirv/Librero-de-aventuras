@@ -9,14 +9,26 @@ public class CelulaGlobal : MonoBehaviour
 {
     public int vidaCelula;
     public int InternalScore;
+    public float speed = 4f;
     public GameObject explosion;
+
+    private float RotateSpeed = 2f;
+    private float Radius = 0.5f;
+
+    private Vector2 _centre;
+    private float _angle;
 
     private void Start()
     {
+        _centre = transform.position;
     }
 
     private void Update()
     {
+        _angle += RotateSpeed * Time.deltaTime;
+
+        var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
+        transform.position = _centre + offset;
     }
 
     private void Awake()

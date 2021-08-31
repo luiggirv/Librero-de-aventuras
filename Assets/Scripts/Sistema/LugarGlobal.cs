@@ -16,6 +16,8 @@ public class LugarGlobal : MonoBehaviour
     public GameObject regresarButton;
     public static int numVirusNecesarios;
     public int numVirusRequeridos;
+    public GameObject marcaAgua;
+    public Sprite[] imagenesbackground;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,8 @@ public class LugarGlobal : MonoBehaviour
         regresarButton.SetActive(true);
         lugarEscenario = 1;
         entroNivel = true;
+        marcaAgua.GetComponent<Image>().sprite = imagenesbackground[0];
+        marcaAgua.SetActive(true);
         lugarCorrecto();
     }
     public void Escenario2()
@@ -59,6 +63,8 @@ public class LugarGlobal : MonoBehaviour
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 2;
+        marcaAgua.GetComponent<Image>().sprite = imagenesbackground[1];
+        marcaAgua.SetActive(true);
         lugarCorrecto();
     }
     public void Escenario3()
@@ -66,6 +72,8 @@ public class LugarGlobal : MonoBehaviour
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 3;
+        marcaAgua.GetComponent<Image>().sprite = imagenesbackground[2];
+        marcaAgua.SetActive(true);
         lugarCorrecto();
     }
     public void Escenario4()
@@ -73,6 +81,8 @@ public class LugarGlobal : MonoBehaviour
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 4;
+        marcaAgua.GetComponent<Image>().sprite = imagenesbackground[3];
+        marcaAgua.SetActive(true);
         lugarCorrecto();
     }
 
@@ -98,7 +108,7 @@ public class LugarGlobal : MonoBehaviour
             enemigosUI.SetActive(false);
             advertenciaUI.SetActive(false);
             entroNivel = false;
-
+            marcaAgua.SetActive(false);
             var clonesVirus = GameObject.FindGameObjectsWithTag("Virus");
             foreach (var clone in clonesVirus)
             {

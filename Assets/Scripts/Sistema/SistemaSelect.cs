@@ -22,7 +22,7 @@ public class SistemaSelect : MonoBehaviour
     }
     public void Nervioso()
     {
-
+        SceneManager.LoadScene(33);
     }
     public void Regresar(){
         SceneManager.LoadScene(4);

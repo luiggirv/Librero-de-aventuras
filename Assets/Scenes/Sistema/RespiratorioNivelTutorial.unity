@@ -6256,7 +6256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd1da5eb63e36c4db83ed4789da85eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lugarVirus: 3
   numLugar: 3
   entroNivel: 0
   enemigosUI: {fileID: 1775881448}
@@ -9258,8 +9257,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Aliado: Celula\n- Recuperaci\xF3n: 40 HP\n- Ratio de aparici\xF3n: Medio\n-
-    Nota: Son indefensos y debes evitar atacarlos"
+  m_Text: "- Aliado: Celula\n- Ratio de aparici\xF3n: Medio\n- Nota: Son indefensos
+    y debes evitar atacarlos"
 --- !u!222 &1954711972
 CanvasRenderer:
   m_ObjectHideFlags: 0
