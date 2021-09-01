@@ -13,6 +13,7 @@ public class STimeGlobal : MonoBehaviour
     public GameObject puntajeNivelFinal;
     public GameObject puntajeTotal;
     public static int LvlIngresado;
+    public float quitarTiempo;
 
     void Start()
     {
@@ -25,6 +26,18 @@ public class STimeGlobal : MonoBehaviour
     {
         timeStart -= Time.deltaTime;
         TiempoReal.GetComponent<Text>().text = Mathf.Round(timeStart).ToString() + " segundos";
+        if (LugarGlobal.lugarEquivocado)
+        {
+            LugarGlobal.lugarEquivocado = false;
+            if (timeStart - quitarTiempo <= 0)
+            {
+                timeStart = 0;
+            }
+            else
+            {
+                timeStart -= quitarTiempo;
+            }
+        }
 
         if (Mathf.Round(timeStart) == 0)
         {

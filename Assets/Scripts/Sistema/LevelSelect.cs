@@ -71,7 +71,21 @@ public class LevelSelect : MonoBehaviour
         lvl4Entrar = false;
         lvl5Entrar = false;
         lvl6Entrar = false;
-    }
+
+        lvl1EntrarCirculatorio = false;
+        lvl2EntrarCirculatorio = false;
+        lvl3EntrarCirculatorio = false;
+        lvl4EntrarCirculatorio = false;
+        lvl5EntrarCirculatorio = false;
+        lvl6EntrarCirculatorio = false;
+
+        lvl1EntrarNervioso = false;
+        lvl2EntrarNervioso = false;
+        lvl3EntrarNervioso = false;
+        lvl4EntrarNervioso = false;
+        lvl5EntrarNervioso = false;
+        lvl6EntrarNervioso = false;
+}
 
     // Update is called once per frame
     void Update()
