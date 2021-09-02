@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Sistema/CirculatorioNivel6.unity
+- path: Assets/Scenes/Sistema/LevelSelectNervioso.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

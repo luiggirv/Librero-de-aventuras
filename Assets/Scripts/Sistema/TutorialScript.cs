@@ -188,7 +188,7 @@ public class TutorialScript : MonoBehaviour
         point2 = true;
         button5.SetActive(false);
         button6.SetActive(true);
-        cuadroText.GetComponent<Text>().text = "Para entrenarte, me disfrazaré de cada bacteria y describiré sus características. Empecemos con la bacteria más común: La bacteria normal.";
+        cuadroText.GetComponent<Text>().text = "Para entrenarte, me disfrazaré de cada bacteria y describiré sus características. Empecemos con la primera bacteria.";
     }
     public void PassPoint7()
     {
@@ -453,7 +453,7 @@ public class TutorialScript : MonoBehaviour
         audioClick.Play();
         button22.SetActive(false);
         button23.SetActive(true);
-        cuadroText.GetComponent<Text>().text = "Si te olvidas de alguna indicación, siempre puedes consultar este tutorial.\n Ahora si, ¡buena suerte!";
+        cuadroText.GetComponent<Text>().text = "Si te olvidas de alguna indicación, siempre puedes consultar este tutorial.\nAhora si, ¡buena suerte!";
     }
     public void PassPoint24()
     {

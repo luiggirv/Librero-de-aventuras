@@ -10,6 +10,7 @@ public class PauseMenuSistema : MonoBehaviour
 
     public void Resume()
     {
+        AudioListener.pause = false;
         var clones = GameObject.FindGameObjectsWithTag("Virus");
         foreach (var clone in clones)
         {
@@ -28,6 +29,7 @@ public class PauseMenuSistema : MonoBehaviour
     }
     public void Pause()
     {
+        AudioListener.pause = true;
         var clones = GameObject.FindGameObjectsWithTag("Virus");
         foreach (var clone in clones)
         {
@@ -58,15 +60,15 @@ public class PauseMenuSistema : MonoBehaviour
             Destroy(clone);
         }
         Time.timeScale = 1f;
-        if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
+        if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar||LevelSelect.lvlTutorialRespiratorio)
         {
             SceneManager.LoadScene(8);
         }
-        else if (LevelSelect.lvl1EntrarCirculatorio || LevelSelect.lvl2EntrarCirculatorio || LevelSelect.lvl3EntrarCirculatorio || LevelSelect.lvl4EntrarCirculatorio || LevelSelect.lvl5EntrarCirculatorio || LevelSelect.lvl6EntrarCirculatorio)
+        else if (LevelSelect.lvl1EntrarCirculatorio || LevelSelect.lvl2EntrarCirculatorio || LevelSelect.lvl3EntrarCirculatorio || LevelSelect.lvl4EntrarCirculatorio || LevelSelect.lvl5EntrarCirculatorio || LevelSelect.lvl6EntrarCirculatorio|| LevelSelect.lvlTutorialCirculatorio)
         {
             SceneManager.LoadScene(26);
         }
-        else if (LevelSelect.lvl1EntrarNervioso || LevelSelect.lvl2EntrarNervioso || LevelSelect.lvl3EntrarNervioso || LevelSelect.lvl4EntrarNervioso || LevelSelect.lvl5EntrarNervioso || LevelSelect.lvl6EntrarNervioso)
+        else if (LevelSelect.lvl1EntrarNervioso || LevelSelect.lvl2EntrarNervioso || LevelSelect.lvl3EntrarNervioso || LevelSelect.lvl4EntrarNervioso || LevelSelect.lvl5EntrarNervioso || LevelSelect.lvl6EntrarNervioso|| LevelSelect.lvlTutorialNervioso)
         {
             SceneManager.LoadScene(33);
         }
@@ -90,6 +92,12 @@ public class PauseMenuSistema : MonoBehaviour
         LevelSelect.lvl4EntrarNervioso = false;
         LevelSelect.lvl5EntrarNervioso = false;
         LevelSelect.lvl6EntrarNervioso = false;
+
+        LevelSelect.lvlTutorialCirculatorio = false;
+        LevelSelect.lvlTutorialNervioso = false;
+        LevelSelect.lvlTutorialRespiratorio = false;
+
+        AudioListener.pause = false;
     }
 
     public void QuitGame()
