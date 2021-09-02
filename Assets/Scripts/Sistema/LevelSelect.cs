@@ -34,6 +34,10 @@ public class LevelSelect : MonoBehaviour
     public static bool lvl5EntrarNervioso = false;
     public static bool lvl6EntrarNervioso = false;
 
+    public static bool lvlTutorialRespiratorio = false;
+    public static bool lvlTutorialCirculatorio = false;
+    public static bool lvlTutorialNervioso = false;
+
     public int lvl1Resp = 101;
     public int lvl2Resp = 102;
     public int lvl3Resp = 103;
@@ -226,15 +230,18 @@ public class LevelSelect : MonoBehaviour
 
     public void Tutorial()
     {
-        SceneManager.LoadScene(24);
+        lvlTutorialRespiratorio = true;
+        SceneManager.LoadScene(40);
     }
     public void TutorialCirculatorio()
     {
+        lvlTutorialCirculatorio = true;
         SceneManager.LoadScene(32);
     }
 
     public void TutorialNervioso()
     {
-        SceneManager.LoadScene(32);
+        lvlTutorialNervioso = true;
+        SceneManager.LoadScene(41);
     }
 }

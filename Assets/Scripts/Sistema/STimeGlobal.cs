@@ -111,6 +111,26 @@ public class STimeGlobal : MonoBehaviour
         }
         timeStart = 999;
         Time.timeScale = 1f;
+        LevelSelect.lvl1Entrar = false;
+        LevelSelect.lvl2Entrar = false;
+        LevelSelect.lvl3Entrar = false;
+        LevelSelect.lvl4Entrar = false;
+        LevelSelect.lvl5Entrar = false;
+        LevelSelect.lvl6Entrar = false;
+
+        LevelSelect.lvl1EntrarCirculatorio = false;
+        LevelSelect.lvl2EntrarCirculatorio = false;
+        LevelSelect.lvl3EntrarCirculatorio = false;
+        LevelSelect.lvl4EntrarCirculatorio = false;
+        LevelSelect.lvl5EntrarCirculatorio = false;
+        LevelSelect.lvl6EntrarCirculatorio = false;
+
+        LevelSelect.lvl1EntrarNervioso = false;
+        LevelSelect.lvl2EntrarNervioso = false;
+        LevelSelect.lvl3EntrarNervioso = false;
+        LevelSelect.lvl4EntrarNervioso = false;
+        LevelSelect.lvl5EntrarNervioso = false;
+        LevelSelect.lvl6EntrarNervioso = false;
         SceneManager.LoadScene(4);
     }
 

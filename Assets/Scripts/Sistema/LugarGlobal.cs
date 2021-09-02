@@ -14,6 +14,7 @@ public class LugarGlobal : MonoBehaviour
     public GameObject sistemaRespiratorioUI;
     public GameObject advertenciaUI;
     public GameObject regresarButton;
+    public GameObject menuButton;
     public static int numVirusNecesarios;
     public int numVirusRequeridos;
     public GameObject marcaAgua;
@@ -67,7 +68,9 @@ public class LugarGlobal : MonoBehaviour
             }
             advertenciaUI.GetComponent<Text>().text = "Has eliminado a todas las bacterias de este lugar.\n¡Revisa los otros escenarios!";
             advertenciaUI.SetActive(true);
+            menuButton.SetActive(false);
             regresarButton.SetActive(true);
+
             var exclude = new HashSet<int>() { numLugar };
             var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
 
@@ -102,6 +105,7 @@ public class LugarGlobal : MonoBehaviour
     }
     public void Escenario1()
     {
+        menuButton.SetActive(false);
         regresarButton.SetActive(true);
         lugarEscenario = 1;
         entroNivel = true;
@@ -111,6 +115,7 @@ public class LugarGlobal : MonoBehaviour
     }
     public void Escenario2()
     {
+        menuButton.SetActive(false);
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 2;
@@ -120,6 +125,7 @@ public class LugarGlobal : MonoBehaviour
     }
     public void Escenario3()
     {
+        menuButton.SetActive(false);
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 3;
@@ -129,6 +135,7 @@ public class LugarGlobal : MonoBehaviour
     }
     public void Escenario4()
     {
+        menuButton.SetActive(false);
         regresarButton.SetActive(true);
         entroNivel = true;
         lugarEscenario = 4;
@@ -142,6 +149,7 @@ public class LugarGlobal : MonoBehaviour
         sistemaRespiratorioUI.SetActive(false);
         if (lugarEscenario == numLugar)
         {
+            menuButton.SetActive(true);
             lugarEquivocado = false;
             regresarButton.SetActive(false);
             enemigosUI.SetActive(true);
@@ -158,6 +166,7 @@ public class LugarGlobal : MonoBehaviour
         if (entroNivel == true)
         {
             regresarButton.SetActive(false);
+            menuButton.SetActive(true);
             sistemaRespiratorioUI.SetActive(true);
             enemigosUI.SetActive(false);
             advertenciaUI.SetActive(false);
@@ -166,7 +175,7 @@ public class LugarGlobal : MonoBehaviour
             var clonesVirus = GameObject.FindGameObjectsWithTag("Virus");
             foreach (var clone in clonesVirus)
             {
-              Destroy(clone);
+                Destroy(clone);
             }
 
             var clonesObjetos = GameObject.FindGameObjectsWithTag("Objeto");

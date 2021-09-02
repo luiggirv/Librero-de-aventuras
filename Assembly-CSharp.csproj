@@ -172,6 +172,7 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
+    <Compile Include="Assets\Scripts\Sistema\PauseMenuSistema.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />

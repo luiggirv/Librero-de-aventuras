@@ -78,7 +78,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Metodo/PostLevel1.unity
     guid: 7f45672bd1e16ee46b4afb985399051a
   - enabled: 1
-    path: Assets/Scenes/Sistema/RespiratorioNivelTutorial.unity
+    path: Assets/Scenes/Sistema/RespiratoriolTutorialAntiguo.unity
     guid: 1890d2c6591488840834348227eecd3e
   - enabled: 1
     path: Assets/Scenes/Sistema/CirculatorioNivel1.unity
@@ -125,4 +125,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sistema/NerviosoNivel6.unity
     guid: a869b96ce7388d54fb79188c7565fd1f
+  - enabled: 1
+    path: Assets/Scenes/Sistema/RespiratorioNivelTutorial.unity
+    guid: 396c87014350f4849bf12ec0e2eabcc1
+  - enabled: 1
+    path: Assets/Scenes/Sistema/NerviosoNivelTutorial.unity
+    guid: 7b771799d32bb614f98541e5c0e37738
   m_configObjects: {}
