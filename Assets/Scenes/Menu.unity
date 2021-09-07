@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -47}
-  m_SizeDelta: {x: 130, y: 132}
+  m_AnchoredPosition: {x: -10.65, y: -47}
+  m_SizeDelta: {x: 128.7, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58114388
 MonoBehaviour:
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8be4c215375d7743a5026e6a748681f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d678e6f3f3bb1e459d27b3ac434dfff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -599,7 +599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 147}
+  m_AnchoredPosition: {x: -0.3056, y: 130}
   m_SizeDelta: {x: 200.86, y: 55.6835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400197544
@@ -766,9 +766,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Analizando el
-
-    sistema humano'
+  m_Text: El poder del anticuerpo
 --- !u!222 &657353096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -811,7 +809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012517, y: 220.75}
+  m_AnchoredPosition: {x: -0.3056, y: 199}
   m_SizeDelta: {x: 499.397, y: 53.1871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785889425
@@ -1701,7 +1699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 21e8020abded3554c8452307b1f84cad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 69e80bacf7994c54797335baacb1a8d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1956,7 +1954,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62ca7a0024bce9542bb9b6423c66d6ec, type: 3}
+  m_Sprite: {fileID: 6937678200099639712, guid: b67e91802fd75534fbe7737a7dab224e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2138,7 +2136,7 @@ Canvas:
   m_GameObject: {fileID: 1606884419}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1773064865}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2409,7 +2407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 231.82}
+  m_AnchoredPosition: {x: -0.000030038, y: 180}
   m_SizeDelta: {x: 503.9623, y: 60.3496}
   m_Pivot: {x: 0.49999994, y: 0.50000006}
 --- !u!114 &1742898382
@@ -2881,8 +2879,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.16125, y: -237}
-  m_SizeDelta: {x: 223.3553, y: 62.2583}
+  m_AnchoredPosition: {x: -297, y: -196}
+  m_SizeDelta: {x: 184.72, y: 43.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011355125
 MonoBehaviour:

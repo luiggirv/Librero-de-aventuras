@@ -84,6 +84,26 @@ public class DataLevel : MonoBehaviour
                     //If every level between 1 and 4 is completed, unlock this
                     Unlocked();
                     break;
+
+                case 401:
+                case 402:
+                case 403:
+                case 404:
+                case 405:
+                case 406:
+                    //Loop trought the save data for level 1-4
+                    for (int i = 301; i < levelNumber; i++)
+                    {
+                        //If a level is not completed, lock this level
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //If every level between 1 and 4 is completed, unlock this
+                    Unlocked();
+                    break;
             }
         }
     }

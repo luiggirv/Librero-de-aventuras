@@ -11,14 +11,15 @@ public class Artifact : MonoBehaviour
     public int maxHealth;
 
     public int bleed;
-    AudioSource audioSource;
+    public GameObject audioSource;
+    public GameObject sonidoCorral;
     float timer;
+    int frutasTomadas;
 
     public GameObject player;
 
     void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         health = maxHealth;
         timer = Time.time + 1;
     }
@@ -39,6 +40,7 @@ public class Artifact : MonoBehaviour
     public void Damage(int amount)
     {
         health -= amount;
+        sonidoCorral.GetComponent<AudioSource>().Play();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -63,9 +65,11 @@ public class Artifact : MonoBehaviour
         {
             if (player.GetComponent<PlayerBackpack>().current != 0)
             {
-                audioSource.Play();
+                audioSource.GetComponent<AudioSource>().Play();
             }
-            health += player.GetComponent<PlayerBackpack>().TakeFruits();
+            frutasTomadas = player.GetComponent<PlayerBackpack>().TakeFruits();
+            health += frutasTomadas;
+            ScoreGlobalTower.ScoreCount += frutasTomadas;
             if (health > maxHealth)
             {
                 health = maxHealth;
