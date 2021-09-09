@@ -95,6 +95,7 @@ public class LevelSelectEcosistema : MonoBehaviour
     public void Tutorial()
     {
         lvlTutorialForest = true;
-        SceneManager.LoadScene(40);
+        Manager.LvlIngresado = 400;
+        SceneManager.LoadScene(48);
     }
 }

@@ -122,7 +122,9 @@
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Toolbox\ToolboxItemType.cs" />
     <Compile Include="Assets\Scripts\CatchGame\HT_SetParticleSortingLayer.cs" />
     <Compile Include="Assets\Scripts\Sistema\CorazonGlobal.cs" />
+    <Compile Include="Assets\Importaciones\TowerDefense\Scripts\IndicacionesScript.cs" />
     <Compile Include="Assets\Scripts\Sistema\CelulaGlobal.cs" />
+    <Compile Include="Assets\Scripts\DataLevelEcosistema.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\Helper Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\CatchGame\SelfDestruct.cs" />
@@ -149,6 +151,7 @@
     <Compile Include="Assets\Scripts\GlobalScore.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Objects\ObjectBase.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuEcosistema.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Sistema\ButtonHit.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\UI\BtnUsableAfter1Sec.cs" />
@@ -207,9 +210,7 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\DataLevelEcosistema.cs" />
-    <Compile Include="Assets\Scripts\PauseMenuEcosistema.cs" />
-    <Compile Include="Assets\Importaciones\TowerDefense\Scripts\IndicacionesScript.cs" />
+    <Compile Include="Assets\Scripts\TutorialTDScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />

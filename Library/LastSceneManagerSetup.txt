@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Ecosistema/TowerDefense/TDLevel1.unity
+- path: Assets/Scenes/Sistema/SistemaSelect.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

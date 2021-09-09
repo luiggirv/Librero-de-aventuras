@@ -3832,7 +3832,7 @@ PrefabInstance:
     - target: {fileID: 6500222039090690774, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1365510883}
     - target: {fileID: 6500222039090690774, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3843,7 +3843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500222039090690774, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelect, Assembly-CSharp
+      value: LevelSelectEcosistema, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6500222039090690774, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument

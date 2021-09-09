@@ -1510,7 +1510,7 @@ PrefabInstance:
     - target: {fileID: 2653027755290323086, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e817a8ab755582345bb6714ebf0d39e4, type: 3}
+      objectReference: {fileID: 21300000, guid: 6e6273fe208b1924e9aebe3ad0356371, type: 3}
     - target: {fileID: 2821837974116270271, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_Name
       value: LevelButton2
@@ -1704,7 +1704,7 @@ PrefabInstance:
     - target: {fileID: 2653027755290323086, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42de78f740c2af547aa370c48ce1fdbe, type: 3}
+      objectReference: {fileID: 21300000, guid: 6fa77e6c8399eaf47b6b3e0c958df22d, type: 3}
     - target: {fileID: 2821837974116270271, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
       propertyPath: m_Name
       value: LevelButton3

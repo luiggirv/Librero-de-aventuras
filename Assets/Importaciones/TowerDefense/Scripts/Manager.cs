@@ -35,7 +35,7 @@ public class Manager : MonoBehaviour
 
     void Lose()
     {
-        PuntajeFinalText.GetComponent<Text>().text = "La vida del corral llegó a 0 de vida por los animales depredadores";
+        PuntajeFinalText.GetComponent<Text>().text = "La vida del corral llegó a 0 de vida por los animales salvajes";
         AudioListener.pause = true;
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
@@ -59,11 +59,12 @@ public class Manager : MonoBehaviour
             SceneManager.LoadScene(15);
         }
         LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
+        LevelSelectEcosistema.lvl2ForestEntrar = false;
+        LevelSelectEcosistema.lvl3ForestEntrar = false;
+        LevelSelectEcosistema.lvl4ForestEntrar = false;
+        LevelSelectEcosistema.lvl5ForestEntrar = false;
+        LevelSelectEcosistema.lvl6ForestEntrar = false;
+        LevelSelectEcosistema.lvlTutorialForest = false;
 
         AudioListener.pause = false;
     }
@@ -72,11 +73,12 @@ public class Manager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(1);
         LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
-        LevelSelectEcosistema.lvl1ForestEntrar = false;
+        LevelSelectEcosistema.lvl2ForestEntrar = false;
+        LevelSelectEcosistema.lvl3ForestEntrar = false;
+        LevelSelectEcosistema.lvl4ForestEntrar = false;
+        LevelSelectEcosistema.lvl5ForestEntrar = false;
+        LevelSelectEcosistema.lvl6ForestEntrar = false;
+        LevelSelectEcosistema.lvlTutorialForest = false;
 
         AudioListener.pause = false;
     }
