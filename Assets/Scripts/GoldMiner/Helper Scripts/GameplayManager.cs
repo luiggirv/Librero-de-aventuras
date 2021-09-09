@@ -58,17 +58,13 @@ public class GameplayManager : MonoBehaviour
             instance = this;
     }
 
-    // קורה לפני תחילת המשחק
     void Start()
     {
         startLevel = true;
         sumScoreInThisLvl = 0f;
         PreguntaBG.SetActive(false);
 
-        //level5 = 0;
-        //level6 = 0;
         formula(false);
-        //resetFormula();
         done = false;
 
         DisplayScore(0);
@@ -83,56 +79,6 @@ public class GameplayManager : MonoBehaviour
 
     }
 
-    //private void showOperators()
-    //{
-    //    GameObject plus = GameObject.Find("plus");
-    //    GameObject plus2 = GameObject.Find("plus2");
-    //    GameObject mult = GameObject.Find("mult");
-    //    GameObject minus = GameObject.Find("minus");
-    //    GameObject divide = GameObject.Find("divide");
-    //    GameObject mult2 = GameObject.Find("mult2");
-
-    //    switch (SceneManager.GetActiveScene().buildIndex)
-    //    {
-    //        case 1:
-    //            //"plus":
-    //            plus.GetComponent<Text>().enabled = true;
-    //            //"mult":
-    //            mult.GetComponent<Text>().enabled = true;
-    //            break;
-    //        case 2:
-    //            //"plus":
-    //            plus.GetComponent<Text>().enabled = true;
-    //            //"plus2":
-    //            plus2.GetComponent<Text>().enabled = true;
-    //            //"mult":
-    //            mult.GetComponent<Text>().enabled = true;
-    //            //"minus":
-    //            minus.GetComponent<Text>().enabled = true;
-    //            break;
-    //        case 3:
-    //            //"plus":
-    //            plus.GetComponent<Text>().enabled = true;
-    //            //"plus2":
-    //            plus2.GetComponent<Text>().enabled = true;
-    //            //"mult":
-    //            mult.GetComponent<Text>().enabled = true;
-    //            //"divide":
-    //            divide.GetComponent<Text>().enabled = true;
-    //            break;
-    //        case 4:
-    //            //"plus":
-    //            plus.GetComponent<Text>().enabled = true;
-    //            //"mult2":
-    //            mult2.GetComponent<Text>().enabled = true;
-    //            //"mult":
-    //            mult.GetComponent<Text>().enabled = true;
-    //            //"divide":
-    //            divide.GetComponent<Text>().enabled = true;
-    //            break;
-    //    }
-    //}
-
     IEnumerator Countdown()
     {
         if (startLevel)
@@ -141,6 +87,10 @@ public class GameplayManager : MonoBehaviour
             startLevel = false;
         }
         if (countdownTimer <= 0)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+        else if (PauseMenuLago.GameIsPause)
         {
             yield return new WaitForSeconds(1f);
         }
@@ -165,7 +115,6 @@ public class GameplayManager : MonoBehaviour
         if (countdownTimer <= 0)
         {
             StopCoroutine("Countdown");
-            //Market.resetMarket();
             SoundManager.instance.GameEnd();
             SoundManager.instance.TimeRunningOut(false);
 
@@ -192,29 +141,6 @@ public class GameplayManager : MonoBehaviour
         winTxt.GetComponent<Text>().enabled = false;
         GameObject lossTxt = GameObject.Find("loseTxt");
         lossTxt.GetComponent<Text>().enabled = false;
-
-        //if (Market.hasClock)
-        //{
-        //    countdownTimer += 10;
-        //    GameObject clock = GameObject.Find("clock");
-        //    clock.GetComponent<Image>().enabled = true;
-        //}
-        //if (Market.hasPower)
-        //{
-        //    GameObject power = GameObject.Find("power");
-        //    power.GetComponent<Image>().enabled = true;
-
-        //    //power.SetActive(false);
-        //}
-        ////resetFormula();
-        //if (Market.hasClow)
-        //{
-        //    //showOperators();
-        //    GameObject clow = GameObject.Find("Clow");
-        //    clow.GetComponent<Image>().enabled = true;
-
-        //    //clow.SetActive(false);
-        //}
     }
 
     public void DisplayScore(int scoreValue)
@@ -229,7 +155,7 @@ public class GameplayManager : MonoBehaviour
             scoreValue = 0;
             scoreCount -= 10;
             allScore -= 10;
-            scoreText.text = "Puntaje: " + scoreCount;
+            scoreText.text = scoreCount.ToString();
             scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
             if (countdownTimer > 10)
             {
@@ -238,7 +164,6 @@ public class GameplayManager : MonoBehaviour
             else
             {
                 StopCoroutine("Countdown");
-                //Market.resetMarket();
                 SoundManager.instance.GameEnd();
                 SoundManager.instance.TimeRunningOut(false);
                 GameObject lossTxt = GameObject.Find("loseTxt");
@@ -254,7 +179,7 @@ public class GameplayManager : MonoBehaviour
         }
             scoreCount += scoreValue;
             allScore += scoreValue;
-            scoreText.text = "Puntaje: " + scoreCount;
+            scoreText.text = scoreCount.ToString();
 
             scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
 
@@ -295,8 +220,6 @@ public class GameplayManager : MonoBehaviour
                 switch (HookScript.itemValue)
                 {
                     case "plus":
-                        //GameObject plus = GameObject.Find("plus");
-                        //plus.GetComponent<Text>().enabled = show;
                         level1++;
                         nRespuestaCorrecta = 1;
                         PreguntaBG.SetActive(true);
@@ -309,8 +232,6 @@ public class GameplayManager : MonoBehaviour
                         GameIsPause = true;
                         break;
                     case "four":
-                        //GameObject four = GameObject.Find("four");
-                        //four.GetComponent<Text>().enabled = show;
                         level1++;
                         nRespuestaCorrecta = 2;
                         PreguntaBG.SetActive(true);
@@ -323,8 +244,6 @@ public class GameplayManager : MonoBehaviour
                         GameIsPause = true;
                         break;
                     case "mult":
-                        //GameObject mult = GameObject.Find("mult");
-                        //mult.GetComponent<Text>().enabled = show;
                         level1++;
                         nRespuestaCorrecta = 1;
                         PreguntaBG.SetActive(true);
@@ -337,8 +256,6 @@ public class GameplayManager : MonoBehaviour
                         GameIsPause = true;
                         break;
                     case "three":
-                        //GameObject three = GameObject.Find("three");
-                        //three.GetComponent<Text>().enabled = show;
                         level1++;
                         nRespuestaCorrecta = 4;
                         PreguntaBG.SetActive(true);
@@ -351,8 +268,6 @@ public class GameplayManager : MonoBehaviour
                         GameIsPause = true;
                         break;
                     case "six":
-                        //GameObject six = GameObject.Find("six");
-                        //six.GetComponent<Text>().enabled = show;
                         level1++;
                         nRespuestaCorrecta = 3;
                         PreguntaBG.SetActive(true);
@@ -522,76 +437,13 @@ public class GameplayManager : MonoBehaviour
 
         }
     }
-    //void resetFormula()
-    //{
-    //    GameObject plus = GameObject.Find("plus");
-    //    GameObject plus2 = GameObject.Find("plus2");
-    //    GameObject minus = GameObject.Find("minus");
-    //    GameObject mult = GameObject.Find("mult");
-    //    GameObject divide = GameObject.Find("divide");
-    //    GameObject one = GameObject.Find("one");
-    //    GameObject two = GameObject.Find("two");
-    //    GameObject three = GameObject.Find("three");
-    //    GameObject four = GameObject.Find("four");
-    //    GameObject five = GameObject.Find("five");
-    //    GameObject six = GameObject.Find("six");
-    //    GameObject seven = GameObject.Find("seven");
-    //    GameObject eight = GameObject.Find("eight");
-    //    GameObject nine = GameObject.Find("nine");
-    //    GameObject mult2 = GameObject.Find("mult2");
-    //    GameObject nine2 = GameObject.Find("nine2");
-    //    switch (SceneManager.GetActiveScene().buildIndex)
-    //    {
-    //        case 1:
-    //            plus.GetComponent<Text>().enabled = false;
-    //            four.GetComponent<Text>().enabled = false;
-    //            mult.GetComponent<Text>().enabled = false;
-    //            three.GetComponent<Text>().enabled = false;
-    //            six.GetComponent<Text>().enabled = false;
-    //            break;
-    //        case 2:
-    //            plus.GetComponent<Text>().enabled = false;
-    //            plus2.GetComponent<Text>().enabled = false;
-    //            mult.GetComponent<Text>().enabled = false;
-    //            nine.GetComponent<Text>().enabled = false;
-    //            five.GetComponent<Text>().enabled = false;
-    //            eight.GetComponent<Text>().enabled = false;
-    //            seven.GetComponent<Text>().enabled = false;
-    //            minus.GetComponent<Text>().enabled = false;
-    //            one.GetComponent<Text>().enabled = false;
-    //            break;
-    //        case 3:
-    //            plus.GetComponent<Text>().enabled = false;
-    //            plus2.GetComponent<Text>().enabled = false;
-    //            mult.GetComponent<Text>().enabled = false;
-    //            divide.GetComponent<Text>().enabled = false;
-    //            nine.GetComponent<Text>().enabled = false;
-    //            two.GetComponent<Text>().enabled = false;
-    //            eight.GetComponent<Text>().enabled = false;
-    //            seven.GetComponent<Text>().enabled = false;
-    //            six.GetComponent<Text>().enabled = false;
-    //            break;
-    //        case 4:
-    //            plus.GetComponent<Text>().enabled = false;
-    //            mult2.GetComponent<Text>().enabled = false;
-    //            mult.GetComponent<Text>().enabled = false;
-    //            divide.GetComponent<Text>().enabled = false;
-    //            nine.GetComponent<Text>().enabled = false;
-    //            two.GetComponent<Text>().enabled = false;
-    //            nine2.GetComponent<Text>().enabled = false;
-    //            seven.GetComponent<Text>().enabled = false;
-    //            five.GetComponent<Text>().enabled = false;
-    //            break;
-    //    }
-    //}
-    // הפעלת המשחק מחדש ובהמשך הפעלת שלב הבא
 
     public void Resume(int itemTag)
     {
         if (itemTag == nRespuestaCorrecta) {
             scoreCount += 20;
             allScore += 20;
-            scoreText.text = "Puntaje: " + scoreCount;
+            scoreText.text = scoreCount.ToString();
 
             scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
         }
@@ -601,13 +453,9 @@ public class GameplayManager : MonoBehaviour
             StopCoroutine("Countdown");
             SoundManager.instance.GameEnd();
             success = true;
-            //Market.resetMarket();
-            //levelReached += 1;
             GameObject winTxt = GameObject.Find("winTxt");
             winTxt.GetComponent<Text>().enabled = true;
             continuarButton.SetActive(true);
-            //StartCoroutine(RestartGame(1182));
-            //SceneManager.LoadScene(1);
         }
         else
         {
@@ -629,8 +477,7 @@ public class GameplayManager : MonoBehaviour
     IEnumerator RestartGame(int scene)
     {
         yield return new WaitForSeconds(4f);
-        //if (success) levelReached++;
         SceneManager.LoadScene(14);
     }
 
-} // class
+}

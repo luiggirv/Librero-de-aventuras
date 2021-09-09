@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Scripts Pasados\PanAndZoom.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Managers\GoalManager.cs" />
     <Compile Include="Assets\Scripts\Sistema\ObjetosSpawn.cs" />
+    <Compile Include="Assets\Scripts\TutorialTDScript.cs" />
     <Compile Include="Assets\Importaciones\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Misc\ChildSortingInvoker.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Objects\Balloon.cs" />
@@ -210,7 +211,7 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\TutorialTDScript.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\PauseMenuLago.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />

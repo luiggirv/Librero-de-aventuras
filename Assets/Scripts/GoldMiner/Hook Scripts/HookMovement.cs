@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class HookMovement : MonoBehaviour {
 
-    // rotation Z
     public float min_Z = -57f, max_Z = 57f;
     public float rotate_Speed = 5f;
 
@@ -22,7 +22,6 @@ public class HookMovement : MonoBehaviour {
 
     public bool catchItem = false;
 
-    // FOR LINE RENDERER
     private RopeRenderer ropeRenderer;
 
     void Awake() {
@@ -44,7 +43,6 @@ public class HookMovement : MonoBehaviour {
         MoveRope();
     }
 
-    // סיבוב של הhook
     void Rotate() {
 
         if (!canRotate)
@@ -71,12 +69,13 @@ public class HookMovement : MonoBehaviour {
 
         }
 
-    } // can rotate
+    } 
 
-    // אחראי על האזנה ללחיצה על העכבר כדי להפעיל את השליחת חבל
-    void GetInput() { 
+    void GetInput() {
 
-        if(Input.GetMouseButtonDown(0)) { 
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
+        if (Input.GetMouseButtonDown(0)) { 
 
             if(canRotate) {
                 canRotate = false;
@@ -87,9 +86,8 @@ public class HookMovement : MonoBehaviour {
 
         }
 
-    } // get input
+    }
 
-    // אחראי על שליחת החבל לאחר לחיצה על העכבר
     void MoveRope() {
 
         if (canRotate)
@@ -122,10 +120,8 @@ public class HookMovement : MonoBehaviour {
 
                 canRotate = true;
 
-                // deactivate line renderer
                 ropeRenderer.RenderLine(temp, false);
 
-                //reset move speed
                 move_Speed = initial_Move_Speed;
 
                 SoundManager.instance.RopeStretch(false);
@@ -134,12 +130,11 @@ public class HookMovement : MonoBehaviour {
 
             ropeRenderer.RenderLine(transform.position, true);
 
-        } // cannot rotate
+        } 
 
 
-    } // move rope
+    } 
 
-    // במידה ונתפס עצם בHook
     public void HookAttachedItem() {
         moveDown = false;
         catchItem = true;
