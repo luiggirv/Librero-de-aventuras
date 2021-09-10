@@ -48,9 +48,13 @@ public class GameplayManager : MonoBehaviour
     public GameObject continuarButton;
     private bool startLevel;
 
-    public static int PuntajeLvl1;
-    public static int PuntajeLvl2;
-    public static int PuntajeLvl3;
+    public static int LvlIngresado;
+
+    QuestionsGenerate preguntaGenerada ;
+    QuestionsGenerate.PreguntasAcuaticos preguntaRecogida;
+
+    public AudioSource correctSound;
+    public AudioSource wrongSound;
 
     void Awake()
     {
@@ -60,6 +64,7 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
+        preguntaGenerada = GetComponentInChildren<QuestionsGenerate>();
         startLevel = true;
         sumScoreInThisLvl = 0f;
         PreguntaBG.SetActive(false);
@@ -153,10 +158,10 @@ public class GameplayManager : MonoBehaviour
         if (scoreValue == 999)
         {
             scoreValue = 0;
-            scoreCount -= 10;
-            allScore -= 10;
+            scoreCount -= 100;
+            allScore -= 100;
             scoreText.text = scoreCount.ToString();
-            scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
+            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
             if (countdownTimer > 10)
             {
                 countdownTimer -= 10;
@@ -181,7 +186,7 @@ public class GameplayManager : MonoBehaviour
             allScore += scoreValue;
             scoreText.text = scoreCount.ToString();
 
-            scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
+            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
 
 
         switch (SceneManager.GetActiveScene().buildIndex)
@@ -189,21 +194,13 @@ public class GameplayManager : MonoBehaviour
             case 7:
                 if (level1 == 5) done = true;
                 break;
-            //case 2:
-            //    if (level2 == 9) done = true;
-            //    break;
-            //case 3:
-            //    if (level3 == 9) done = true;
-            //    break;
-            //case 4:
-            //    if (level4 == 9) done = true;
-            //    break;
-            //case 5:
-            //    if (level5 == 9) done = true;
-            //    break;
-            //case 6:
-            //    if (level6 == 9) done = true;
-            //    break;
+            case 49:
+                if (level2 == 7) done = true;
+                break;
+            case 50:
+                if (level3 == 7) done = true;
+                break;
+            
         }
 
         
@@ -215,225 +212,77 @@ public class GameplayManager : MonoBehaviour
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 7:
-                sumScoreInThisLvl = 150f;
+                //sumScoreInThisLvl = 150f;
                 SoundManager.instance.RopeStretch(false);
                 switch (HookScript.itemValue)
                 {
                     case "plus":
-                        level1++;
-                        nRespuestaCorrecta = 1;
-                        PreguntaBG.SetActive(true);
-                        PreguntaTxt.GetComponent<Text>().text = "Pregunta:\n¿Cuál de los siguientes objetos es contaminante para un ecosistema acuático?";
-                        Respuesta1Txt.GetComponent<Text>().text = "Sustancias tóxicas";
-                        Respuesta2Txt.GetComponent<Text>().text = "Algas marinas";
-                        Respuesta3Txt.GetComponent<Text>().text = "Rocas";
-                        Respuesta4Txt.GetComponent<Text>().text = "Estrella de mar";
-                        Time.timeScale = 0f;
-                        GameIsPause = true;
-                        break;
                     case "four":
-                        level1++;
-                        nRespuestaCorrecta = 2;
-                        PreguntaBG.SetActive(true);
-                        PreguntaTxt.GetComponent<Text>().text = "Pregunta:\n¿Cuál de los siguientes seres acuáticos es un depredador?";
-                        Respuesta1Txt.GetComponent<Text>().text = "Pez Payaso";
-                        Respuesta2Txt.GetComponent<Text>().text = "Tiburón";
-                        Respuesta3Txt.GetComponent<Text>().text = "Estrella de mar";
-                        Respuesta4Txt.GetComponent<Text>().text = "Caballito de mar";
-                        Time.timeScale = 0f;
-                        GameIsPause = true;
-                        break;
                     case "mult":
-                        level1++;
-                        nRespuestaCorrecta = 1;
-                        PreguntaBG.SetActive(true);
-                        PreguntaTxt.GetComponent<Text>().text = "Pregunta:\n¿Cuál de los siguientes residuos marinos NO es reciclable?";
-                        Respuesta1Txt.GetComponent<Text>().text = "Sustancias químicas";
-                        Respuesta2Txt.GetComponent<Text>().text = "Latas de comida";
-                        Respuesta3Txt.GetComponent<Text>().text = "Botellas de vidrio y plástico";
-                        Respuesta4Txt.GetComponent<Text>().text = "Bolsas de plástico";
-                        Time.timeScale = 0f;
-                        GameIsPause = true;
-                        break;
                     case "three":
-                        level1++;
-                        nRespuestaCorrecta = 4;
-                        PreguntaBG.SetActive(true);
-                        PreguntaTxt.GetComponent<Text>().text = "Pregunta:\n¿Cuál de los siguientes animales NO es vertebrado?";
-                        Respuesta1Txt.GetComponent<Text>().text = "Pez Espada";
-                        Respuesta2Txt.GetComponent<Text>().text = "Rana";
-                        Respuesta3Txt.GetComponent<Text>().text = "Tiburón";
-                        Respuesta4Txt.GetComponent<Text>().text = "Estrella de mar";
-                        Time.timeScale = 0f;
-                        GameIsPause = true;
-                        break;
                     case "six":
                         level1++;
-                        nRespuestaCorrecta = 3;
                         PreguntaBG.SetActive(true);
-                        PreguntaTxt.GetComponent<Text>().text = "Pregunta:\n¿Cuál de los siguientes animales acuáticos es el más grande?";
-                        Respuesta1Txt.GetComponent<Text>().text = "Estrella de mar";
-                        Respuesta2Txt.GetComponent<Text>().text = "Pez Espada";
-                        Respuesta3Txt.GetComponent<Text>().text = "Ballena";
-                        Respuesta4Txt.GetComponent<Text>().text = "Tiburón";
+                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                    break;
+                }
+                break;
+            case 49:
+                //sumScoreInThisLvl = 150f;
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        level2++;
+                        PreguntaBG.SetActive(true);
+                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
                         Time.timeScale = 0f;
                         GameIsPause = true;
                         break;
                 }
                 break;
-    //        case 2:
-    //            sumScoreInThisLvl = 190f;
-    //            switch (HookScript.itemValue)
-    //            {
-    //                case "plus":
-    //                    GameObject plus = GameObject.Find("plus");
-    //                    plus.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "plus2":
-    //                    GameObject plus2 = GameObject.Find("plus2");
-    //                    plus2.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "mult":
-    //                    GameObject mult = GameObject.Find("mult");
-    //                    mult.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "nine":
-    //                    GameObject nine = GameObject.Find("nine");
-    //                    nine.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "five":
-    //                    GameObject five = GameObject.Find("five");
-    //                    five.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "eight":
-    //                    GameObject eight = GameObject.Find("eight");
-    //                    eight.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "seven":
-    //                    GameObject seven = GameObject.Find("seven");
-    //                    seven.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "minus":
-    //                    GameObject minus = GameObject.Find("minus");
-    //                    minus.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //                case "one":
-    //                    GameObject one = GameObject.Find("one");
-    //                    one.GetComponent<Text>().enabled = show;
-    //                    level2++;
-    //                    break;
-    //            }
-    //            break;
-    //        case 3:
-    //            sumScoreInThisLvl = 210f;
-    //            switch (HookScript.itemValue)
-    //            {
-    //                case "plus":
-    //                    GameObject plus = GameObject.Find("plus");
-    //                    plus.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "plus2":
-    //                    GameObject plus2 = GameObject.Find("plus2");
-    //                    plus2.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "mult":
-    //                    GameObject mult = GameObject.Find("mult");
-    //                    mult.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "divide":
-    //                    GameObject divide = GameObject.Find("divide");
-    //                    divide.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "nine":
-    //                    GameObject nine = GameObject.Find("nine");
-    //                    nine.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "two":
-    //                    GameObject two = GameObject.Find("two");
-    //                    two.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "eight":
-    //                    GameObject eight = GameObject.Find("eight");
-    //                    eight.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "seven":
-    //                    GameObject seven = GameObject.Find("seven");
-    //                    seven.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //                case "six":
-    //                    GameObject six = GameObject.Find("six");
-    //                    six.GetComponent<Text>().enabled = show;
-    //                    level3++;
-    //                    break;
-    //            }
-    //            break;
-    //        case 4:
-    //            sumScoreInThisLvl = 230f;
-    //            switch (HookScript.itemValue)
-    //            {
-    //                case "plus":
-    //                    GameObject plus = GameObject.Find("plus");
-    //                    plus.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "mult2":
-    //                    GameObject mult2 = GameObject.Find("mult2");
-    //                    mult2.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "mult":
-    //                    GameObject mult = GameObject.Find("mult");
-    //                    mult.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "divide":
-    //                    GameObject divide = GameObject.Find("divide");
-    //                    divide.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "nine":
-    //                    GameObject nine = GameObject.Find("nine");
-    //                    nine.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "two":
-    //                    GameObject two = GameObject.Find("two");
-    //                    two.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "nine2":
-    //                    GameObject nine2 = GameObject.Find("nine2");
-    //                    nine2.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "seven":
-    //                    GameObject seven = GameObject.Find("seven");
-    //                    seven.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //                case "five":
-    //                    GameObject five = GameObject.Find("five");
-    //                    five.GetComponent<Text>().enabled = show;
-    //                    level4++;
-    //                    break;
-    //            }
-    //            break;
+            case 50:
+                //sumScoreInThisLvl = 150f;
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        level3++;
+                        PreguntaBG.SetActive(true);
+                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                        break;
+                }
+                break;
 
         }
     }
@@ -441,19 +290,32 @@ public class GameplayManager : MonoBehaviour
     public void Resume(int itemTag)
     {
         if (itemTag == nRespuestaCorrecta) {
-            scoreCount += 20;
-            allScore += 20;
+            correctSound.Play();
+            scoreCount += 200;
+            allScore += 200;
             scoreText.text = scoreCount.ToString();
 
-            scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
+            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
+        }
+        else
+        {
+            wrongSound.Play();
         }
         PreguntaBG.SetActive(false);
         if (done)
         {
             StopCoroutine("Countdown");
             SoundManager.instance.GameEnd();
+            HookScript.itemValue = "";
             success = true;
+            scoreCount += countdownTimer * 100;
+            scoreText.text = scoreCount.ToString();
+            if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < scoreCount)
+            {
+                PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", scoreCount);
+            }
             GameObject winTxt = GameObject.Find("winTxt");
+            winTxt.GetComponent<Text>().text = "Nivel finalizado\nPuntaje adicional por tiempo: " + (countdownTimer*100).ToString() +"\nPuntaje final: " + scoreText.text;
             winTxt.GetComponent<Text>().enabled = true;
             continuarButton.SetActive(true);
         }
@@ -468,7 +330,7 @@ public class GameplayManager : MonoBehaviour
     public void Continuar()
     {
         LevelSelectLake.lvl1Superado = true;
-        PuntajeLvl1 = scoreCount;
+        PreguntaBG.SetActive(false);
         Time.timeScale = 1f;
         GameIsPause = false;
         SceneManager.LoadScene(14);

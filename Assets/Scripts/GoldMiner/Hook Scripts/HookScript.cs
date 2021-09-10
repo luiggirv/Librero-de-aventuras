@@ -83,12 +83,12 @@ public class HookScript : MonoBehaviour
 
                 }
 
-            } // deliver item
+            }
         
     }
 
 
-} // class
+}
 
 
 

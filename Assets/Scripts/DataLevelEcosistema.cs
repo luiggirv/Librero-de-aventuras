@@ -46,6 +46,25 @@ public class DataLevelEcosistema : MonoBehaviour
                     //If every level between 1 and 4 is completed, unlock this
                     Unlocked();
                     break;
+                case 501:
+                case 502:
+                case 503:
+                case 504:
+                case 505:
+                case 506:
+                    //Loop trought the save data for level 1-4
+                    for (int i = 501; i < levelNumber; i++)
+                    {
+                        //If a level is not completed, lock this level
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //If every level between 1 and 4 is completed, unlock this
+                    Unlocked();
+                    break;
             }
         }
     }

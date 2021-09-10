@@ -29,7 +29,7 @@ public class PauseMenuLago : MonoBehaviour
         Time.timeScale = 1f;
         if (LevelSelectEcosistema.lvl1LakeEntrar || LevelSelectEcosistema.lvl2LakeEntrar || LevelSelectEcosistema.lvl3LakeEntrar || LevelSelectEcosistema.lvl4LakeEntrar || LevelSelectEcosistema.lvl5LakeEntrar || LevelSelectEcosistema.lvl6LakeEntrar || LevelSelectEcosistema.lvlTutorialLake)
         {
-            SceneManager.LoadScene(15);
+            SceneManager.LoadScene(14);
         }
         LevelSelectEcosistema.lvl1LakeEntrar = false;
         LevelSelectEcosistema.lvl2LakeEntrar = false;

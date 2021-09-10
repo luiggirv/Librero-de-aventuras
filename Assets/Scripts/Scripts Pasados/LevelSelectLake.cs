@@ -52,45 +52,45 @@ public class LevelSelectLake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lvl1Superado == true)
-        {
-            PlayerPrefs.SetInt("PuntajeLake1", GameplayManager.PuntajeLvl1);
-            PuntajeReal1.GetComponent<Text>().text = GameplayManager.PuntajeLvl1.ToString();
-            Lock2.SetActive(false);
-            Button2.GetComponent<Button>().interactable = true;
-            lvl1Superado = false;
-        }
-        if (lvl2Superado == true)
-        {
-            int puntaje1 = PlayerPrefs.GetInt("PuntajeLake1");
-            PuntajeReal1.GetComponent<Text>().text = puntaje1.ToString();
-            Lock2.SetActive(false);
-            Button2.GetComponent<Button>().interactable = true;
+        //if (lvl1Superado == true)
+        //{
+        //    PlayerPrefs.SetInt("PuntajeLake1", GameplayManager.PuntajeLvl1);
+        //    PuntajeReal1.GetComponent<Text>().text = GameplayManager.PuntajeLvl1.ToString();
+        //    Lock2.SetActive(false);
+        //    Button2.GetComponent<Button>().interactable = true;
+        //    lvl1Superado = false;
+        //}
+        //if (lvl2Superado == true)
+        //{
+        //    int puntaje1 = PlayerPrefs.GetInt("PuntajeLake1");
+        //    PuntajeReal1.GetComponent<Text>().text = puntaje1.ToString();
+        //    Lock2.SetActive(false);
+        //    Button2.GetComponent<Button>().interactable = true;
 
-            PlayerPrefs.SetInt("PuntajeLake2", GameplayManager.PuntajeLvl2);
-            PuntajeReal2.GetComponent<Text>().text = GameplayManager.PuntajeLvl2.ToString();
-            Lock3.SetActive(false);
-            Button3.GetComponent<Button>().interactable = true;
-            lvl2Superado = false;
-        }
-        if (lvl3Superado == true)
-        {
-            int puntaje1 = PlayerPrefs.GetInt("PuntajeLake1");
-            PuntajeReal1.GetComponent<Text>().text = puntaje1.ToString();
-            Lock2.SetActive(false);
-            Button2.GetComponent<Button>().interactable = true;
+        //    PlayerPrefs.SetInt("PuntajeLake2", GameplayManager.PuntajeLvl2);
+        //    PuntajeReal2.GetComponent<Text>().text = GameplayManager.PuntajeLvl2.ToString();
+        //    Lock3.SetActive(false);
+        //    Button3.GetComponent<Button>().interactable = true;
+        //    lvl2Superado = false;
+        //}
+        //if (lvl3Superado == true)
+        //{
+        //    int puntaje1 = PlayerPrefs.GetInt("PuntajeLake1");
+        //    PuntajeReal1.GetComponent<Text>().text = puntaje1.ToString();
+        //    Lock2.SetActive(false);
+        //    Button2.GetComponent<Button>().interactable = true;
 
-            int puntaje2 = PlayerPrefs.GetInt("PuntajeLake2");
-            PuntajeReal2.GetComponent<Text>().text = puntaje2.ToString();
-            Lock3.SetActive(false);
-            Button3.GetComponent<Button>().interactable = true;
+        //    int puntaje2 = PlayerPrefs.GetInt("PuntajeLake2");
+        //    PuntajeReal2.GetComponent<Text>().text = puntaje2.ToString();
+        //    Lock3.SetActive(false);
+        //    Button3.GetComponent<Button>().interactable = true;
 
-            PlayerPrefs.SetInt("PuntajeLake3", GameplayManager.PuntajeLvl3);
-            PuntajeReal3.GetComponent<Text>().text = GameplayManager.PuntajeLvl3.ToString();
-            Lock4.SetActive(false);
-            Button4.GetComponent<Button>().interactable = true;
-            lvl3Superado = false;
-        }
+        //    PlayerPrefs.SetInt("PuntajeLake3", GameplayManager.PuntajeLvl3);
+        //    PuntajeReal3.GetComponent<Text>().text = GameplayManager.PuntajeLvl3.ToString();
+        //    Lock4.SetActive(false);
+        //    Button4.GetComponent<Button>().interactable = true;
+        //    lvl3Superado = false;
+        //}
     }
 
     public void Level1() {
