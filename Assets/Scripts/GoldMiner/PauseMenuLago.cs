@@ -37,6 +37,7 @@ public class PauseMenuLago : MonoBehaviour
         LevelSelectEcosistema.lvl4LakeEntrar = false;
         LevelSelectEcosistema.lvl5LakeEntrar = false;
         LevelSelectEcosistema.lvl6LakeEntrar = false;
+        LevelSelectEcosistema.lvlTutorialLake = false;
 
         AudioListener.pause = false;
     }

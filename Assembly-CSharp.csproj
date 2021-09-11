@@ -70,11 +70,13 @@
     <Compile Include="Assets\Importaciones\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
     <Compile Include="Assets\Scripts\Sistema\DataLevel.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\FloatBehavior.cs" />
     <Compile Include="Assets\Importaciones\Foggy Mountains Background\Demo\BackgroundHelper.cs" />
     <Compile Include="Assets\Scripts\CatchGame\Restart.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\LevelSelectMountain.cs" />
     <Compile Include="Assets\Scripts\Sistema\EventController.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Enemy\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\QuestionsGenerate.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Managers\InputManager.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Objects\PhysicsObject.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\PanAndZoom.cs" />
@@ -144,6 +146,7 @@
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Artifact.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\DropSlot.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\SceneFader.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\FishBehavior.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\TriggerRegisterer.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\Hook Scripts\HookScript.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -212,9 +215,7 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\GoldMiner\QuestionsGenerate.cs" />
-    <Compile Include="Assets\Scripts\GoldMiner\FloatBehavior.cs" />
-    <Compile Include="Assets\Scripts\GoldMiner\FishBehavior.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\TutorialLago.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />

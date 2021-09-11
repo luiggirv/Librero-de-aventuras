@@ -158,4 +158,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevel3.unity
     guid: b63f09a13efef444d826d87ee34163b3
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevel4.unity
+    guid: a837f1389d37f9b46a0c1910fcadfc91
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevel5.unity
+    guid: 60bab8bcad7e8e540a7e86c231790906
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevel6.unity
+    guid: c0feb96044367fd4a82aee0ab9efe0ab
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevelTutorial.unity
+    guid: ea87f2385f14a9747acd86bce12aaed6
   m_configObjects: {}

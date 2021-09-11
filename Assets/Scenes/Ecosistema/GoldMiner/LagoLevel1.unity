@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1568750133}
-  countdownTimer: 100
+  countdownTimer: 120
   scoreText: {fileID: 63809412}
   scoreFillUI: {fileID: 947753508}
   fader: {fileID: 0}
@@ -2028,6 +2028,8 @@ MonoBehaviour:
   continuarButton: {fileID: 820020573}
   correctSound: {fileID: 2081522294}
   wrongSound: {fileID: 1659660006}
+  preguntasSonAcuaticas: 1
+  preguntasSonReciclaje: 0
 --- !u!114 &670852155
 MonoBehaviour:
   m_ObjectHideFlags: 0

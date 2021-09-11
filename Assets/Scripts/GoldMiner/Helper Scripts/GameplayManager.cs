@@ -27,12 +27,13 @@ public class GameplayManager : MonoBehaviour
 
     public static int levelReached = 1;
     public SceneFader fader;
+    private int levelTutorial;
     private int level1;
     private int level2;
     private int level3;
     private int level4;
-    //private int level5;
-    //private int level6;
+    private int level5;
+    private int level6;
     private float sumScoreInThisLvl;
     private bool done = false;
     private bool StopCount = false;
@@ -55,6 +56,9 @@ public class GameplayManager : MonoBehaviour
 
     public AudioSource correctSound;
     public AudioSource wrongSound;
+
+    public bool preguntasSonAcuaticas = true;
+    public bool preguntasSonReciclaje = false;
 
     void Awake()
     {
@@ -80,8 +84,6 @@ public class GameplayManager : MonoBehaviour
 
         StartCoroutine("Countdown");
 
-
-
     }
 
     IEnumerator Countdown()
@@ -95,7 +97,7 @@ public class GameplayManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
         }
-        else if (PauseMenuLago.GameIsPause)
+        else if (PauseMenuLago.GameIsPause || TutorialLago.GameIsPause)
         {
             yield return new WaitForSeconds(1f);
         }
@@ -125,7 +127,15 @@ public class GameplayManager : MonoBehaviour
 
             GameObject lossTxt = GameObject.Find("loseTxt");
             lossTxt.GetComponent<Text>().enabled = true;
-            
+
+            LevelSelectEcosistema.lvl1LakeEntrar = false;
+            LevelSelectEcosistema.lvl2LakeEntrar = false;
+            LevelSelectEcosistema.lvl3LakeEntrar = false;
+            LevelSelectEcosistema.lvl4LakeEntrar = false;
+            LevelSelectEcosistema.lvl5LakeEntrar = false;
+            LevelSelectEcosistema.lvl6LakeEntrar = false;
+            LevelSelectEcosistema.lvlTutorialLake = false;
+
             success = false;
             StopCount = true;
             HookScript.itemValue = "";
@@ -161,7 +171,6 @@ public class GameplayManager : MonoBehaviour
             scoreCount -= 100;
             allScore -= 100;
             scoreText.text = scoreCount.ToString();
-            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
             if (countdownTimer > 10)
             {
                 countdownTimer -= 10;
@@ -186,8 +195,6 @@ public class GameplayManager : MonoBehaviour
             allScore += scoreValue;
             scoreText.text = scoreCount.ToString();
 
-            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
-
 
         switch (SceneManager.GetActiveScene().buildIndex)
         {
@@ -200,10 +207,20 @@ public class GameplayManager : MonoBehaviour
             case 50:
                 if (level3 == 7) done = true;
                 break;
-            
-        }
+            case 51:
+                if (level4 == 7) done = true;
+                break;
+            case 52:
+                if (level5 == 7) done = true;
+                break;
+            case 53:
+                if (level6 == 8) done = true;
+                break;
+            case 54:
+                if (levelTutorial == 2) done = true;  //Nivel de Tutorial
+                break;
 
-        
+        }
 
     }
 
@@ -212,7 +229,6 @@ public class GameplayManager : MonoBehaviour
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 7:
-                //sumScoreInThisLvl = 150f;
                 SoundManager.instance.RopeStretch(false);
                 switch (HookScript.itemValue)
                 {
@@ -223,7 +239,14 @@ public class GameplayManager : MonoBehaviour
                     case "six":
                         level1++;
                         PreguntaBG.SetActive(true);
-                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
                         nRespuestaCorrecta = preguntaRecogida.numRespuesta;
                         PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
                         Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
@@ -236,7 +259,6 @@ public class GameplayManager : MonoBehaviour
                 }
                 break;
             case 49:
-                //sumScoreInThisLvl = 150f;
                 SoundManager.instance.RopeStretch(false);
                 switch (HookScript.itemValue)
                 {
@@ -247,7 +269,14 @@ public class GameplayManager : MonoBehaviour
                     case "six":
                         level2++;
                         PreguntaBG.SetActive(true);
-                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
                         nRespuestaCorrecta = preguntaRecogida.numRespuesta;
                         PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
                         Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
@@ -260,7 +289,6 @@ public class GameplayManager : MonoBehaviour
                 }
                 break;
             case 50:
-                //sumScoreInThisLvl = 150f;
                 SoundManager.instance.RopeStretch(false);
                 switch (HookScript.itemValue)
                 {
@@ -271,7 +299,134 @@ public class GameplayManager : MonoBehaviour
                     case "six":
                         level3++;
                         PreguntaBG.SetActive(true);
-                        preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                        break;
+                }
+                break;
+            case 51:
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        level4++;
+                        PreguntaBG.SetActive(true);
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                        break;
+                }
+                break;
+            case 52:
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        level5++;
+                        PreguntaBG.SetActive(true);
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                        break;
+                }
+                break;
+            case 53:
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        level6++;
+                        PreguntaBG.SetActive(true);
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
+                        nRespuestaCorrecta = preguntaRecogida.numRespuesta;
+                        PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
+                        Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
+                        Respuesta2Txt.GetComponent<Text>().text = preguntaRecogida.respuesta2;
+                        Respuesta3Txt.GetComponent<Text>().text = preguntaRecogida.respuesta3;
+                        Respuesta4Txt.GetComponent<Text>().text = preguntaRecogida.respuesta4;
+                        Time.timeScale = 0f;
+                        GameIsPause = true;
+                        break;
+                }
+                break;
+            case 54:
+                SoundManager.instance.RopeStretch(false);
+                switch (HookScript.itemValue)
+                {
+                    case "plus":
+                    case "four":
+                    case "mult":
+                    case "three":
+                    case "six":
+                        levelTutorial++;
+                        PreguntaBG.SetActive(true);
+                        if (preguntasSonAcuaticas)
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasActuaticos();
+                        }
+                        else
+                        {
+                            preguntaRecogida = preguntaGenerada.DevolverPreguntasReciclaje();
+                        }
                         nRespuestaCorrecta = preguntaRecogida.numRespuesta;
                         PreguntaTxt.GetComponent<Text>().text = preguntaRecogida.pregunta;
                         Respuesta1Txt.GetComponent<Text>().text = preguntaRecogida.respuesta1;
@@ -294,8 +449,6 @@ public class GameplayManager : MonoBehaviour
             scoreCount += 200;
             allScore += 200;
             scoreText.text = scoreCount.ToString();
-
-            //scoreFillUI.fillAmount = (float)scoreCount / sumScoreInThisLvl;
         }
         else
         {
@@ -329,7 +482,14 @@ public class GameplayManager : MonoBehaviour
 
     public void Continuar()
     {
-        LevelSelectLake.lvl1Superado = true;
+        LevelSelectEcosistema.lvl1LakeEntrar = false;
+        LevelSelectEcosistema.lvl2LakeEntrar = false;
+        LevelSelectEcosistema.lvl3LakeEntrar = false;
+        LevelSelectEcosistema.lvl4LakeEntrar = false;
+        LevelSelectEcosistema.lvl5LakeEntrar = false;
+        LevelSelectEcosistema.lvl6LakeEntrar = false;
+        LevelSelectEcosistema.lvlTutorialLake = false;
+
         PreguntaBG.SetActive(false);
         Time.timeScale = 1f;
         GameIsPause = false;

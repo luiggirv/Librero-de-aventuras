@@ -5,23 +5,22 @@ using UnityEngine.UI;
 
 public class DataLevelEcosistema : MonoBehaviour
 {
-    public int levelNumber;              //The number of the level
-    public bool alwaysUnlocked;             //The level is always/not always unlocked
+    public int levelNumber;              //El número del nivel
+    public bool alwaysUnlocked;             //Si el nivel esta desbloqueado siempre o no
     public GameObject Puntuacion;
     public GameObject Lock;
-    bool islocked;                          //The level is locked/unlocked
+    bool islocked;                          //Bandera de bloqueado
 
-    // Start is called before the first frame update
     void Start()
     {
         if (!PlayerPrefs.HasKey(levelNumber.ToString()+"a"))
         {
             CreateData();
         }
-        //If the level is always unlocked, unlock it
+        //Si el nivel siempre está desbloqueado, entonces se usa Unlocked()
         if (alwaysUnlocked)
             Unlocked();
-        //If the level is not always unlocked, it means the level id is between 5 and 8
+        //Si no es el caso, el nivel estará bloqueado hasta que el anterior esté desbloqueado y con datos creados
         else
         {
             switch (levelNumber)
@@ -33,17 +32,17 @@ public class DataLevelEcosistema : MonoBehaviour
                 case 404:
                 case 405:
                 case 406:
-                    //Loop trought the save data for level 1-4
+                    //Loop para verificar si los niveles anteriores al seleccionado están desbloqueados y con data
                     for (int i = 401; i < levelNumber; i++)
                     {
-                        //If a level is not completed, lock this level
+                        //Si alguno de los niveles anteriores no está completo, bloquear nivel
                         if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
                         {
                             Locked();
                             return;
                         }
                     }
-                    //If every level between 1 and 4 is completed, unlock this
+                    //Si los niveles anteriores están desbloqueados y con data, se desbloquea
                     Unlocked();
                     break;
                 case 501:
@@ -52,30 +51,30 @@ public class DataLevelEcosistema : MonoBehaviour
                 case 504:
                 case 505:
                 case 506:
-                    //Loop trought the save data for level 1-4
+                    //Loop para verificar si los niveles anteriores al seleccionado están desbloqueados y con data
                     for (int i = 501; i < levelNumber; i++)
                     {
-                        //If a level is not completed, lock this level
+                        //Si alguno de los niveles anteriores no está completo, bloquear nivel
                         if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
                         {
                             Locked();
                             return;
                         }
                     }
-                    //If every level between 1 and 4 is completed, unlock this
+                    //Si los niveles anteriores están desbloqueados y con data, se desbloquea
                     Unlocked();
                     break;
             }
         }
     }
 
-    //Creates a save data for this level
+    //Se crea data con valor 0 para el nivel
     void CreateData()
     {
         PlayerPrefs.SetInt(levelNumber.ToString()+"a", 0);
         PlayerPrefs.Save();
     }
-    //Unlocks this button
+    //Desbloquea el nivel
     void Unlocked()
     {
         islocked = false;
@@ -83,7 +82,7 @@ public class DataLevelEcosistema : MonoBehaviour
         Lock.SetActive(false);
         Puntuacion.GetComponent<Text>().text = PlayerPrefs.GetInt(levelNumber.ToString() + "a").ToString();
     }
-    //Locks this button
+    //Bloquea el nivel
     void Locked()
     {
         islocked = true;
@@ -91,9 +90,4 @@ public class DataLevelEcosistema : MonoBehaviour
         this.GetComponent<Button>().interactable = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

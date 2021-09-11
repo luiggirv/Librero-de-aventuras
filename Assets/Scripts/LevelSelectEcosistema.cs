@@ -135,21 +135,21 @@ public class LevelSelectEcosistema : MonoBehaviour
     {
         lvl4LakeEntrar = true;
         GameplayManager.LvlIngresado = lvl4Lake;
-        SceneManager.LoadScene(45);
+        SceneManager.LoadScene(51);
     }
 
     public void Level5Lake()
     {
         lvl5LakeEntrar = true;
         GameplayManager.LvlIngresado = lvl5Lake;
-        SceneManager.LoadScene(46);
+        SceneManager.LoadScene(52);
     }
 
     public void Level6Lake()
     {
         lvl6LakeEntrar = true;
         GameplayManager.LvlIngresado = lvl6Lake;
-        SceneManager.LoadScene(47);
+        SceneManager.LoadScene(53);
     }
 
     public void Regresar()
@@ -160,7 +160,14 @@ public class LevelSelectEcosistema : MonoBehaviour
     public void Tutorial()
     {
         lvlTutorialForest = true;
-        Manager.LvlIngresado = 400;
+        GameplayManager.LvlIngresado = 400;
         SceneManager.LoadScene(48);
+    }
+
+    public void TutorialLake()
+    {
+        lvlTutorialLake = true;
+        GameplayManager.LvlIngresado = 500;
+        SceneManager.LoadScene(54);
     }
 }
