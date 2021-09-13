@@ -59,6 +59,7 @@ public class VirusGlobal : MonoBehaviour
             particulas.Play();
             HealthSistema.currentHealth -= 10;
         }
+        StartCoroutine(Damage());
     }
 
     IEnumerator RotateMe(Vector3 byAngles, float inTime)

@@ -6,13 +6,13 @@ public class QuestionsGenerate : MonoBehaviour
 {
     public class PreguntasAcuaticos
     {
-        public string pregunta { get; set; }
-        public string respuesta1 { get; set; }
+        public string pregunta { get; set; } //Pregunta que se mostrará en la pantalla
+        public string respuesta1 { get; set; } //Respuesta corta como alternativa (Maximo de 20 caracteres)
         public string respuesta2 { get; set; }
         public string respuesta3 { get; set; }
         public string respuesta4 { get; set; }
 
-        public int numRespuesta { get; set; }
+        public int numRespuesta { get; set; } //El número de la alternativa que tiene la respuesta correcta (Número entre el 1 al 4)
     }
 
     static PreguntasAcuaticos[] preguntasAc = { new PreguntasAcuaticos 

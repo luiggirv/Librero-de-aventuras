@@ -22,6 +22,9 @@ public class LugarGlobal : MonoBehaviour
     public GameObject preguntaText;
     public static bool lugarEquivocado = false;
 
+    public AudioSource correctSound;
+    public AudioSource incorrectSound;
+
     string[] preguntasRespiratorio =
     {
         "Es él más grande de los dos órganos en forma de cono que se encuentran dentro del pecho de una persona y proveen oxígeno al cuerpo.",
@@ -149,6 +152,7 @@ public class LugarGlobal : MonoBehaviour
         sistemaRespiratorioUI.SetActive(false);
         if (lugarEscenario == numLugar)
         {
+            correctSound.Play();
             menuButton.SetActive(true);
             lugarEquivocado = false;
             regresarButton.SetActive(false);
@@ -156,6 +160,7 @@ public class LugarGlobal : MonoBehaviour
         }
         else
         {
+            incorrectSound.Play();
             lugarEquivocado = true;
             advertenciaUI.GetComponent<Text>().text = "Las bacterias no se encuentran en este lugar.\n¡Revisa los otros escenarios antes que el tiempo se agote!";
             advertenciaUI.SetActive(true);

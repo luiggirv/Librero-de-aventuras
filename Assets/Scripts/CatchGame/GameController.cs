@@ -18,7 +18,6 @@ public class GameController : MonoBehaviour {
 	private bool playing;
 	private int ballCount;
 
-	// Use this for initialization
 	void Start () {
 
 		if (cam == null) {
@@ -72,7 +71,7 @@ public class GameController : MonoBehaviour {
 				rand--;
 				yield return new WaitForSeconds (Random.Range (0.5f, 0.7f));
 			}
-			yield return new WaitForSeconds (Random.Range (1.0f, 2.0f)); //Wait for 1 or 2 seconds & go for the loop again
+			yield return new WaitForSeconds (Random.Range (1.0f, 2.0f)); //Se espera entre 1 y 2 segundos y vuelve al loop para spawnear de nuevo
 		}
 		yield return new WaitForSeconds(2.0f);
 		gameOverText.SetActive (true);

@@ -208,7 +208,7 @@ public class TutorialScript : MonoBehaviour
         }
         else if (LevelSelect.lvlTutorialNervioso)
         {
-            cuadroText.GetComponent<Text>().text = "La bacteria enterovirus tiene un ratio de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
+            cuadroText.GetComponent<Text>().text = "La bacteria Enterovirus tiene un ratio de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
         }
         else if (LevelSelect.lvlTutorialRespiratorio)
         {

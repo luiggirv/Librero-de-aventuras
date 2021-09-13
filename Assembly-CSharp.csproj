@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Scripts Pasados\FuegoSpawnerScript.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Managers\FeedbackManager.cs" />
+    <Compile Include="Assets\Scripts\GoldMiner\TutorialLago.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\SimpleScript.cs" />
@@ -215,7 +216,7 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\GoldMiner\TutorialLago.cs" />
+    <Compile Include="Assets\Scripts\Sistema\IndicacionesSistemas.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />
