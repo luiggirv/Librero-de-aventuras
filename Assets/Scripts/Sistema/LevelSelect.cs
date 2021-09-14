@@ -225,6 +225,9 @@ public class LevelSelect : MonoBehaviour
 
     public void Regresar()
     {
+        SistemaSelect.SistemaCirculatorioEntrar = false;
+        SistemaSelect.SistemaRespiratorioEntrar = false;
+        SistemaSelect.SistemaNerviosoEntrar = false;
         SceneManager.LoadScene(11);
     }
 

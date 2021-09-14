@@ -2638,7 +2638,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 753015903}
   m_OnClick:
     m_PersistentCalls:
@@ -3816,7 +3816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd1da5eb63e36c4db83ed4789da85eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numLugar: 3
   entroNivel: 0
   enemigosUI: {fileID: 1775881448}
   sistemaRespiratorioUI: {fileID: 669523822}
@@ -3833,6 +3832,10 @@ MonoBehaviour:
   preguntaText: {fileID: 1601481367}
   correctSound: {fileID: 1589336967}
   incorrectSound: {fileID: 1955717581}
+  buttonLugar1: {fileID: 1745858036}
+  buttonLugar2: {fileID: 753015900}
+  buttonLugar3: {fileID: 2021298389}
+  buttonLugar4: {fileID: 2010654336}
 --- !u!114 &1193613458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5942,7 +5945,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1745858039}
   m_OnClick:
     m_PersistentCalls:
@@ -7047,7 +7050,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2010654339}
   m_OnClick:
     m_PersistentCalls:
@@ -7180,7 +7183,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2021298392}
   m_OnClick:
     m_PersistentCalls:

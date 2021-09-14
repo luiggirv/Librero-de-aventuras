@@ -57,8 +57,8 @@ public class GameplayManager : MonoBehaviour
     public AudioSource correctSound;
     public AudioSource wrongSound;
 
-    public bool preguntasSonAcuaticas = true;
-    public bool preguntasSonReciclaje = false;
+    public bool preguntasSonAcuaticas = false;
+    public bool preguntasSonReciclaje = true;
 
     void Awake()
     {

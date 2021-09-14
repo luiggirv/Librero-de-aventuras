@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class LugarGlobal : MonoBehaviour
 {
     int lugarEscenario;
-    public int numLugar;
+    int numLugar;
     public bool entroNivel = false;
     public GameObject enemigosUI;
     public GameObject sistemaRespiratorioUI;
@@ -24,6 +24,17 @@ public class LugarGlobal : MonoBehaviour
 
     public AudioSource correctSound;
     public AudioSource incorrectSound;
+
+    bool lugar1 = false;
+    bool lugar2 = false;
+    bool lugar3 = false;
+    bool lugar4 = false;
+    List<int> lugaresConfigurados = new List<int>();
+
+    public GameObject buttonLugar1;
+    public GameObject buttonLugar2;
+    public GameObject buttonLugar3;
+    public GameObject buttonLugar4;
 
     string[] preguntasRespiratorio =
     {
@@ -54,7 +65,136 @@ public class LugarGlobal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!LevelSelect.lvlTutorialCirculatorio && !LevelSelect.lvlTutorialNervioso && !LevelSelect.lvlTutorialRespiratorio) {
+            if (SistemaSelect.SistemaRespiratorioEntrar){
+                if (lugar1)
+                {
+                    lugaresConfigurados.Add(1);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                }
+                if (lugar2)
+                {
+                    lugaresConfigurados.Add(2);
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                }
+                if (lugar3)
+                {
+                    lugaresConfigurados.Add(3);
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                }
+                if (lugar4)
+                {
+                    lugaresConfigurados.Add(4);
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+                if (!lugar1 && !lugar2 && !lugar3 && !lugar4)
+                {
+                    lugaresConfigurados.Add(1);
+                    lugaresConfigurados.Add(2);
+                    lugaresConfigurados.Add(3);
+                    lugaresConfigurados.Add(4);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+            }
+            else if (SistemaSelect.SistemaCirculatorioEntrar)
+            {
+                if (lugar1)
+                {
+                    lugaresConfigurados.Add(1);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                }
+                if (lugar2)
+                {
+                    lugaresConfigurados.Add(2);
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                }
+                if (lugar3)
+                {
+                    lugaresConfigurados.Add(3);
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                }
+                if (lugar4)
+                {
+                    lugaresConfigurados.Add(4);
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+                if (!lugar1 && !lugar2 && !lugar3 && !lugar4)
+                {
+                    lugaresConfigurados.Add(1);
+                    lugaresConfigurados.Add(2);
+                    lugaresConfigurados.Add(3);
+                    lugaresConfigurados.Add(4);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+            }
+            else
+            {
+                if (lugar1)
+                {
+                    lugaresConfigurados.Add(1);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                }
+                if (lugar2)
+                {
+                    lugaresConfigurados.Add(2);
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                }
+                if (lugar3)
+                {
+                    lugaresConfigurados.Add(3);
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                }
+                if (lugar4)
+                {
+                    lugaresConfigurados.Add(4);
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+                if (!lugar1 && !lugar2 && !lugar3 && !lugar4)
+                {
+                    lugaresConfigurados.Add(1);
+                    lugaresConfigurados.Add(2);
+                    lugaresConfigurados.Add(3);
+                    lugaresConfigurados.Add(4);
+                    buttonLugar1.GetComponent<Button>().interactable = true;
+                    buttonLugar2.GetComponent<Button>().interactable = true;
+                    buttonLugar3.GetComponent<Button>().interactable = true;
+                    buttonLugar4.GetComponent<Button>().interactable = true;
+                }
+            }
+        }
+        //Debug.Log("longitud: " + lugaresConfigurados.ToArray().Length);
+        var rand = new System.Random();
+        int index = rand.Next(0, lugaresConfigurados.ToArray().Length);
+        //Debug.Log("Numero Aleatorio:" + lugaresConfigurados[index]);
+        numLugar = lugaresConfigurados[index];
+        Debug.Log("Numero Aleatorio:" + numLugar);
+        if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
+        {
+            if (numLugar == 4)
+            {
+                var rand2 = new System.Random();
+                preguntaText.GetComponent<Text>().text = preguntasRespiratorio[rand2.Next(3, 6)];
+            }
+            else
+            {
+                preguntaText.GetComponent<Text>().text = preguntasRespiratorio[numLugar - 1];
+            }
+
+        }
+        else if (LevelSelect.lvl1EntrarCirculatorio || LevelSelect.lvl2EntrarCirculatorio || LevelSelect.lvl3EntrarCirculatorio || LevelSelect.lvl4EntrarCirculatorio || LevelSelect.lvl5EntrarCirculatorio || LevelSelect.lvl6EntrarCirculatorio)
+        {
+            preguntaText.GetComponent<Text>().text = preguntasCirculatorio[numLugar - 1];
+        }
+        else if (LevelSelect.lvl1EntrarNervioso || LevelSelect.lvl2EntrarNervioso || LevelSelect.lvl3EntrarNervioso || LevelSelect.lvl4EntrarNervioso || LevelSelect.lvl5EntrarNervioso || LevelSelect.lvl6EntrarNervioso)
+        {
+            preguntaText.GetComponent<Text>().text = preguntasNervioso[numLugar - 1];
+        }
     }
 
     // Update is called once per frame
@@ -75,11 +215,14 @@ public class LugarGlobal : MonoBehaviour
             regresarButton.SetActive(true);
 
             var exclude = new HashSet<int>() { numLugar };
-            var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
+            //var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
+            var range = lugaresConfigurados.ToArray().Where(i => !exclude.Contains(i));
 
             var rand = new System.Random();
-            int index = rand.Next(0, 4 - exclude.Count);
+            int index = rand.Next(0, lugaresConfigurados.ToArray().Length - exclude.Count);
             numLugar = range.ElementAt(index);
+
+            //Debug.Log("Nuevo lugar:" + numLugar);
             if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
             {
                 if (numLugar == 4)
@@ -102,7 +245,7 @@ public class LugarGlobal : MonoBehaviour
                 preguntaText.GetComponent<Text>().text = preguntasNervioso[numLugar - 1];
             }
             
-            Debug.Log("NumLugar: " + numLugar);
+            //Debug.Log("NumLugar: " + numLugar);
             numVirusRequeridos = numVirusRequeridos * 2;
         }
     }

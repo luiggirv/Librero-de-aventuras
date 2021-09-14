@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SistemaSelect : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static bool SistemaRespiratorioEntrar;
+    public static bool SistemaNerviosoEntrar;
+    public static bool SistemaCirculatorioEntrar;
     void Start()
     {
         
@@ -14,17 +16,30 @@ public class SistemaSelect : MonoBehaviour
     // Update is called once per frame
     public void Respiratorio()
     {
+        SistemaRespiratorioEntrar = true;
+        SistemaNerviosoEntrar = false;
+        SistemaCirculatorioEntrar = false;
         SceneManager.LoadScene(8);
     }
     public void Circulatorio()
     {
+        SistemaNerviosoEntrar = true;
+        SistemaRespiratorioEntrar = false;
+        SistemaCirculatorioEntrar = false;
         SceneManager.LoadScene(26);
     }
     public void Nervioso()
     {
+        SistemaCirculatorioEntrar = true;
+        SistemaRespiratorioEntrar = false;
+        SistemaNerviosoEntrar = false;
         SceneManager.LoadScene(33);
     }
-    public void Regresar(){
+    public void Regresar()
+    {
+        SistemaCirculatorioEntrar = false;
+        SistemaRespiratorioEntrar = false;
+        SistemaNerviosoEntrar = false;
         SceneManager.LoadScene(4);
     }
 }

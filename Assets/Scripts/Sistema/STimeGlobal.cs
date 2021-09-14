@@ -131,6 +131,11 @@ public class STimeGlobal : MonoBehaviour
         LevelSelect.lvl4EntrarNervioso = false;
         LevelSelect.lvl5EntrarNervioso = false;
         LevelSelect.lvl6EntrarNervioso = false;
+
+        SistemaSelect.SistemaCirculatorioEntrar = false;
+        SistemaSelect.SistemaRespiratorioEntrar = false;
+        SistemaSelect.SistemaNerviosoEntrar = false;
+
         SceneManager.LoadScene(4);
     }
 
