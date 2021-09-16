@@ -186,35 +186,35 @@ public class LevelSelectEcosistema : MonoBehaviour
     {
         lvl2MountainEntrar = true;
         GameController.LvlIngresado = lvl2Mountain;
-        SceneManager.LoadScene(49);
+        SceneManager.LoadScene(56);
     }
 
     public void Level3Mountain()
     {
         lvl3MountainEntrar = true;
         GameController.LvlIngresado = lvl3Mountain;
-        SceneManager.LoadScene(50);
+        SceneManager.LoadScene(57);
     }
 
     public void Level4Mountain()
     {
         lvl4MountainEntrar = true;
         GameController.LvlIngresado = lvl4Mountain;
-        SceneManager.LoadScene(51);
+        SceneManager.LoadScene(58);
     }
 
     public void Level5Mountain()
     {
         lvl5MountainEntrar = true;
         GameController.LvlIngresado = lvl5Mountain;
-        SceneManager.LoadScene(52);
+        SceneManager.LoadScene(59);
     }
 
     public void Level6Mountain()
     {
         lvl6MountainEntrar = true;
         GameController.LvlIngresado = lvl6Mountain;
-        SceneManager.LoadScene(53);
+        SceneManager.LoadScene(60);
     }
 
     public void Regresar()
@@ -240,6 +240,6 @@ public class LevelSelectEcosistema : MonoBehaviour
     {
         lvlTutorialMountain = true;
         GameController.LvlIngresado = 600;
-        SceneManager.LoadScene(54);
+        SceneManager.LoadScene(61);
     }
 }

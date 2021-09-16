@@ -173,4 +173,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity
     guid: f1f1197b267b52a4c814b73d5a062644
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl2.unity
+    guid: 7b1807957d4cd014393c6df8379b86da
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity
+    guid: 1b3f25c468928a744925d9057cb0712e
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl4.unity
+    guid: c61627d0877a92e41a07d22356a956c3
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl5.unity
+    guid: 9d2ab0b1a4e1db84d957bb29537fe1fd
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl6.unity
+    guid: 9528b5b24df79f24aa21e422bb0cc77f
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvlTutorial.unity
+    guid: c43db6c0635b8054fb6d10d6f7d50a15
   m_configObjects: {}

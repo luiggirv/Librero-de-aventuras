@@ -20616,7 +20616,7 @@ MonoBehaviour:
   splashScreen: {fileID: 917690281}
   startButton: {fileID: 1103455026}
   hat_Controller: {fileID: 2028465630}
-  numberSpawn: 7
+  numberSpawn: 4
   lluvioso: {fileID: 234359144}
   soleado: {fileID: 163749437}
   nevoso: {fileID: 571795308}
