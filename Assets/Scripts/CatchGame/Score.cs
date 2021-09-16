@@ -8,7 +8,8 @@ public class Score : MonoBehaviour {
 	public int ballValue;
 	public static int scoreCompartido;
 	private int score;
-
+	public AudioSource splash;
+	public AudioSource wrongSound;
 	// Use this for initialization
 	void Start () {
 		score = 0;
@@ -18,11 +19,16 @@ public class Score : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D collision) {
 		if (collision.gameObject.tag == "Bomb")
 		{
-			score -= ballValue * 2;
+			wrongSound.Play();
+			if (score - ballValue * 2 < 0)
+				score = 0;
+			else
+				score -= ballValue * 2;
 			UpdateScore();
 		}
 		else
 		{
+			splash.Play();
 			score += ballValue;
 			UpdateScore();
 		}

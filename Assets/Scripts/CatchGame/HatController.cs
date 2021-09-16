@@ -23,7 +23,7 @@ public class HatController : MonoBehaviour
 	void FixedUpdate () {
 		if (canControl) {
 			Vector3 rawPosition = cam.ScreenToWorldPoint (Input.mousePosition);
-			Vector3 targetPosition = new Vector3 (rawPosition.x, 0.0f, 0.0f);
+			Vector3 targetPosition = new Vector3 (rawPosition.x, 0.5f, 0.0f);
 			float targetWidth = Mathf.Clamp (targetPosition.x, -maxWidth, maxWidth);
 			targetPosition = new Vector3 (targetWidth, targetPosition.y, targetPosition.z);
 			GetComponent<Rigidbody2D>().MovePosition(targetPosition);

@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Sistema/RespiratorioNivel1.unity
     guid: fbf4efea74e91ca498f4425e14557324
   - enabled: 1
-    path: Assets/Scenes/Ecosistema/CatchGame/RainLvl1.unity
+    path: Assets/Scenes/Ecosistema/CatchGame/PruebaLvl.unity
     guid: cb692e02b4791ee4081bc5deab3ad6b9
   - enabled: 1
     path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevel1.unity
@@ -170,4 +170,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ecosistema/GoldMiner/LagoLevelTutorial.unity
     guid: ea87f2385f14a9747acd86bce12aaed6
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity
+    guid: f1f1197b267b52a4c814b73d5a062644
   m_configObjects: {}

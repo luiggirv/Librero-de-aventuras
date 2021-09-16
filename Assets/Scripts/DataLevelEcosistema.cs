@@ -64,6 +64,25 @@ public class DataLevelEcosistema : MonoBehaviour
                     //Si los niveles anteriores están desbloqueados y con data, se desbloquea
                     Unlocked();
                     break;
+                case 601:
+                case 602:
+                case 603:
+                case 604:
+                case 605:
+                case 606:
+                    //Loop para verificar si los niveles anteriores al seleccionado están desbloqueados y con data
+                    for (int i = 601; i < levelNumber; i++)
+                    {
+                        //Si alguno de los niveles anteriores no está completo, bloquear nivel
+                        if (PlayerPrefs.GetInt(i.ToString() + "a") == 0 || !PlayerPrefs.HasKey(i.ToString() + "a"))
+                        {
+                            Locked();
+                            return;
+                        }
+                    }
+                    //Si los niveles anteriores están desbloqueados y con data, se desbloquea
+                    Unlocked();
+                    break;
             }
         }
     }

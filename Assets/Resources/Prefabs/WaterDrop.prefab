@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5065938}
   - component: {fileID: 5895300}
   - component: {fileID: 8249948}
+  - component: {fileID: 7426183079573507896}
   m_Layer: 0
   m_Name: WaterDrop
   m_TagString: Untagged
@@ -104,7 +105,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &5895300
 CircleCollider2D:
@@ -119,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.073123276, y: -0.32588005}
+  m_Offset: {x: 0.073123276, y: -1.9488949}
   serializedVersion: 2
-  m_Radius: 4.562809
+  m_Radius: 2.9397945
 --- !u!82 &8249948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -218,3 +219,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &7426183079573507896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6130bcad2bc3fd149a9103ab2ffcb49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 100000, guid: dbb401393d34c5046a7ccca5d484dd52, type: 3}
+  effects: []
