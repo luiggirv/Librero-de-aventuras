@@ -17,6 +17,7 @@ public class CelulaGlobal : MonoBehaviour
 
     private Vector2 _centre;
     private float _angle;
+    float movementSpeed = 2.7f;
 
     private void Start()
     {
@@ -25,10 +26,12 @@ public class CelulaGlobal : MonoBehaviour
 
     private void Update()
     {
-        _angle += RotateSpeed * Time.deltaTime;
+        //_angle += RotateSpeed * Time.deltaTime;
 
-        var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
-        transform.position = _centre + offset;
+        //var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
+        //transform.position = _centre + offset;
+
+        transform.position += Vector3.left * Time.deltaTime * movementSpeed;
     }
 
     private void Awake()
@@ -48,7 +51,7 @@ public class CelulaGlobal : MonoBehaviour
     //}
     IEnumerator Damage()
     {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(10);
             Destroy(gameObject);
     }
 

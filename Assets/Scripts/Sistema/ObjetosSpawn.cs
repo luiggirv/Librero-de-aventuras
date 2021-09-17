@@ -27,7 +27,7 @@ public class ObjetosSpawn : MonoBehaviour
                 nextSpawn = Time.timeSinceLevelLoad + spawnRate;
                 randX = Random.Range(-3.4f, 3.4f);
                 randY = Random.Range(-2.8f, 2.8f);
-                whereToSpawn = new Vector2(randX, randY);
+                whereToSpawn = new Vector2(randX, randY);  
                 GameObject resultVirus = virusArray[Random.Range(0, virusArray.Length)];
                 Instantiate(resultVirus, whereToSpawn, Quaternion.identity);
                 numberObjectGenerate += 1;
