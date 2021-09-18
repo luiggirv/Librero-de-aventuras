@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class GUIManager : MonoBehaviour 
 {
     enum LevelState { inPlanning, inPlaying, inPause, inFinish, inGoal, inChange };
     LevelState levelState = LevelState.inPlanning;
 
     public SpriteRenderer overlay;
+    public GameObject pausaText;
+    public GameObject buttonTextFinish;
 
     public Transform playButton;                        //The play button
     public Transform pauseButton;                       //The pause button
@@ -129,11 +131,11 @@ public class GUIManager : MonoBehaviour
 
         //Hide the play button and bring the pause menu to middle position
         StartCoroutine(MoveMenuElementBy(playButton, 1.5f, 0.4f, 0));
-        StartCoroutine(MoveMenuElementBy(pauseMenu, 0.75f, 0.2f, 0));
+        StartCoroutine(MoveMenuElementBy(pauseMenu, 0.92f, 0.2f, 0));
 
         //Move the pause menu to the extended position with the pause button
-        StartCoroutine(MoveMenuElementBy(pauseMenu, 0.75f, 0.2f, 0.2f));
-        StartCoroutine(MoveMenuElementBy(pauseButton, 0.75f, 0.2f, 0.2f));
+        StartCoroutine(MoveMenuElementBy(pauseMenu, 0.92f, 0.2f, 0.2f));
+        StartCoroutine(MoveMenuElementBy(pauseButton, 0f, 0.2f, 0.2f));
 
         //Change level state once finished
         StartCoroutine(ChangeStateAfter(LevelState.inPause, 0.8f));
@@ -148,12 +150,12 @@ public class GUIManager : MonoBehaviour
         StartCoroutine(FadeScreen(0.4f, 0));
 
         //Move the pause menu along with the pause button to middle position
-        StartCoroutine(MoveMenuElementBy(pauseMenu, -0.75f, 0.2f, 0));
-        StartCoroutine(MoveMenuElementBy(pauseButton, -0.75f, 0.2f, 0));
+        StartCoroutine(MoveMenuElementBy(pauseMenu, -0.92f, 0.2f, 0));
+        StartCoroutine(MoveMenuElementBy(pauseButton, 0f, 0.2f, 0));
 
         //Show the play button and hide the pause menu
         StartCoroutine(MoveMenuElementBy(playButton, -1.5f, 0.4f, 0.2f));
-        StartCoroutine(MoveMenuElementBy(pauseMenu, -0.75f, 0.2f, 0.2f));
+        StartCoroutine(MoveMenuElementBy(pauseMenu, -0.92f, 0.2f, 0.2f));
 
         StartCoroutine(ChangeStateAfter(LevelState.inPlanning, 0.8f));
     }
@@ -266,18 +268,19 @@ public class GUIManager : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         //Scale up and show the check for 2 seconds
-        StartCoroutine(ScaleObject(markers[2], new Vector2(0.5f, 0.5f), 0.2f, 0));
+        StartCoroutine(ScaleObject(markers[2], new Vector2(0.1f, 0.1f), 0.2f, 0));
         yield return new WaitForSeconds(2);
         markers[2].transform.localScale = new Vector2(0, 0);
 
         //Show the overlay in the centre
         overlay.color = new Color(0, 0, 0, 0.6f);
         overlay.transform.localScale = new Vector2(0, 3);
-        StartCoroutine(ScaleObject(overlay.transform, new Vector2(1.75f, 3), 0.4f, 0));
+        StartCoroutine(ScaleObject(overlay.transform, new Vector2(2.2f, 3.8f), 0.4f, 0));
 
         //Activate the finish menu
         yield return new WaitForSeconds(0.3f);
         finishMenu.gameObject.SetActive(true);
+        buttonTextFinish.SetActive(true);
 
         LevelManager.Instance.SaveData();
         int stars = LevelManager.Instance.GetStarsCollected();
@@ -302,6 +305,7 @@ public class GUIManager : MonoBehaviour
         while (i < 1.0)
         {
             i += Time.deltaTime * rate;
+            pausaText.GetComponent<Text>().color = Color.Lerp(start, end, i);
             overlay.color = Color.Lerp(start, end, i);
             yield return 0;
         }
