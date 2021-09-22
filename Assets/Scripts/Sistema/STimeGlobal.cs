@@ -51,7 +51,7 @@ public class STimeGlobal : MonoBehaviour
             {
                 Destroy(clone);
             }
-            puntajeNivelFinal.GetComponent<Text>().text = "Puntaje total: " + puntajeTotal.GetComponent<Text>().text;
+            puntajeNivelFinal.GetComponent<Text>().text = "Puntaje total: " + puntajeTotal.GetComponent<Text>().text + "\nNúmero de virus eliminados: " + SScoreGlobal.EliminadosCount;
             finNivelUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsPause = true;            

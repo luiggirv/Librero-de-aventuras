@@ -1156,8 +1156,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ALIADOS (NO ATACAR)\n\xA1Cuidado con atacarlos! En caso de que los ataques,
-    te costar\xE1 parte de tu vida."
+  m_Text: "ALIADOS (NO ATACAR)\nEn caso de que ataques a una CELULA, te costar\xE1
+    parte de tu vida. \xA1Ten cuidado!"
 --- !u!222 &344094405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5489,8 +5489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 112}
-  m_SizeDelta: {x: 309.03, y: 30}
+  m_AnchoredPosition: {x: -1.78, y: 105}
+  m_SizeDelta: {x: 476, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1468063341
 GameObject:
