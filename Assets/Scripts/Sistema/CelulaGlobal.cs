@@ -80,4 +80,16 @@ public class CelulaGlobal : MonoBehaviour
         }
     }
 
+    public void isClicked()
+    {
+        Debug.Log("Sprite Clicked");
+        vidaCelula -= 1;
+        if (vidaCelula == 0)
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
+            HealthSistema.currentHealth -= 10;
+            Destroy(gameObject);
+        }
+    }
+
 }

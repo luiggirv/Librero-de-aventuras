@@ -54,6 +54,7 @@ public class Manager : MonoBehaviour
     public void Continue()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         if (LevelSelectEcosistema.lvl1ForestEntrar || LevelSelectEcosistema.lvl2ForestEntrar || LevelSelectEcosistema.lvl3ForestEntrar || LevelSelectEcosistema.lvl4ForestEntrar || LevelSelectEcosistema.lvl5ForestEntrar || LevelSelectEcosistema.lvl6ForestEntrar || LevelSelectEcosistema.lvlTutorialForest)
         {
             SceneManager.LoadScene(15);
@@ -65,12 +66,11 @@ public class Manager : MonoBehaviour
         LevelSelectEcosistema.lvl5ForestEntrar = false;
         LevelSelectEcosistema.lvl6ForestEntrar = false;
         LevelSelectEcosistema.lvlTutorialForest = false;
-
-        AudioListener.pause = false;
     }
     public void LoadMenu()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         SceneManager.LoadScene(1);
         LevelSelectEcosistema.lvl1ForestEntrar = false;
         LevelSelectEcosistema.lvl2ForestEntrar = false;
@@ -79,8 +79,6 @@ public class Manager : MonoBehaviour
         LevelSelectEcosistema.lvl5ForestEntrar = false;
         LevelSelectEcosistema.lvl6ForestEntrar = false;
         LevelSelectEcosistema.lvlTutorialForest = false;
-
-        AudioListener.pause = false;
     }
     public float GetTime()
     {

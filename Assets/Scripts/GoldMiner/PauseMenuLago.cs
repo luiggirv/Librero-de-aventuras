@@ -26,6 +26,7 @@ public class PauseMenuLago : MonoBehaviour
     public void LoadMenu()
     {
         GameIsPause = false;
+        HookScript.itemValue = "";
         Time.timeScale = 1f;
         if (LevelSelectEcosistema.lvl1LakeEntrar || LevelSelectEcosistema.lvl2LakeEntrar || LevelSelectEcosistema.lvl3LakeEntrar || LevelSelectEcosistema.lvl4LakeEntrar || LevelSelectEcosistema.lvl5LakeEntrar || LevelSelectEcosistema.lvl6LakeEntrar || LevelSelectEcosistema.lvlTutorialLake)
         {

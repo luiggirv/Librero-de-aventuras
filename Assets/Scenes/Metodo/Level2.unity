@@ -420,7 +420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398543759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8, y: 0.89, z: 0}
+  m_LocalPosition: {x: -4.6, y: 0.89, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1809318145}
@@ -3103,7 +3103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe5898d094c3d4c4eb26872e0e047989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 21
+  levelNumber: 62
   activeContainer: {fileID: 237143172}
   toolboxContainer: {fileID: 1104192345}
 --- !u!4 &1206296106 stripped

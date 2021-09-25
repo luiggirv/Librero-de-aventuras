@@ -150,6 +150,6 @@ public class MetodoPreNivel : MonoBehaviour
 
     public void PasarNivelClick()
     {
-        SceneManager.LoadScene(22);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

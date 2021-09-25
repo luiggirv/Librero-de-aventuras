@@ -24,11 +24,21 @@ public class LevelSelectButton : MonoBehaviour
         //If the level is always unlocked, unlock it
         if (alwaysUnlocked)
             Unlocked();
+        if (int.Parse(levelNumber) == 62)
+        {
+            int a = 21;
+            if (PlayerPrefs.GetInt(a.ToString()) == -1 || !PlayerPrefs.HasKey(a.ToString()))
+            {
+                Locked();
+                return;
+            }
+            Unlocked();
+        }
         //If the level is not always unlocked, it means the level id is between 5 and 8
         else
         {
             //Loop trought the save data for level 1-4
-            for (int i = 1; i < 5; i++)
+            for (int i = 62; i < int.Parse(levelNumber); i++)
             {
                 //If a level is not completed, lock this level
 				if (PlayerPrefs.GetInt(i.ToString()) == -1 || !PlayerPrefs.HasKey(i.ToString()))
@@ -36,6 +46,7 @@ public class LevelSelectButton : MonoBehaviour
                     Locked();
                     return;
                 }
+                i = i + 2;
             }
             //If every level between 1 and 4 is completed, unlock this
             Unlocked();

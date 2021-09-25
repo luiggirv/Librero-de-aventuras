@@ -68,6 +68,9 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
+        GameIsPause = false;
+        AudioListener.pause = false;
         preguntaGenerada = GetComponentInChildren<QuestionsGenerate>();
         startLevel = true;
         sumScoreInThisLvl = 0f;

@@ -75,7 +75,6 @@
     <Compile Include="Assets\Importaciones\Foggy Mountains Background\Demo\BackgroundHelper.cs" />
     <Compile Include="Assets\Scripts\CatchGame\Restart.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\LevelSelectMountain.cs" />
-    <Compile Include="Assets\Scripts\Sistema\EventController.cs" />
     <Compile Include="Assets\Scripts\Sistema\IndicacionesSistemas.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\GoldMiner\QuestionsGenerate.cs" />
@@ -121,7 +120,6 @@
     <Compile Include="Assets\Scripts\Scripts Pasados\LevelGeneration.cs" />
     <Compile Include="Assets\Scripts\Sistema\STimeGlobal.cs" />
     <Compile Include="Assets\Importaciones\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
-    <Compile Include="Assets\Scripts\Sistema\Event.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\UI\VersionDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
@@ -204,6 +202,7 @@
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\UI\BackpackUI.cs" />
     <Compile Include="Assets\Importaciones\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuButton.cs" />
+    <Compile Include="Assets\Scripts\Sistema\CelulaSpawn.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Localization\LocalizableString.cs" />
     <Compile Include="Assets\TextMesh Pro\GoldMiner\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -219,7 +218,6 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\Sistema\CelulaSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />
