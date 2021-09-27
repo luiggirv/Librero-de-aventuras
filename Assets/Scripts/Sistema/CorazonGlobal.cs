@@ -71,4 +71,22 @@ public class CorazonGlobal : MonoBehaviour
         }
     }
 
+    public void isClicked()
+    {
+        vidaCorazon -= 1;
+        if (vidaCorazon == 0)
+        {
+            if (HealthSistema.currentHealth + 40 > 100)
+            {
+                HealthSistema.currentHealth = 100;
+            }
+            else
+            {
+                HealthSistema.currentHealth += 40;
+            }
+            Debug.Log("Curarvida");
+            Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+    }
 }

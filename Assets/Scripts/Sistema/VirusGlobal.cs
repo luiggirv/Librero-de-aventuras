@@ -81,7 +81,7 @@ public class VirusGlobal : MonoBehaviour
         {
             Instantiate(explosion, transform.position, transform.rotation);
             numVirusDeleted += 1;
-            SScoreGlobal.EliminadosCount += 1; 
+            SScoreGlobal.EliminadosCount += 1;
             SScoreGlobal.ScoreCount += InternalScore;
             Destroy(gameObject);
         }
@@ -99,6 +99,18 @@ public class VirusGlobal : MonoBehaviour
         obj.localScale = Vector2.Lerp(originalScale, end, i);
         yield return new WaitForSeconds(0.05f);
         obj.localScale = Vector2.Lerp(end, originalScale, i);
+    }
+
+    public void upScore()
+    {
+        if (vidaVirus == 0)
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
+            numVirusDeleted += 1;
+            SScoreGlobal.EliminadosCount += 1;
+            SScoreGlobal.ScoreCount += InternalScore;
+            Destroy(gameObject);
+        }
     }
 
 }
