@@ -5432,8 +5432,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b476906a5086d4face44012b3c41cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wolfPrefab: {fileID: 6060242505385302422, guid: 64a310aca1e8ea14bb31682d26532b6a, type: 3}
-  wolfEaterPrefab: {fileID: 8011127346797358265, guid: bb1b15a2a88d04e4da8b1067a60de167, type: 3}
+  wolfPrefab:
+  - {fileID: 6060242505385302422, guid: 64a310aca1e8ea14bb31682d26532b6a, type: 3}
+  wolfEaterPrefab:
+  - {fileID: 8011127346797358265, guid: bb1b15a2a88d04e4da8b1067a60de167, type: 3}
   spawnPoints:
   - {fileID: 1624900929}
   - {fileID: 507649258}
@@ -26870,7 +26872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 451.33, y: -49.91}
+  m_AnchoredPosition: {x: 451.33, y: -49.910004}
   m_SizeDelta: {x: 277.35, y: 99.80005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351098776
@@ -27573,7 +27575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 871, y: -49.9}
+  m_AnchoredPosition: {x: 871, y: -49.899994}
   m_SizeDelta: {x: 314.08, y: 99.80005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384620358

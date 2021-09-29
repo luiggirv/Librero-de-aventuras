@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Ecosistema/LevelSelectForest.unity
+- path: Assets/Scenes/Metodo/TutorialMetodo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

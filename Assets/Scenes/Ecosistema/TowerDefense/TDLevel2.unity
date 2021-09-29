@@ -5686,8 +5686,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b476906a5086d4face44012b3c41cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wolfPrefab: {fileID: 6060242505385302422, guid: 64a310aca1e8ea14bb31682d26532b6a, type: 3}
-  wolfEaterPrefab: {fileID: 8011127346797358265, guid: bb1b15a2a88d04e4da8b1067a60de167, type: 3}
+  wolfPrefab:
+  - {fileID: 6060242505385302422, guid: 64a310aca1e8ea14bb31682d26532b6a, type: 3}
+  wolfEaterPrefab:
+  - {fileID: 8011127346797358265, guid: bb1b15a2a88d04e4da8b1067a60de167, type: 3}
   spawnPoints:
   - {fileID: 1624900929}
   - {fileID: 507649258}

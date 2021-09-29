@@ -7,8 +7,8 @@ using UnityEngine;
 /// </summary>
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] Transform wolfPrefab;
-    [SerializeField] Transform wolfEaterPrefab;
+    [SerializeField] Transform[] wolfPrefab;
+    [SerializeField] Transform[] wolfEaterPrefab;
     [SerializeField] Transform[] spawnPoints;
 
     [SerializeField] int eaterChance = 3;     //Chance out of 10 wolves to spawn an eater wolf
@@ -43,11 +43,11 @@ public class EnemySpawner : MonoBehaviour
         //Calculate eater wolf chance
         if(Random.Range(0,11) > eaterChance)
         {
-            Instantiate(wolfPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
+            Instantiate(wolfPrefab[Random.Range(0, wolfPrefab.Length)], spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
         }
         else
         {
-            Instantiate(wolfEaterPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
+            Instantiate(wolfEaterPrefab[Random.Range(0, wolfEaterPrefab.Length)], spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
         }
     }
 }
