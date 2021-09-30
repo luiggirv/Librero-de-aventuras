@@ -236,4 +236,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Metodo/PostLevel6.unity
     guid: afc7c78c91b88bb43a79a5b60058e1b1
+  - enabled: 1
+    path: Assets/Scenes/Metodo/TutorialMetodo.unity
+    guid: 8378b549980a7bd4885c2372b02c41de
+  - enabled: 1
+    path: Assets/Scenes/Metodo/LevelTutorial.unity
+    guid: a174fbaa821a08647a1dc7730d125749
+  - enabled: 1
+    path: Assets/Scenes/Metodo/TutorialPostMetodo.unity
+    guid: d6db0f33f8f8043458ad2a728ecd5f0e
   m_configObjects: {}

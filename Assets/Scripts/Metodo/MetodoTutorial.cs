@@ -5,151 +5,53 @@ using UnityEngine.SceneManagement;
 
 public class MetodoTutorial : MonoBehaviour
 {
-    public GameObject ObservacionTitulo;
-    public GameObject PreguntasTitulo;
-    public GameObject HipotesisTitulo;
 
-    public GameObject ObservacionText;
-    public GameObject PreguntasText;
-    public GameObject HipotesisText;
-    public GameObject ComentarioText;
+    public GameObject[] listaDeObjetos;
+    int i;
 
-    public GameObject Respuesta1;
-    public GameObject Respuesta2;
-    public GameObject Respuesta3;
-    public GameObject Respuesta4;
-
-    public GameObject RespuestaButton1;
-    public GameObject RespuestaButton2;
-    public GameObject RespuestaButton3;
-    public GameObject RespuestaButton4;
-
-    public GameObject ObservacionButton;
-    public GameObject PreguntasButton;
-    public GameObject SiguienteButton;
-    public GameObject PasarNivel;
-
-    public int RespuestaCorrecta;
+    public void Start()
+    {
+        i = 0;
+    }
 
 
     // Start is called before the first frame update
-    public void ObservacionClick()
+    public void AnteriorClick()
     {
-        ObservacionTitulo.SetActive(false);
-        ObservacionText.SetActive(false);
-        ObservacionButton.SetActive(false);
-
-        PreguntasButton.SetActive(true);
-        PreguntasTitulo.SetActive(true);
-        PreguntasText.SetActive(true);
-    }
-
-
-    public void PreguntasClick()
-    {
-        PreguntasTitulo.SetActive(false);
-        PreguntasText.SetActive(false);
-        Respuesta1.SetActive(false);
-        Respuesta2.SetActive(false);
-        Respuesta3.SetActive(false);
-        Respuesta4.SetActive(false);
-        PreguntasButton.SetActive(false);
-
-        HipotesisTitulo.SetActive(true);
-        HipotesisText.SetActive(true);
-        RespuestaButton1.SetActive(true);
-        RespuestaButton2.SetActive(true);
-        RespuestaButton3.SetActive(true);
-        RespuestaButton4.SetActive(true);
-        SiguienteButton.SetActive(false);
-        PasarNivel.SetActive(false);
-    }
-    public void Respuesta1Click()
-    {
-        RespuestaButton1.SetActive(false);
-        RespuestaButton2.SetActive(false);
-        RespuestaButton3.SetActive(false);
-        RespuestaButton4.SetActive(false);
-        HipotesisText.SetActive(false);
-        Respuesta1.SetActive(true);
-        int n = 1;
-        if (n == RespuestaCorrecta)
+        if (i <= 0)
         {
-            SiguienteButton.SetActive(true);
-        }
-        else {
-            PreguntasButton.SetActive(true);
-        }
-    }
-    public void Respuesta2Click()
-    {
-        RespuestaButton1.SetActive(false);
-        RespuestaButton2.SetActive(false);
-        RespuestaButton3.SetActive(false);
-        RespuestaButton4.SetActive(false);
-        HipotesisText.SetActive(false);
-        Respuesta2.SetActive(true);
-        int n = 2;
-        if (n == RespuestaCorrecta)
-        {
-            SiguienteButton.SetActive(true);
+            return;
         }
         else
         {
-            PreguntasButton.SetActive(true);
+            listaDeObjetos[i].SetActive(false);
+            listaDeObjetos[i - 1].SetActive(true);
+            i--;
         }
-    }
-    public void Respuesta3Click()
-    {
-        RespuestaButton1.SetActive(false);
-        RespuestaButton2.SetActive(false);
-        RespuestaButton3.SetActive(false);
-        RespuestaButton4.SetActive(false);
-        HipotesisText.SetActive(false);
-        Respuesta3.SetActive(true);
-        int n = 3;
-        if (n == RespuestaCorrecta)
-        {
-            SiguienteButton.SetActive(true);
-        }
-        else
-        {
-            PreguntasButton.SetActive(true);
-        }
-    }
-
-    public void Respuesta4Click()
-    {
-        RespuestaButton1.SetActive(false);
-        RespuestaButton2.SetActive(false);
-        RespuestaButton3.SetActive(false);
-        RespuestaButton4.SetActive(false);
-        HipotesisText.SetActive(false);
-        Respuesta4.SetActive(true);
-        int n = 4;
-        if (n == RespuestaCorrecta)
-        {
-            SiguienteButton.SetActive(true);
-        }
-        else
-        {
-            PreguntasButton.SetActive(true);
-        }
+        Debug.Log("Anterior");
     }
     public void SiguienteClick()
     {
-        Respuesta1.SetActive(false);
-        Respuesta2.SetActive(false);
-        Respuesta3.SetActive(false);
-        Respuesta4.SetActive(false);
-
-        ComentarioText.SetActive(true);
-        SiguienteButton.SetActive(false);
-        PasarNivel.SetActive(true);
+        if (i >= listaDeObjetos.Length-1)
+        {
+            return;
+        }
+        else
+        {
+            listaDeObjetos[i].SetActive(false);
+            listaDeObjetos[i + 1].SetActive(true);
+            i++;
+        }
+        Debug.Log("Siguiente");
     }
 
     public void PasarNivelClick()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void VolverMenuClick()
+    {
+        SceneManager.LoadScene(20);
     }
 }

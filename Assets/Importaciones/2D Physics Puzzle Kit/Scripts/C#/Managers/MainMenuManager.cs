@@ -32,6 +32,8 @@ public class MainMenuManager : MonoBehaviour
                 StartCoroutine(PlayPressed(hit.transform));
 			else if (hit.transform.name == "backButton")
                 SceneManager.LoadScene(19);
+            else if (hit.transform.name == "LevelTutorial")
+                SceneManager.LoadScene(77);
             else
                 hit.transform.GetComponent<LevelSelectButton>().ClickEvent();
         }
@@ -93,5 +95,10 @@ public class MainMenuManager : MonoBehaviour
     public void RegresarButton()
     {
         SceneManager.LoadScene(19);
+    }
+
+    public void TutorialButton()
+    {
+        SceneManager.LoadScene(77);
     }
 }
