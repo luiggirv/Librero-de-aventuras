@@ -1972,7 +1972,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "- Nombre cient\xEDfico: Neisseria Meningitidis\n- Descripci\xF3n: Puede
     causar fiebre, dolor de cabeza y problemas en el torrente sanguinea.\n- N\xFAmero
-    de vidas: 4 HP\n- Da\xF1o de ataque: 10 HP\n- Ratio de aparici\xF3n: Alto"
+    de vidas: 4 HP\n- Da\xF1o de ataque: 10 HP\n- Frecuencia de aparici\xF3n: Alto"
 --- !u!222 &309396314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5225,7 +5225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Objeto: Corazon Curador\n- Recuperaci\xF3n: 40 HP\n- Ratio de aparici\xF3n:
+  m_Text: "- Objeto: Corazon Curador\n- Recuperaci\xF3n: 40 HP\n- Frecuencia de aparici\xF3n:
     Medio"
 --- !u!222 &832110844
 CanvasRenderer:
@@ -5792,7 +5792,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "- Nombre cient\xEDfico: Staphylococcus Aureus\n- Descripci\xF3n: Bacter\xEDa
     que puede atacar al coraz\xF3n y a sus v\xE1lvulas card\xEDacas.\n- N\xFAmero
-    de vidas: 2 HP\n- Da\xF1o de ataque: 5 HP\n- Ratio de aparici\xF3n: Alto"
+    de vidas: 2 HP\n- Da\xF1o de ataque: 5 HP\n- Frecuencia de aparici\xF3n: Alto"
 --- !u!222 &964179932
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6938,7 +6938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd1da5eb63e36c4db83ed4789da85eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numLugar: 3
   entroNivel: 0
   enemigosUI: {fileID: 1775881448}
   sistemaRespiratorioUI: {fileID: 121344917}
@@ -6948,7 +6947,13 @@ MonoBehaviour:
   numVirusRequeridos: 25
   marcaAgua: {fileID: 0}
   imagenesbackground: []
-  preguntaText: {fileID: 0}
+  preguntaText: {fileID: 173866009}
+  correctSound: {fileID: 1412284240}
+  incorrectSound: {fileID: 1412284240}
+  buttonLugar1: {fileID: 21619041}
+  buttonLugar2: {fileID: 1936388576}
+  buttonLugar3: {fileID: 51383496}
+  buttonLugar4: {fileID: 51383496}
 --- !u!114 &1193613458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7985,7 +7990,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "- Nombre cient\xEDfico: Staphylococcus\n- Descripci\xF3n: Bacteria que
     ataca al torrente sangu\xEDneo y a las articulaciones del cuerpo.\n- N\xFAmero
-    de vidas: 1 HP\n- Da\xF1o de ataque: 5 HP\n- Ratio de aparici\xF3n: Muy alto"
+    de vidas: 1 HP\n- Da\xF1o de ataque: 5 HP\n- Frecuencia de aparici\xF3n: Muy
+    alto"
 --- !u!222 &1421995784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10030,7 +10036,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "- Nombre cient\xEDfico: Streptococcus\n- Descripci\xF3n: Puede causar
     fiebre, dificultad para respirar y falta de energ\xEDa.\n- N\xFAmero de vidas:
-    3 HP\n- Da\xF1o de ataque: 10 HP\n- Ratio de aparici\xF3n: Alto"
+    3 HP\n- Da\xF1o de ataque: 10 HP\n- Frecuencia de aparici\xF3n: Alto"
 --- !u!222 &1816721582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10757,8 +10763,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Aliado: Eritrocito\n- Ratio de aparici\xF3n: Medio\n- Funci\xF3n: Transportar
-    oxigeno a los tejidos corporales."
+  m_Text: "- Aliado: Eritrocito\n- Frecuencia de aparici\xF3n: Medio\n- Funci\xF3n:
+    Transportar oxigeno a los tejidos corporales."
 --- !u!222 &1954711972
 CanvasRenderer:
   m_ObjectHideFlags: 0

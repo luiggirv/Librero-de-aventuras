@@ -13,10 +13,11 @@ public class Manager : MonoBehaviour
     public GameObject PuntajeFinalText;
     public static int LvlIngresado;
 
-    void Awake()
+    void Start()
     {
         timer = timeToWin;
     }
+    
 
     void Update()
     {

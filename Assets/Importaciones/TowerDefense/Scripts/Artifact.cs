@@ -76,4 +76,15 @@ public class Artifact : MonoBehaviour
             }
         }
     }
+
+    public void eatFruit()
+    {
+        frutasTomadas = player.GetComponent<PlayerBackpack>().TakeFruits();
+        health += frutasTomadas;
+        ScoreGlobalTower.ScoreCount += frutasTomadas;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+    }
 }

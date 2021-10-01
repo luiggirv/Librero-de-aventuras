@@ -204,15 +204,15 @@ public class TutorialScript : MonoBehaviour
         button7.SetActive(true);
         if (LevelSelect.lvlTutorialCirculatorio) 
         {
-            cuadroText.GetComponent<Text>().text = "La bacteria Staphylococcus tiene un ratio de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
+            cuadroText.GetComponent<Text>().text = "La bacteria Staphylococcus tiene una frecuencia de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
         }
         else if (LevelSelect.lvlTutorialNervioso)
         {
-            cuadroText.GetComponent<Text>().text = "La bacteria Enterovirus tiene un ratio de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
+            cuadroText.GetComponent<Text>().text = "La bacteria Enterovirus tiene una frecuencia de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
         }
         else if (LevelSelect.lvlTutorialRespiratorio)
         {
-            cuadroText.GetComponent<Text>().text = "La bacteria Rhinovirus tiene un ratio de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
+            cuadroText.GetComponent<Text>().text = "La bacteria Rhinovirus tiene una frecuencia de aparición muy alto. Son las bacterias más debiles, pero pueden empezar a lastimarte si están mucho tiempo frente a ti.";
         }
     }
     public void PassPoint8()
@@ -246,15 +246,15 @@ public class TutorialScript : MonoBehaviour
         informaciónText2.SetActive(true);
         if (LevelSelect.lvlTutorialCirculatorio)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Staphylococcus Aureus tiene un ratio de aparición alto. Esta bacteria resiste un poco más que la bacteria Staphylococcus pero su ataque es similar.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Staphylococcus Aureus tiene una frecuencia de aparición alto. Esta bacteria resiste un poco más que la bacteria Staphylococcus pero su ataque es similar.";
         }
         else if (LevelSelect.lvlTutorialNervioso)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Coxsackievirus tiene un ratio de aparición alto. Esta bacteria resiste un poco más que las bacterias normales pero su ataque es similar.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Coxsackievirus tiene una frecuencia de aparición alto. Esta bacteria resiste un poco más que las bacterias normales pero su ataque es similar.";
         }
         else if (LevelSelect.lvlTutorialRespiratorio)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Streptococcus Pneumoniae tiene un ratio de aparición alto. Esta bacteria resiste un poco más que la bacteria Rhinovirus pero su ataque es similar.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, la bacteria Streptococcus Pneumoniae tiene una frecuencia de aparición alto. Esta bacteria resiste un poco más que la bacteria Rhinovirus pero su ataque es similar.";
         }
     }
     public void PassPoint10()
@@ -287,15 +287,15 @@ public class TutorialScript : MonoBehaviour
         informaciónText3.SetActive(true);
         if (LevelSelect.lvlTutorialCirculatorio)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Streptococcus. Tiene un ratio de aparición menor a las 2 bacterias anteriores pero es más resistentes y su daño de ataque es mayor al resto.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Streptococcus. Tiene una frecuencia de aparición menor a las 2 bacterias anteriores pero es más resistentes y su daño de ataque es mayor al resto.";
         }
         else if (LevelSelect.lvlTutorialNervioso)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Neisseria Meningitidis. Tiene un ratio de aparición menor que las 2 bacterias anteriores pero es más resistente y su daño de ataque es mayor.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Neisseria Meningitidis. Tiene una frecuencia de aparición menor que las 2 bacterias anteriores pero es más resistente y su daño de ataque es mayor.";
         }
         else if (LevelSelect.lvlTutorialRespiratorio)
         {
-            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Haemophilus Influenzae. Tiene un ratio de aparición menor que las 2 bacterias anteriores pero es más resistente y su daño de ataque es mayor.";
+            cuadroText.GetComponent<Text>().text = "Por otro lado, tenemos a la bacteria Haemophilus Influenzae. Tiene una frecuencia de aparición menor que las 2 bacterias anteriores pero es más resistente y su daño de ataque es mayor.";
         }
     }
     public void PassPoint12()
@@ -391,11 +391,11 @@ public class TutorialScript : MonoBehaviour
         }
         else if (LevelSelect.lvlTutorialNervioso)
         {
-            cuadroText.GetComponent<Text>().text = "¡Incluso puedes encontrarte con celulas en el escenario!. Eso sí, recuerda evitar atacarlos porque son aliados tuyos.";
+            cuadroText.GetComponent<Text>().text = "¡Incluso puedes encontrarte con celulas en el escenario!. Eso sí, recuerda evitar atacarlos porque son aliados.";
         }
         else if (LevelSelect.lvlTutorialRespiratorio)
         {
-            cuadroText.GetComponent<Text>().text = "¡Incluso puedes encontrarte con celulas en el escenario!. Eso sí, recuerda evitar atacarlos porque son aliados tuyos.";
+            cuadroText.GetComponent<Text>().text = "¡Incluso puedes encontrarte con celulas en el escenario!. Eso sí, recuerda evitar atacarlos porque son aliados.";
         }
     }
     public void PassPoint18()

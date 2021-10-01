@@ -82,6 +82,7 @@
     <Compile Include="Assets\Importaciones\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Misc\ChildSortingInvoker.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Objects\Balloon.cs" />
+    <Compile Include="Assets\Scripts\Metodo\MetodoTutorialExperimentacion.cs" />
     <Compile Include="Assets\Scripts\Sistema\PauseMenuSistema.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Objects\SmallBall.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\Localization\Localization.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Importaciones\2D Physics Puzzle Kit\Scripts\C#\Toolbox\ToolboxItemType.cs" />
     <Compile Include="Assets\Scripts\Metodo\MetodoTutorial.cs" />
+    <Compile Include="Assets\Scripts\CatchGame\PauseMenuCatch.cs" />
     <Compile Include="Assets\Scripts\CatchGame\HT_SetParticleSortingLayer.cs" />
     <Compile Include="Assets\Scripts\Sistema\CorazonGlobal.cs" />
     <Compile Include="Assets\Importaciones\TowerDefense\Scripts\IndicacionesScript.cs" />
@@ -186,8 +188,6 @@
     <Compile Include="Assets\Scripts\GoldMiner\LevelSelector.cs" />
     <Compile Include="Assets\Scripts\Scripts Pasados\Jaguar.cs" />
     <Compile Include="Assets\Scripts\Sistema\LevelSelect.cs" />
-    <Compile Include="Assets\Scripts\Metodo\MetodoTutorialExperimentacion.cs" />
-    <Compile Include="Assets\Scripts\CatchGame\PauseMenuCatch.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Importaciones\2D Physics Puzzle Kit\Shaders\Depth Mask.shader" />
