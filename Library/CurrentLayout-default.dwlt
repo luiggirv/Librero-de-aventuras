@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 44
+  controlID: 18
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 438
     height: 771
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -92,8 +92,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 386
-    height: 439
+    width: 385.6
+    height: 445.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
@@ -111,25 +111,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 439
+    y: 445.6
     width: 1098
-    height: 332
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+    height: 325.4
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 20}
   - {fileID: 15}
   - {fileID: 13}
-  m_Selected: 3
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,7 +152,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 821
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -225,10 +225,10 @@ MonoBehaviour:
     y: 0
     width: 1098
     height: 771
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 45
+  controlID: 23
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,11 +249,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1098
-    height: 439
+    height: 445.6
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 46
+  controlID: 24
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,10 +269,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 386
+    x: 385.6
     y: 0
-    width: 712
-    height: 439
+    width: 712.4
+    height: 445.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
@@ -302,10 +302,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 386.4
+    x: 385.6
     y: 73.6
-    width: 710
-    height: 418
+    width: 710.4
+    height: 424.6
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1280, y: 720}
+  m_TargetSize: {x: 888, y: 504.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -328,10 +328,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -512
-    m_HBaseRangeMax: 512
-    m_VBaseRangeMin: -288
-    m_VBaseRangeMax: 288
+    m_HBaseRangeMin: -355.2
+    m_HBaseRangeMax: 355.2
+    m_VBaseRangeMin: -201.8
+    m_VBaseRangeMax: 201.8
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -349,23 +349,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 710
-      height: 397
-    m_Scale: {x: 0.6892361, y: 0.6892361}
-    m_Translation: {x: 355, y: 198.5}
+      width: 710.4
+      height: 403.6
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 355.2, y: 201.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -515.063
-      y: -288
-      width: 1030.126
-      height: 576
+      x: -355.2
+      y: -201.8
+      width: 710.4
+      height: 403.6
     m_MinimalGUI: 1
-  m_defaultScale: 0.6892361
-  m_LastWindowPixelSize: {x: 887.5, y: 522.5}
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 888, y: 530.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -392,27 +392,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 512
+    y: 519.2
     width: 1097
-    height: 311
+    height: 304.4
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 6030
-    splitterInitialOffset: 187
+    ID: 639
+    splitterInitialOffset: 214
     currentActiveSplitter: -1
     realSizes:
-    - 119.2
-    - 121.600006
+    - 140.8
+    - 92.8
     relativeSizes:
-    - 0.49577698
-    - 0.504223
+    - 0.60299003
+    - 0.39700997
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 240.8
+    lastTotalSize: 233.6
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
       name: Librero de aventuras
       fullName: Librero de aventuras
       resultStatus: 1
-      duration: 11.157674
+      duration: 14.259479
       messages: 
       output: 
       stacktrace: 
@@ -445,7 +445,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 11.091136
+      duration: 14.184806
       messages: 
       output: 
       stacktrace: 
@@ -460,8 +460,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][TestAventura1][suite]
       name: TestAventura1
       fullName: TestAventura1
-      resultStatus: 0
-      duration: 14.096674
+      resultStatus: 1
+      duration: 14.173007
       messages: 
       output: 
       stacktrace: 
@@ -476,8 +476,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1HealthSystem]
       name: TestAventura1HealthSystem
       fullName: TestAventura1.TestAventura1HealthSystem
-      resultStatus: 0
-      duration: 8.030849
+      resultStatus: 1
+      duration: 8.086224
       messages: 
       output: 'Sprite Clicked
 
@@ -497,8 +497,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1SScoreGlobal]
       name: TestAventura1SScoreGlobal
       fullName: TestAventura1.TestAventura1SScoreGlobal
-      resultStatus: 0
-      duration: 1.0123758
+      resultStatus: 1
+      duration: 1.0207267
       messages: 
       output: 
       stacktrace: 
@@ -514,8 +514,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1STimeGlobal]
       name: TestAventura1STimeGlobal
       fullName: TestAventura1.TestAventura1STimeGlobal
-      resultStatus: 0
-      duration: 5.017525
+      resultStatus: 1
+      duration: 5.016125
       messages: 
       output: 
       stacktrace: 
@@ -532,7 +532,7 @@ MonoBehaviour:
       name: TestAventura2Bosque
       fullName: TestAventura2Bosque
       resultStatus: 1
-      duration: 11.082099
+      duration: 5.0614033
       messages: 
       output: 
       stacktrace: 
@@ -547,10 +547,15 @@ MonoBehaviour:
       uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueHealthSystem]
       name: TestAventura2BosqueHealthSystem
       fullName: TestAventura2Bosque.TestAventura2BosqueHealthSystem
-      resultStatus: 0
-      duration: 0.0192431
+      resultStatus: 1
+      duration: 3.0294948
       messages: 
-      output: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        100
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -565,7 +570,7 @@ MonoBehaviour:
       name: TestAventura2BosqueScoreGlobal
       fullName: TestAventura2Bosque.TestAventura2BosqueScoreGlobal
       resultStatus: 1
-      duration: 11.038265
+      duration: 11.024478
       messages: 
       output: 'There are no audio listeners in the scene. Please ensure there is
         always one audio listener in the scene
@@ -584,8 +589,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueTimeGlobal]
       name: TestAventura2BosqueTimeGlobal
       fullName: TestAventura2Bosque.TestAventura2BosqueTimeGlobal
-      resultStatus: 0
-      duration: 5.031289
+      resultStatus: 1
+      duration: 5.0296426
       messages: 
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -604,18 +609,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1005
       parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
-    m_ResultText: 'TestAventura2BosqueScoreGlobal (11.038s)
-
-      ---
-
-      There
-      are no audio listeners in the scene. Please ensure there is always one audio
-      listener in the scene'
+    m_ResultText: TestAventura2Bosque (5.061s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 70e3ed8e
-      m_LastClickedID: -1897012368
+      m_SelectedIDs: 66bbbcff
+      m_LastClickedID: -4408474
       m_ExpandedIDs: fbaa2aca66bbbcff72b2a96dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -895,13 +894,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 516
-    width: 1046
-    height: 307
+    y: 512
+    width: 1097
+    height: 311
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 168610
+  m_LastSelectedObjectID: 29810
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -923,9 +922,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 512
+    y: 519.2
     width: 1097
-    height: 311
+    height: 304.4
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -940,22 +939,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Importaciones/TowerDefense/Prefabs
+    - Assets/Scenes/Ecosistema
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Importaciones/TowerDefense/Prefabs
+  - Assets/Scenes/Ecosistema
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Luiggi\Documents\GitHub\Librero de aventuras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 349}
-    m_SelectedIDs: 88460000
-    m_LastClickedID: 18056
-    m_ExpandedIDs: 000000000a4600000c4600000e46000010460000124600001446000016460000184600001a4600001c4600001e46000020460000224600002446000026460000284600002a4600002c4600002e46000030460000324600003446000036460000384600003a4600003c4600003e460000404600004246000044460000464600004846000000ca9a3b
+    scrollPos: {x: 0, y: 707.6}
+    m_SelectedIDs: e44a0000
+    m_LastClickedID: 19172
+    m_ExpandedIDs: 00000000ce4a0000d04a0000d24a0000d44a0000d64a0000d84a0000da4a0000dc4a0000de4a0000e04a0000e24a0000e44a0000e64a0000e84a0000ea4a0000ec4a0000ee4a0000f04a0000f24a0000f44a0000f64a0000f84a0000fa4a0000fc4a0000fe4a0000004b0000024b0000044b0000064b0000084b00000a4b00000c4b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -983,7 +982,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a4600000c4600000e46000010460000124600001446000016460000184600001a4600001c4600001e46000020460000224600002446000026460000284600002a4600002c4600002e46000030460000324600003446000036460000384600003a4600003c4600003e4600004046000042460000444600004646000048460000
+    m_ExpandedIDs: 00000000ce4a0000d04a0000d24a0000d44a0000d64a0000d84a0000da4a0000dc4a0000de4a0000e04a0000e24a0000e44a0000e64a0000e84a0000ea4a0000ec4a0000ee4a0000f04a0000f24a0000f44a0000f64a0000f84a0000fa4a0000fc4a0000fe4a0000004b0000024b0000044b0000064b0000084b00000a4b00000c4b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1008,8 +1007,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2e560000
-    m_LastClickedInstanceID: 22062
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000050480000ec620000a45c000032860000d6480000ba3a0100ac3a0100bc440000fecb00000e43000060d10000184f0000f0c000002e7600008e4f0000786600001444000076510000cc9d000038450000c44d0000b28f0000686c0000d86b000092a5000074a5000066270100686e0000105c0000624400004cc90100284600005e56000064560000be4400005645000000ae0000425f010050450000384a00003c4a0000f447000086db00008efa0000fee101000c490000d44a0000b4600000965e0100944600007e4500002a4b0000144600004047000032dc000000000000a2560000aa65000084130200384900009c58000096890000ccc500008ec400001c5a0100cc8f0100c68f0100d6a30100b0470000044c0000624700006a7600003484000014540000a016010094160100ca4d0000c6690000a2690000ba5c000098460000ce5c0000aa4e0000125d000016600000064900006a4800006eba00001e130100
     m_RenameOverlay:
@@ -1098,15 +1097,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 385
-    height: 418
+    width: 384.6
+    height: 424.6
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 986a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 7c9dfcff969dfcff809efcfff2b1fcff0cb2fcfff6b2fcff2cc9fcff46c9fcff30cafcff9eddfcffb8ddfcffa2defcff88f2fcffa2f2fcff8cf3fcfffc06fdff1607fdff3408fdff221cfdff3c1cfdffd61cfdff6230fdff7c30fdff5c31fdff3c45fdff5645fdff1446fdff8459fdff9e59fdffb65afdff6a6efdff846efdff746ffdff6a83fdff8483fdffce83fdff0899fdff2299fdffe099fdff58adfdff72adfdff30aefdffa6c1fdffc0c1fdff7ec2fdffe8d5fdff02d6fdffc4d6fdff7cebfdff96ebfdff52ecfdff5efffdff78fffdff0400feff1c14feff3614fefff214feff5629feff7029feff262afeff9e3ffeffb83ffeff6c40feff8254feff9c54feff5055feffba68feffd468feff8869fefffe7cfeff187dfeffcc7dfeff5491feff6e91feff2492feff30a5feff4aa5feffd6a5feff40b9feff5ab9feff0ebafeff78cdfeff92cdfeff3ecefeff34e2feff4ee2feff38e3feff52f7feff6cf7feffaef8feff600dffff7a0dffff340effff1a23ffff3423ffffc023ffff4c37ffff6637ffff2038ffff344dffff4e4dffff084effff7c62ffff9662ffff5063ffff0678ffff2078ffffdc78ffff448cffff5e8cffff788dffffe0a0fffffaa0ffffb0a1ffff28b5ffff42b5fffff6b5ffff62c9ffff7cc9ffff34caffffaee2ffff80e3ffff7ee6ffff4ee7ffff5ee9ffff10eaffff22eaffffbeeeffffecefffffeef1ffffe2f2ffff6af6fffffaf9ffff3afbffffba4800002849000042730000f673000020760000d283000078840000a2860000788b0000288c00003a8e000010ba00007eba0000f6bd00006ebe00007ac60000f2c60000d6e300001055010092570100
+      m_ExpandedIDs: 56ebfeffe4ebfeff52ecfeffc0ecfefff8fffeff1200ffff5201ffffe814ffff0215ffffb815ffffc828ffffe228ffffcc29ffff323fffff4c3fffff2640ffff9253ffffac53ffff8654ffffee67ffff0868ffffe268ffff507cffff6a7cffff447dffffac90ffffc690ffffa091ffff9ea5ffffb8a5ffff92a6ffff52baffff6cbaffff46bbffff74d1ffff8ed1ffff68d2ffff74e5ffff8ee5ffff6ae6ffff3afbffff54470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1150,10 +1149,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 386.4
+    x: 385.6
     y: 73.6
-    width: 710
-    height: 418
+    width: 710.4
+    height: 424.6
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -1267,9 +1266,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 512
+    y: 519.2
     width: 1097
-    height: 311
+    height: 304.4
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &21
 MonoBehaviour:
