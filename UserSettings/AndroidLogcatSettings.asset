@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RQ300618GD",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 14065,
+        "processId": 8795,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -90,6 +90,12 @@
             "deviceId": "RQ300618GD",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 14065,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 8795,
             "exited": false
         }
     ],

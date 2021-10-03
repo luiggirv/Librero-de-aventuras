@@ -1240,8 +1240,8 @@ Canvas:
   m_GameObject: {fileID: 396543415}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2814,7 +2814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 65.72187, y: 0}
+  m_AnchoredPosition: {x: 65.72186, y: 0}
   m_SizeDelta: {x: -171.4436, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1080244426
@@ -3450,6 +3450,18 @@ MonoBehaviour:
   lvl4Forest: 404
   lvl5Forest: 405
   lvl6Forest: 406
+  lvl1Lake: 501
+  lvl2Lake: 502
+  lvl3Lake: 503
+  lvl4Lake: 504
+  lvl5Lake: 505
+  lvl6Lake: 506
+  lvl1Mountain: 601
+  lvl2Mountain: 602
+  lvl3Mountain: 603
+  lvl4Mountain: 604
+  lvl5Mountain: 605
+  lvl6Mountain: 606
 --- !u!1 &1366016687
 GameObject:
   m_ObjectHideFlags: 0

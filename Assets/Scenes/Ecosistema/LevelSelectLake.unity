@@ -903,7 +903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 65.72187, y: 0}
+  m_AnchoredPosition: {x: 65.72186, y: 0}
   m_SizeDelta: {x: -171.4436, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &453647690
@@ -3079,8 +3079,8 @@ Canvas:
   m_GameObject: {fileID: 1346440435}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3089,7 +3089,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1346440439
 RectTransform:
@@ -3270,6 +3270,12 @@ MonoBehaviour:
   lvl4Lake: 504
   lvl5Lake: 505
   lvl6Lake: 506
+  lvl1Mountain: 601
+  lvl2Mountain: 602
+  lvl3Mountain: 603
+  lvl4Mountain: 604
+  lvl5Mountain: 605
+  lvl6Mountain: 606
 --- !u!1 &1432556946
 GameObject:
   m_ObjectHideFlags: 0
