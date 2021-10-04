@@ -23,8 +23,8 @@ public class GameController : MonoBehaviour {
 
 	bool esLluvioso = false;
 	bool esTormenta = false;
-	bool esNevoso = true;
-	bool esSoleado = false;
+	bool esNevoso = false;
+	bool esSoleado = true;
 
 	public GameObject lluvioso;
 	public GameObject soleado;
