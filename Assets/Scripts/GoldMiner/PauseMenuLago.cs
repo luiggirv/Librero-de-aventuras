@@ -43,4 +43,9 @@ public class PauseMenuLago : MonoBehaviour
         AudioListener.pause = false;
     }
 
+    public bool isPause()
+    {
+        return GameIsPause;
+    }
+
 }

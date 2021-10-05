@@ -10,8 +10,7 @@ public class GameplayManager : MonoBehaviour
 
     public static GameplayManager instance;
     public static bool success = false;
-    [SerializeField]
-    private Text countdownText;
+    public Text countdownText;
 
     public int countdownTimer = 60;
 
