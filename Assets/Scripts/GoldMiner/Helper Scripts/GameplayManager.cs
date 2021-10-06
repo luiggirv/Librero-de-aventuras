@@ -504,4 +504,16 @@ public class GameplayManager : MonoBehaviour
         SceneManager.LoadScene(14);
     }
 
+    public int actualScore()
+    {
+        return scoreCount;
+    }
+
+    public void setTextGameObject()
+    {
+        var scoreTextSend = new GameObject();
+        scoreTextSend.AddComponent<Text>();
+        scoreText = scoreTextSend.GetComponent<Text>();
+    }
+
 }
