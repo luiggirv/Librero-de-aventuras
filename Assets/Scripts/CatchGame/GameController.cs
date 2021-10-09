@@ -21,8 +21,8 @@ public class GameController : MonoBehaviour {
 	private bool playing;
 	private int ballCount;
 
-	bool esLluvioso = false;
-	bool esTormenta = true;
+	bool esLluvioso = true;
+	bool esTormenta = false;
 	bool esNevoso = false;
 	bool esSoleado = false;
 
@@ -56,9 +56,9 @@ public class GameController : MonoBehaviour {
 			tormenta.SetActive(false);
 			nevoso.SetActive(false);
 			soleado.SetActive(false);
-			for (int i = 0; i < 9; i++)
+			for (int i = 27; i < 36; i++)
             {
-				objetosElegidos[i] = balls[i];
+				objetosElegidos[i-27] = balls[i];
             }
 		}
 		else if (esTormenta)
