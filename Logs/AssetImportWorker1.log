@@ -1,0 +1,586 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19042.1237; Version 2009; 64bit' Language: 'es' Physical Memory: 12168 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Luiggi\Unity\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Luiggi/Documents/GitHub/Librero de aventuras
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52017
+Successfully changed project path to: D:/Luiggi/Documents/GitHub/Librero de aventuras
+D:/Luiggi/Documents/GitHub/Librero de aventuras
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 102.10 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path D:/Luiggi/Unity/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Luiggi/Documents/GitHub/Librero de aventuras/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Vendor:   
+    VRAM:     4027 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'D:/Luiggi/Unity/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Luiggi/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Luiggi/Unity/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Luiggi/Unity/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004142 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.146 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.160664 seconds.
+Begin MonoManager ReloadAssembly
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b63e18 (Unity) MonoScript::Renew
+0x00007ff767b780c3 (Unity) MonoManager::EndReloadAssembly
+0x00007ff767b7efe9 (Unity) MonoManager::ReloadAssembly
+0x00007ff768f21341 (Unity) LoadDomainAndUserAssemblies
+0x00007ff768f217ee (Unity) LoadUserAssemblies
+0x00007ff7688ac3f1 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 56.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.882 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2088 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.9 MB.
+System memory in use after: 190.0 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 2.800900 ms (FindLiveObjects: 0.438600 ms CreateObjectMapping: 0.183300 ms MarkObjects: 2.126200 ms  DeleteObjects: 0.051700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/GoldMiner/Helper Scripts/GameplayManager.cs
+  artifactKey: Guid(cc825842baef2400ea386f8d5196d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GoldMiner/Helper Scripts/GameplayManager.cs using Guid(cc825842baef2400ea386f8d5196d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c372943b9e53b7bbb874f96acd2954') in 0.182041 seconds
+  Import took 0.187796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.499849 seconds.
+  path: Assets/Scripts/GoldMiner/Helper Scripts/GameplayManager.cs
+  artifactKey: Guid(cc825842baef2400ea386f8d5196d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GoldMiner/Helper Scripts/GameplayManager.cs using Guid(cc825842baef2400ea386f8d5196d404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8da9af52d3bdcbca63a1289f311c9d9') in 0.006482 seconds
+  Import took 0.011287 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008256 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.2 MB.
+System memory in use after: 188.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2557.
+Total: 2.648600 ms (FindLiveObjects: 0.329700 ms CreateObjectMapping: 0.081300 ms MarkObjects: 2.219800 ms  DeleteObjects: 0.016800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005037 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.809 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.2 MB.
+System memory in use after: 188.3 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 3.541400 ms (FindLiveObjects: 0.482100 ms CreateObjectMapping: 0.238400 ms MarkObjects: 2.795700 ms  DeleteObjects: 0.023200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004429 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.197 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.2 MB.
+System memory in use after: 188.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2565.
+Total: 2.076200 ms (FindLiveObjects: 0.197100 ms CreateObjectMapping: 0.084400 ms MarkObjects: 1.774100 ms  DeleteObjects: 0.019200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.3 MB.
+System memory in use after: 188.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2569.
+Total: 2.469000 ms (FindLiveObjects: 0.278900 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.034900 ms  DeleteObjects: 0.042100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.201 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.3 MB.
+System memory in use after: 188.4 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2573.
+Total: 2.522500 ms (FindLiveObjects: 0.496800 ms CreateObjectMapping: 0.310600 ms MarkObjects: 1.661500 ms  DeleteObjects: 0.051200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1761.463766 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity
+  artifactKey: Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity using Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e501cbd7aafbd81d704247742185e6') in 0.025423 seconds
+  Import took 0.030914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.964888 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity
+  artifactKey: Guid(f1f1197b267b52a4c814b73d5a062644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity using Guid(f1f1197b267b52a4c814b73d5a062644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0433f5e4f51a88dd381f8cdd49ebfe') in 0.013032 seconds
+  Import took 0.017736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.265578 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl2.unity
+  artifactKey: Guid(7b1807957d4cd014393c6df8379b86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl2.unity using Guid(7b1807957d4cd014393c6df8379b86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c49206697ed69b2a8749602248fd1a7') in 0.011409 seconds
+  Import took 0.015785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.489065 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity
+  artifactKey: Guid(f1f1197b267b52a4c814b73d5a062644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl1.unity using Guid(f1f1197b267b52a4c814b73d5a062644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ede37e712b085ab9232fac18ea9aed') in 0.006825 seconds
+  Import took 0.012563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.713749 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity
+  artifactKey: Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity using Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade385f6948fb9d0975ab8f566fc1e66') in 0.006169 seconds
+  Import took 0.011849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.396510 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl4.unity
+  artifactKey: Guid(c61627d0877a92e41a07d22356a956c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl4.unity using Guid(c61627d0877a92e41a07d22356a956c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e861eee833d4c06c3edc3c5153dcffc0') in 0.011712 seconds
+  Import took 0.016073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.362736 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl5.unity
+  artifactKey: Guid(9d2ab0b1a4e1db84d957bb29537fe1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl5.unity using Guid(9d2ab0b1a4e1db84d957bb29537fe1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875f5a5f6d3d29250bf8b66d27e28fa4') in 0.012408 seconds
+  Import took 0.016275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.404333 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl6.unity
+  artifactKey: Guid(9528b5b24df79f24aa21e422bb0cc77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl6.unity using Guid(9528b5b24df79f24aa21e422bb0cc77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c542f1bc449e8be4f2e8040f208414') in 0.012056 seconds
+  Import took 0.016134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.488543 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl5.unity
+  artifactKey: Guid(9d2ab0b1a4e1db84d957bb29537fe1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl5.unity using Guid(9d2ab0b1a4e1db84d957bb29537fe1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2421ef37ebf6772e0e8941b198b0b6aa') in 0.006103 seconds
+  Import took 0.011202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.419996 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl4.unity
+  artifactKey: Guid(c61627d0877a92e41a07d22356a956c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl4.unity using Guid(c61627d0877a92e41a07d22356a956c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36dfd6f776d8490b8e5edc3886ded546') in 0.007397 seconds
+  Import took 0.012686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.499426 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity
+  artifactKey: Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl3.unity using Guid(1b3f25c468928a744925d9057cb0712e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff915441d65263b5d5a2aa58313177e') in 0.004364 seconds
+  Import took 0.009151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.470759 seconds.
+  path: Assets/Scenes/Ecosistema/CatchGame/CatchLvl2.unity
+  artifactKey: Guid(7b1807957d4cd014393c6df8379b86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ecosistema/CatchGame/CatchLvl2.unity using Guid(7b1807957d4cd014393c6df8379b86da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2585a953bc6977dfc846704fd0ec8d84') in 0.005861 seconds
+  Import took 0.010423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.036462 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.14 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.901 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.12 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.3 MB.
+System memory in use after: 188.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2577.
+Total: 5.094000 ms (FindLiveObjects: 0.801300 ms CreateObjectMapping: 0.518800 ms MarkObjects: 3.709800 ms  DeleteObjects: 0.056800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005197 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.047 seconds
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on SScoreGlobal
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff767d3e13c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff767d46519 (Unity) StackWalker::ShowCallstack
+0x00007ff76921a3bc (Unity) GetStacktrace
+0x00007ff76a30a273 (Unity) DebugStringToFile
+0x00007ff767b62bcb (Unity) PopulateMethods
+0x00007ff767b5bb73 (Unity) CreateMonoScriptCache
+0x00007ff767b5cd23 (Unity) FindOrCreateMonoScriptCache
+0x00007ff767b62e73 (Unity) MonoScript::Rebuild
+0x00007ff767b62f91 (Unity) MonoScript::RebuildFromAwake
+0x00007ff767c5bd3a (Unity) PersistentManager::ReadAndActivateObjectThreaded
+0x00007ff767c5c189 (Unity) PersistentManager::ReadObjectThreaded
+0x00007ff767c5bf3a (Unity) PersistentManager::ReadObject
+0x00007ff769359278 (Unity) AssetImportWorkerClient::RegisterAvailableScripts
+0x00007ff76935456a (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007ff76941f5e2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff769421740 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff769424ece (Unity) asio::io_service::run
+0x00007ff76939b0c0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff76939b110 (Unity) RunAssetImporterV2
+0x00007ff7688ac3f6 (Unity) Application::InitializeProject
+0x00007ff769227922 (Unity) WinMain
+0x00007ff76b09e0d6 (Unity) __scrt_common_main_seh
+0x00007ff9fe8a7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff9feba2651 (ntdll) RtlUserThreadStart
+
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2069 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.3 MB.
+System memory in use after: 188.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2581.
+Total: 3.044500 ms (FindLiveObjects: 0.631900 ms CreateObjectMapping: 0.198400 ms MarkObjects: 2.187900 ms  DeleteObjects: 0.024700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

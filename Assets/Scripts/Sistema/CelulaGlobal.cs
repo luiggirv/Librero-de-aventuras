@@ -75,7 +75,14 @@ public class CelulaGlobal : MonoBehaviour
             Instantiate(explosion, transform.position, transform.rotation);
             HealthSistema.currentHealth -= 10;
             Debug.Log("Quitarvida");
-            SScoreGlobal.ScoreCount -= InternalScore;
+            if (SScoreGlobal.ScoreCount - InternalScore < 0)
+            {
+                SScoreGlobal.ScoreCount = 0;
+            }
+            else
+            {
+                SScoreGlobal.ScoreCount -= InternalScore;
+            }
             Destroy(gameObject);
         }
     }

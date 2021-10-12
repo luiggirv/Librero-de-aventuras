@@ -1874,7 +1874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197, y: -162.68}
+  m_AnchoredPosition: {x: 286.11, y: -162.68}
   m_SizeDelta: {x: 239.45, y: 131.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500418660
@@ -8145,8 +8145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228.97998, y: -266}
-  m_SizeDelta: {x: 381.55, y: 75.49}
+  m_AnchoredPosition: {x: -232.89001, y: -266}
+  m_SizeDelta: {x: 572.22, y: 75.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907612775
 MonoBehaviour:
@@ -8181,7 +8181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hoja de arbol
+  m_Text: 'Hoja de arbol descolorida
 
 '
 --- !u!222 &907612776
@@ -15181,8 +15181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197, y: -266}
-  m_SizeDelta: {x: 381.55, y: 75.49}
+  m_AnchoredPosition: {x: 286.11, y: -266}
+  m_SizeDelta: {x: 465.78, y: 75.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457211576
 MonoBehaviour:
@@ -15669,8 +15669,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 362}
-  m_SizeDelta: {x: 489.97, y: 123.28}
+  m_AnchoredPosition: {x: -0.00080872, y: 362}
+  m_SizeDelta: {x: 1038, y: 123.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606677723
 MonoBehaviour:
@@ -15705,7 +15705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: INDICACIONES
+  m_Text: "INDICACIONES - Oto\xF1o"
 --- !u!222 &1606677724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21204,8 +21204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 362}
-  m_SizeDelta: {x: 489.97, y: 123.28}
+  m_AnchoredPosition: {x: -0.00080872, y: 362}
+  m_SizeDelta: {x: 1038, y: 123.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868703345
 MonoBehaviour:
@@ -21240,7 +21240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: INDICACIONES
+  m_Text: INDICACIONES - Invierno
 --- !u!222 &1868703346
 CanvasRenderer:
   m_ObjectHideFlags: 0

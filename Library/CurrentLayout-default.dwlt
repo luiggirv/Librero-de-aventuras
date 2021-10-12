@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Game
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 579, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 578, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 25
+  controlID: 22
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,11 +68,11 @@ MonoBehaviour:
     y: 0
     width: 434
     height: 771
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -92,13 +92,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 377
+    width: 376.8
     height: 419
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -122,12 +122,11 @@ MonoBehaviour:
     height: 352
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 20}
   - {fileID: 15}
-  - {fileID: 13}
+  - {fileID: 19}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -152,7 +151,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 821
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -180,8 +179,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 21}
-  m_MainToolbar: {fileID: 21}
+  - {fileID: 20}
+  m_MainToolbar: {fileID: 20}
   m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
@@ -228,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 26
+  controlID: 23
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 27
+  controlID: 24
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,17 +268,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 377
+    x: 376.8
     y: 0
-    width: 725
+    width: 725.2
     height: 419
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 19}
+  - {fileID: 18}
   - {fileID: 12}
-  - {fileID: 14}
+  - {fileID: 13}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &12
@@ -304,7 +303,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.80002
     y: 73.6
-    width: 723
+    width: 723.2
     height: 398
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -349,429 +348,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 723
+      width: 723.2
       height: 377
     m_Scale: {x: 0.6545139, y: 0.6545139}
-    m_Translation: {x: 361.5, y: 188.5}
+    m_Translation: {x: 361.6, y: 188.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -552.3183
+      x: -552.47107
       y: -288
-      width: 1104.6366
+      width: 1104.9421
       height: 576
     m_MinimalGUI: 1
   m_defaultScale: 0.6545139
-  m_LastWindowPixelSize: {x: 903.75, y: 497.5}
+  m_LastWindowPixelSize: {x: 904, y: 497.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &13
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 498.4
-    width: 1101.4
-    height: 332.19998
-  m_ViewDataDictionary: {fileID: 0}
-  m_Spl:
-    ID: 126
-    splitterInitialOffset: 214
-    currentActiveSplitter: -1
-    realSizes:
-    - 157.6
-    - 104
-    relativeSizes:
-    - 0.60299003
-    - 0.39700997
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 261.6
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 13}
-    newResultList:
-    - id: 1004
-      uniqueId: '[Librero de aventuras][suite]'
-      name: Librero de aventuras
-      fullName: Librero de aventuras
-      resultStatus: 1
-      duration: 14.169536
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1008
-      uniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 14.12236
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: '[Librero de aventuras][suite]'
-    - id: 1005
-      uniqueId: Tests.dll/[Tests][TestAventura1][suite]
-      name: TestAventura1
-      fullName: TestAventura1
-      resultStatus: 1
-      duration: 14.173007
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1008
-      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1004
-      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1HealthSystem]
-      name: TestAventura1HealthSystem
-      fullName: TestAventura1.TestAventura1HealthSystem
-      resultStatus: 1
-      duration: 8.086224
-      messages: 
-      output: 'Sprite Clicked
-
-        Curarvida
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
-    - id: 1004
-      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1SScoreGlobal]
-      name: TestAventura1SScoreGlobal
-      fullName: TestAventura1.TestAventura1SScoreGlobal
-      resultStatus: 1
-      duration: 1.0207267
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
-    - id: 1004
-      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1STimeGlobal]
-      name: TestAventura1STimeGlobal
-      fullName: TestAventura1.TestAventura1STimeGlobal
-      resultStatus: 1
-      duration: 5.016125
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
-    - id: 1005
-      uniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
-      name: TestAventura2Bosque
-      fullName: TestAventura2Bosque
-      resultStatus: 1
-      duration: 5.0614033
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1006
-      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueHealthSystem]
-      name: TestAventura2BosqueHealthSystem
-      fullName: TestAventura2Bosque.TestAventura2BosqueHealthSystem
-      resultStatus: 1
-      duration: 3.0294948
-      messages: 
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-        100
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
-    - id: 1008
-      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueScoreGlobal]
-      name: TestAventura2BosqueScoreGlobal
-      fullName: TestAventura2Bosque.TestAventura2BosqueScoreGlobal
-      resultStatus: 1
-      duration: 11.024478
-      messages: 
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
-    - id: 1007
-      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueTimeGlobal]
-      name: TestAventura2BosqueTimeGlobal
-      fullName: TestAventura2Bosque.TestAventura2BosqueTimeGlobal
-      resultStatus: 1
-      duration: 5.0296426
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-        0
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
-    - id: 1009
-      uniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
-      name: TestAventura2Lago
-      fullName: TestAventura2Lago
-      resultStatus: 1
-      duration: 14.115567
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1012
-      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1011
-      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoQuestionsGenerate]
-      name: TestAventura2LagoQuestionsGenerate
-      fullName: TestAventura2Lago.TestAventura2LagoQuestionsGenerate
-      resultStatus: 1
-      duration: 0.0350442
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
-    - id: 1011
-      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoScoreGlobal]
-      name: TestAventura2LagoScoreGlobal
-      fullName: TestAventura2Lago.TestAventura2LagoScoreGlobal
-      resultStatus: 1
-      duration: 4.032553
-      messages: 
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
-    - id: 1010
-      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoTimeGlobal]
-      name: TestAventura2LagoTimeGlobal
-      fullName: TestAventura2Lago.TestAventura2LagoTimeGlobal
-      resultStatus: 1
-      duration: 10.020116
-      messages: 
-      output: 'There are no audio listeners in the scene. Please ensure there is
-        always one audio listener in the scene
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
-    m_ResultText: TestAventura2Lago (14.116s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3a53bf1f
-      m_LastClickedID: 532632378
-      m_ExpandedIDs: fbaa2aca3a53bf1f72b2a96dffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 13}
-    newResultList:
-    - id: 1000
-      uniqueId: '[Librero de aventuras][suite]'
-      name: Librero de aventuras
-      fullName: Librero de aventuras
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: fbaa2acaffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
---- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -951,7 +550,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -978,8 +577,8 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 53602
---- !u!114 &16
+  m_LastSelectedObjectID: -24714
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1017,22 +616,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Metodo
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Metodo
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Luiggi\Documents\GitHub\Librero de aventuras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 729}
-    m_SelectedIDs: 864b0000
-    m_LastClickedID: 19334
-    m_ExpandedIDs: 00000000de4a0000e04a0000e24a0000e44a0000e64a0000e84a0000ea4a0000ec4a0000ee4a0000f04a0000f24a0000f44a0000f64a0000f84a0000fa4a0000fc4a0000fe4a0000004b0000024b0000044b0000064b0000084b00000a4b00000c4b00000e4b0000104b0000124b0000144b0000164b0000184b00001a4b00001c4b000000ca9a3b
+    scrollPos: {x: 0, y: 409}
+    m_SelectedIDs: 9e4b0000
+    m_LastClickedID: 19358
+    m_ExpandedIDs: 00000000864b0000964b00009e4b0000a04b00004e530000a25c00006e610000a664000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1060,7 +659,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de4a0000e04a0000e24a0000e44a0000e64a0000e84a0000ea4a0000ec4a0000ee4a0000f04a0000f24a0000f44a0000f64a0000f84a0000fa4a0000fc4a0000fe4a0000004b0000024b0000044b0000064b0000084b00000a4b00000c4b00000e4b0000104b0000124b0000144b0000164b0000184b00001a4b00001c4b0000
+    m_ExpandedIDs: 00000000864b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1088,7 +687,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000050480000ec620000a45c000032860000d6480000ba3a0100ac3a0100bc440000fecb00000e43000060d10000184f0000f0c000002e7600008e4f0000786600001444000076510000cc9d000038450000c44d0000b28f0000686c0000d86b000092a5000074a5000066270100686e0000105c0000624400004cc90100284600005e56000064560000be4400005645000000ae0000425f010050450000384a00003c4a0000f447000086db00008efa0000fee101000c490000d44a0000b4600000965e0100944600007e4500002a4b0000144600004047000032dc000000000000a2560000aa65000084130200384900009c58000096890000ccc500008ec400001c5a0100cc8f0100c68f0100d6a30100b0470000044c0000624700006a7600003484000014540000a016010094160100ca4d0000c6690000a2690000ba5c000098460000ce5c0000aa4e0000125d000016600000064900006a4800006eba00001e130100ceb10000
+    m_ExpandedInstanceIDs: c623000050480000ec620000a45c000032860000d6480000ba3a0100ac3a0100bc440000fecb00000e43000060d10000184f0000f0c000002e7600008e4f0000786600001444000076510000cc9d000038450000c44d0000b28f0000686c0000d86b000092a5000074a5000066270100686e0000105c0000624400004cc90100284600005e56000064560000be4400005645000000ae0000425f010050450000384a00003c4a0000f447000086db00008efa0000fee101000c490000d44a0000b4600000965e0100944600007e4500002a4b0000144600004047000032dc000000000000a2560000aa65000084130200384900009c58000096890000ccc500008ec400001c5a0100cc8f0100c68f0100d6a30100b0470000044c0000624700006a7600003484000014540000a016010094160100ca4d0000c6690000a2690000ba5c000098460000ce5c0000aa4e0000125d000016600000064900006a4800006eba00001e130100ceb1000086450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1116,7 +715,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 215
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1153,7 +752,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1175,15 +774,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 376
+    width: 375.8
     height: 398
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a4530000
+      m_SelectedIDs: 3c550000
       m_LastClickedID: 0
-      m_ExpandedIDs: 76d2ffff84d2ffff92d2ffffa0d2ffffaed2ffffbcd2ffffcad2ffffd8d2ffffe6d2ffff16d3ffff28d3ffff4ad5ffff48d6ffff56d6ffff64d6ffff94d6ffffbcd8ffffcad8ffffd8d8ffffe6d8ffff8ed9ffffc2daffffa4dbffffdedcffff48deffff64e0ffffa8e1ffff9ae2ffffe4e3ffff5ae5ffff22e6ffff64e7ffff82e7ffffa0e7ffffbee7ffffdce7fffffae7ffff18e8ffff60e8ffff7ee8ffffa8e8ffffc6e8ffffe4e8ffff02e9ffff20e9ffff7aebffffbaebffffeeebfffffcebffff20eeffff5cf2ffff84f4ffff28f7ffffdaf9ffff76faffff8cfaffff3afbffffa68d0000aa910000
+      m_ExpandedIDs: 38aaffff4caaffff5eaaffff7cabffff94abffffacabffffc4abffffdcabffff4aacffff8eacffffd0acffff14adffff26adffffe0adffff28aeffff12affffffaafffff14b1ffff28b1ffff36b1ffff42b2ffff2eb3fffffeb5ffff3afbffff540a01008a1001009e150100bc160100062001001825010036260100302b01006a2c01006e3101009c320100cc380100763d0100fc3e01002c450100b246010044480100065001008c51010014560100bc570100046101008c65010034670100c66801004c6a0100d26b0100646d0100f66e01007c700100ec750100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1207,7 +806,7 @@ MonoBehaviour:
       m_IsLocked: 1
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1229,7 +828,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.80002
     y: 73.6
-    width: 723
+    width: 723.2
     height: 398
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -1243,9 +842,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.4047232, y: 4.34754, z: 828.1108}
+    m_Target: {x: 0.2249063, y: 3.1422372, z: 92.419556}
     speed: 2
-    m_Value: {x: 3.4047232, y: 4.34754, z: 828.1108}
+    m_Value: {x: 0.2249063, y: 3.1422372, z: 92.419556}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1296,9 +895,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.511634
+    m_Target: 5.4869657
     speed: 2
-    m_Value: 7.511634
+    m_Value: 5.4869657
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1323,7 +922,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1345,10 +944,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 492
-    width: 1101.4
-    height: 331.4
+    width: 1101
+    height: 331
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

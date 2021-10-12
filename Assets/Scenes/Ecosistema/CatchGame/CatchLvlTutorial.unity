@@ -4936,7 +4936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &760806744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4992,7 +4992,7 @@ MonoBehaviour:
   m_Text: "Te damos la bienvenida al ecosistema de las monta\xF1as\nEn este lugar
     podr\xE1s apreciar diferentes tipos de climas.\n\nTu misi\xF3n ser\xE1 recolectar
     agua en un balde aprovechando el clima del lugar, el cual puede ser lluvioso,
-    nevado, tormentoso o incluso soleado. "
+    nevado, tormentoso o soleado. "
 --- !u!222 &760806746
 CanvasRenderer:
   m_ObjectHideFlags: 0

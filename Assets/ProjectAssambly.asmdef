@@ -1,3 +1,16 @@
 {
-	"name": "ProjectAssambly"
+    "name": "ProjectAssambly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:cc14fb8228f55b64289458d2f171b95c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

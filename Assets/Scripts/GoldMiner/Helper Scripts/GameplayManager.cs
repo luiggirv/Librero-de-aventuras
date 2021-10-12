@@ -172,6 +172,16 @@ public class GameplayManager : MonoBehaviour
             scoreValue = 0;
             scoreCount -= 100;
             allScore -= 100;
+            //if (scoreCount - 100 < 0) // Por si no se quiere obtener puntaje negativo
+            //{
+            //    scoreCount -= 0;
+            //    allScore -= 0;
+            //}
+            //else
+            //{
+            //    scoreCount -= 100;
+            //    allScore -= 100;
+            //}
             scoreText.text = scoreCount.ToString();
             if (countdownTimer > 10)
             {
