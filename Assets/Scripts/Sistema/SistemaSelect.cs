@@ -23,16 +23,16 @@ public class SistemaSelect : MonoBehaviour
     }
     public void Circulatorio()
     {
-        SistemaNerviosoEntrar = true;
+        SistemaCirculatorioEntrar = true;
         SistemaRespiratorioEntrar = false;
-        SistemaCirculatorioEntrar = false;
+        SistemaNerviosoEntrar = false;
         SceneManager.LoadScene(26);
     }
     public void Nervioso()
     {
-        SistemaCirculatorioEntrar = true;
+        SistemaNerviosoEntrar = true;
         SistemaRespiratorioEntrar = false;
-        SistemaNerviosoEntrar = false;
+        SistemaCirculatorioEntrar = false;
         SceneManager.LoadScene(33);
     }
     public void Regresar()

@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 64b655f8c7f651b448f60e5494ae57f9
+    path: Assets/Scenes/Login.unity
+    guid: fb5ab06f0dadeb24b87a4c8a28f9468e
   - enabled: 1
     path: Assets/Scenes/Ecosistema/EcosistemaMainMenu.unity
     guid: 3f938506e4866644a969edc4fc3f8f12
@@ -245,4 +245,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Metodo/TutorialPostMetodo.unity
     guid: d6db0f33f8f8043458ad2a728ecd5f0e
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 64b655f8c7f651b448f60e5494ae57f9
+  - enabled: 1
+    path: Assets/Scenes/Sistema/LeaderboardRespiratorio.unity
+    guid: d117afd904765dc458d059777edb3290
+  - enabled: 1
+    path: Assets/Scenes/Sistema/LeaderboardCirculatorio.unity
+    guid: d7e59ac4b69c371498b7bcade33d52e7
+  - enabled: 1
+    path: Assets/Scenes/Sistema/LeaderboardNervioso.unity
+    guid: b4f55e142c07da340b49c76d7cb4cda5
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/LeaderboardForest.unity
+    guid: 881d88c21e425fa4ab5afb18b3703d11
+  - enabled: 1
+    path: Assets/Scenes/Ecosistema/LeaderboardLago.unity
+    guid: 0d3646ead24f61d42b7dec400b2a9c1f
+  - enabled: 1
+    path: "Assets/Scenes/Ecosistema/LeaderboardMonta\xF1a.unity"
+    guid: 6a46e0c1e568d984eb168e7690ba77ad
   m_configObjects: {}

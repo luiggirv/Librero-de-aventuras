@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using LootLocker.Requests;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -478,6 +479,75 @@ public class GameplayManager : MonoBehaviour
             if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < scoreCount)
             {
                 PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", scoreCount);
+
+                //Para actualizar datos online
+                if (PlayerPrefs.HasKey("GUID"))
+                {
+                    string ID = PlayerPrefs.GetString("GUID");
+                    LootLockerSDKManager.StartSession(ID, (response) =>
+                    {
+                        if (response.success)
+                        {
+                            LootLockerGetPersistentStorageRequest data = new LootLockerGetPersistentStorageRequest();
+                            data.AddToPayload(new LootLockerPayload
+                            {
+                                key = LvlIngresado.ToString() + "a",
+                                value = PlayerPrefs.GetInt(LvlIngresado.ToString() + "a").ToString(),
+                                is_public = true
+                            });
+                            LootLockerSDKManager.UpdateOrCreateKeyValue(data, (getPersistentStoragResponse) =>
+                            {
+                                if (getPersistentStoragResponse.success)
+                                {
+                                    Debug.Log("Puntaje del nivel actualizado");
+                                }
+                                else
+                                {
+                                    Debug.Log("Error al actualizar el puntaje del nivel");
+                                }
+                            });
+
+                            int leaderboardID = 571;
+                            switch (LvlIngresado)
+                            {
+                                case 501:
+                                    leaderboardID = 524;
+                                    break;
+                                case 502:
+                                    leaderboardID = 548;
+                                    break;
+                                case 503:
+                                    leaderboardID = 549;
+                                    break;
+                                case 504:
+                                    leaderboardID = 550;
+                                    break;
+                                case 505:
+                                    leaderboardID = 551;
+                                    break;
+                                case 506:
+                                    leaderboardID = 552;
+                                    break;
+                            }
+                            LootLockerSDKManager.SubmitScore(ID, PlayerPrefs.GetInt(LvlIngresado.ToString() + "a"), leaderboardID, (response) =>
+                            {
+                                if (response.success)
+                                {
+                                    Debug.Log("Puntaje guardado en el Leaderboard");
+                                }
+                                else
+                                {
+                                    Debug.Log("Error al guardar puntaje en el Leaderboard");
+                                }
+                            }
+                            );
+                        }
+                        else
+                        {
+                            Debug.Log("Failed" + response.Error);
+                        }
+                    });
+                }
             }
             GameObject winTxt = GameObject.Find("winTxt");
             winTxt.GetComponent<Text>().text = "Nivel finalizado\nPuntaje adicional por tiempo: " + (countdownTimer*100).ToString() +"\nPuntaje final: " + scoreText.text;

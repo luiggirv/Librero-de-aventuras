@@ -986,7 +986,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 227799843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa9a951fca1ff946a940182f48fda1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ff1624761cbb0346bed6210e8e3f0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   virusArray:
@@ -5071,7 +5071,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389587008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa9a951fca1ff946a940182f48fda1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ff1624761cbb0346bed6210e8e3f0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   virusArray:
@@ -5123,13 +5123,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1390078963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa9a951fca1ff946a940182f48fda1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ff1624761cbb0346bed6210e8e3f0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   virusArray:
   - {fileID: 6991328161780255395, guid: 45c086f6c2c80e7418734f22de3eab23, type: 3}
   spawnRate: 10
-  nextSpawn: 0
+  nextSpawn: 10
 --- !u!1 &1415371938
 GameObject:
   m_ObjectHideFlags: 0

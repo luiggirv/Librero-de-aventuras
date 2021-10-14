@@ -242,4 +242,17 @@ public class LevelSelectEcosistema : MonoBehaviour
         GameController.LvlIngresado = 600;
         SceneManager.LoadScene(61);
     }
+
+    public void LeaderBoardBosque()
+    {
+        SceneManager.LoadScene(84);
+    }
+    public void LeaderBoardLago()
+    {
+        SceneManager.LoadScene(85);
+    }
+    public void LeaderBoardMontaña()
+    {
+        SceneManager.LoadScene(86);
+    }
 }

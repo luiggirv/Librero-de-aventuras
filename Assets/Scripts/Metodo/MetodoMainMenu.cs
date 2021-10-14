@@ -12,6 +12,6 @@ public class MetodoMainMenu : MonoBehaviour
 
     public void Regresar()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(80);
     }
 }

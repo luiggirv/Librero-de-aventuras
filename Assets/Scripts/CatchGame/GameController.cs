@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using LootLocker.Requests;
 
 public class GameController : MonoBehaviour {
 
@@ -163,6 +164,75 @@ public class GameController : MonoBehaviour {
 		if (PlayerPrefs.GetInt(LvlIngresado.ToString() + "a") < Score.scoreCompartido)
 		{
 			PlayerPrefs.SetInt(LvlIngresado.ToString() + "a", Score.scoreCompartido);
+
+			//Para actualizar datos online
+			if (PlayerPrefs.HasKey("GUID"))
+			{
+				string ID = PlayerPrefs.GetString("GUID");
+				LootLockerSDKManager.StartSession(ID, (response) =>
+				{
+					if (response.success)
+					{
+						LootLockerGetPersistentStorageRequest data = new LootLockerGetPersistentStorageRequest();
+						data.AddToPayload(new LootLockerPayload
+						{
+							key = LvlIngresado.ToString() + "a",
+							value = PlayerPrefs.GetInt(LvlIngresado.ToString() + "a").ToString(),
+							is_public = true
+						});
+						LootLockerSDKManager.UpdateOrCreateKeyValue(data, (getPersistentStoragResponse) =>
+						{
+							if (getPersistentStoragResponse.success)
+							{
+								Debug.Log("Puntaje del nivel actualizado");
+							}
+							else
+							{
+								Debug.Log("Error al actualizar el puntaje del nivel");
+							}
+						});
+
+						int leaderboardID = 571;
+						switch (LvlIngresado)
+						{
+							case 601:
+								leaderboardID = 526;
+								break;
+							case 602:
+								leaderboardID = 553;
+								break;
+							case 603:
+								leaderboardID = 554;
+								break;
+							case 604:
+								leaderboardID = 555;
+								break;
+							case 605:
+								leaderboardID = 556;
+								break;
+							case 606:
+								leaderboardID = 557;
+								break;
+						}
+						LootLockerSDKManager.SubmitScore(ID, PlayerPrefs.GetInt(LvlIngresado.ToString() + "a"), leaderboardID, (response) =>
+						{
+							if (response.success)
+							{
+								Debug.Log("Puntaje guardado en el Leaderboard");
+							}
+							else
+							{
+								Debug.Log("Error al guardar puntaje en el Leaderboard");
+							}
+						}
+						);
+					}
+					else
+					{
+						Debug.Log("Failed" + response.Error);
+					}
+				});
+			}
 		}
 	} 
 

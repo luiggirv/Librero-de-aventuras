@@ -247,4 +247,17 @@ public class LevelSelect : MonoBehaviour
         lvlTutorialNervioso = true;
         SceneManager.LoadScene(41);
     }
+
+    public void LeaderBoardRespiratorio()
+    {
+        SceneManager.LoadScene(81);
+    }
+    public void LeaderBoardCirculatorio()
+    {
+        SceneManager.LoadScene(82);
+    }
+    public void LeaderBoardNervioso()
+    {
+        SceneManager.LoadScene(83);
+    }
 }
