@@ -27,6 +27,7 @@ public class GUIManager : MonoBehaviour
     //Called at the begining of the level
     void Start()
     {
+        Application.targetFrameRate = 60;
         myInstance = this;
         StartCoroutine(ShowMarkers(4));
     }

@@ -33,7 +33,6 @@ public class EnemyHealth : MonoBehaviour
     }
     void OnMouseDown()
     {
-        Debug.Log("Sprite Clicked");
         current -= damage;
         if (current <= 0)
         {

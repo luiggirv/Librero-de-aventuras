@@ -43,11 +43,10 @@ public class GameController : MonoBehaviour {
 	public static int LvlIngresado;
 
 	void Start () {
-
+		Application.targetFrameRate = 60;
 		if (cam == null) {
 			cam = Camera.main;
 		}
-		Debug.Log(balls.Length);
 
 		if (esLluvioso)
         {
@@ -101,8 +100,6 @@ public class GameController : MonoBehaviour {
 				objetosElegidos[i] = balls[i];
 			}
 		}
-
-		Debug.Log(objetosElegidos.Length);
 		playing = false;
 		Vector3 upperCorner = new Vector3 (Screen.width, Screen.height, 0.0f);
 		Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner);
@@ -184,7 +181,7 @@ public class GameController : MonoBehaviour {
 						{
 							if (getPersistentStoragResponse.success)
 							{
-								Debug.Log("Puntaje del nivel actualizado");
+								//Debug.Log("Puntaje del nivel actualizado");
 							}
 							else
 							{
@@ -218,7 +215,7 @@ public class GameController : MonoBehaviour {
 						{
 							if (response.success)
 							{
-								Debug.Log("Puntaje guardado en el Leaderboard");
+								//Debug.Log("Puntaje guardado en el Leaderboard");
 							}
 							else
 							{

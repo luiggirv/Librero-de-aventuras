@@ -13,6 +13,7 @@ public class VirusGlobal : MonoBehaviour
     public int numVirusDeleted;
     public GameObject explosion;
     public ParticleSystem particulas;
+    public AudioSource disparo;
 
     private void Start()
     {
@@ -84,6 +85,10 @@ public class VirusGlobal : MonoBehaviour
             SScoreGlobal.EliminadosCount += 1;
             SScoreGlobal.ScoreCount += InternalScore;
             Destroy(gameObject);
+        }
+        else
+        {
+            disparo.Play();
         }
     }
 

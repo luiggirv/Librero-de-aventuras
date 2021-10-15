@@ -64,6 +64,7 @@ public class LevelSelectEcosistema : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;
         lvl1ForestEntrar = false;
         lvl2ForestEntrar = false;
         lvl3ForestEntrar = false;

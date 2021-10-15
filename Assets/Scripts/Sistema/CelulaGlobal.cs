@@ -68,13 +68,11 @@ public class CelulaGlobal : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Sprite Clicked");
         vidaCelula -= 1;
         if (vidaCelula == 0)
         {
             Instantiate(explosion, transform.position, transform.rotation);
             HealthSistema.currentHealth -= 10;
-            Debug.Log("Quitarvida");
             if (SScoreGlobal.ScoreCount - InternalScore < 0)
             {
                 SScoreGlobal.ScoreCount = 0;
@@ -89,7 +87,6 @@ public class CelulaGlobal : MonoBehaviour
 
     public void isClicked()
     {
-        Debug.Log("Sprite Clicked");
         vidaCelula -= 1;
         if (vidaCelula == 0)
         {

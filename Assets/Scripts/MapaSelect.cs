@@ -9,6 +9,10 @@ public class MapaSelect : MonoBehaviour
     public static bool LagoEntrar;
     public static bool MontanaEntrar;
 
+    private void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
     public void Bosque()
     {
         BosqueEntrar = true;

@@ -41,7 +41,6 @@ public class PlayerHarvest : MonoBehaviour
                         BushFruits bush = hit.collider.GetComponent<BushFruits>();
                         if (bush.HasFruits())
                         {
-                            Debug.Log("cosechando");
                             audioSource.Play();
                             playerMovement.HarvestStopMovement(harvestTime);
                             backpack.AddFruits(bush.HarvestFruit());

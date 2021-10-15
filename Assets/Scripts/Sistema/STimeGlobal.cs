@@ -18,6 +18,7 @@ public class STimeGlobal : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         GameIsPause = false;
         TiempoReal.GetComponent<Text>().text = timeStart.ToString() + " segundos";
     }
@@ -92,7 +93,7 @@ public class STimeGlobal : MonoBehaviour
                         {
                             if (getPersistentStoragResponse.success)
                             {
-                                Debug.Log("Puntaje del nivel actualizado");
+                                //Debug.Log("Puntaje del nivel actualizado");
                             }
                             else
                             {
@@ -162,7 +163,7 @@ public class STimeGlobal : MonoBehaviour
                         {
                             if (response.success)
                             {
-                                Debug.Log("Puntaje guardado en el Leaderboard");
+                                //Debug.Log("Puntaje guardado en el Leaderboard");
                             }
                             else
                             {
@@ -246,7 +247,7 @@ public class STimeGlobal : MonoBehaviour
                         {
                             if (getPersistentStoragResponse.success)
                             {
-                                Debug.Log("Puntaje del nivel actualizado");
+                                //Debug.Log("Puntaje del nivel actualizado");
                             }
                             else
                             {
@@ -315,7 +316,7 @@ public class STimeGlobal : MonoBehaviour
                            {
                                if (response.success)
                                {
-                                   Debug.Log("Puntaje guardado en el Leaderboard");
+                                   //Debug.Log("Puntaje guardado en el Leaderboard");
                                }
                                else
                                {

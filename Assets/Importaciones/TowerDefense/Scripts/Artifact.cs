@@ -60,7 +60,6 @@ public class Artifact : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Artifact Clicked");
         if (player.GetComponent<PlayerBackpack>() != null)
         {
             if (player.GetComponent<PlayerBackpack>().current != 0)

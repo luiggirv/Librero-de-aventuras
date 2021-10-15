@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         timer = timeToWin;
     }
     
@@ -67,7 +68,7 @@ public class Manager : MonoBehaviour
                         {
                             if (getPersistentStoragResponse.success)
                             {
-                                Debug.Log("Puntaje del nivel actualizado");
+                                //Debug.Log("Puntaje del nivel actualizado");
                             }
                             else
                             {
@@ -101,7 +102,7 @@ public class Manager : MonoBehaviour
                         {
                             if (response.success)
                             {
-                                Debug.Log("Puntaje guardado en el Leaderboard");
+                                //Debug.Log("Puntaje guardado en el Leaderboard");
                             }
                             else
                             {

@@ -8,9 +8,10 @@ using LootLocker.Requests;
 public class LeaderBoardControllerEcosistema : MonoBehaviour
 {
     int leaderboardID = 571;
-    int count = 10;
+    int count = 30;
     public GameObject[] entradas;
     public GameObject loadingUI;
+    public GameObject[] botones;
     void Start()
     {
         if (MapaSelect.BosqueEntrar)
@@ -25,6 +26,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 526;
         }
+        aclararBotones(0);
         getLeaderboard();
     }
 
@@ -42,6 +44,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 526;
         }
+        aclararBotones(0);
         getLeaderboard();
     }
 
@@ -59,6 +62,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 553;
         }
+        aclararBotones(1);
         getLeaderboard();
     }
 
@@ -76,6 +80,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 554;
         }
+        aclararBotones(2);
         getLeaderboard();
     }
 
@@ -93,6 +98,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 555;
         }
+        aclararBotones(3);
         getLeaderboard();
     }
 
@@ -110,6 +116,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 556;
         }
+        aclararBotones(4);
         getLeaderboard();
     }
 
@@ -127,6 +134,7 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
         {
             leaderboardID = 557;
         }
+        aclararBotones(5);
         getLeaderboard();
     }
 
@@ -150,8 +158,6 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
                             {
                                 entradas[i].GetComponent<Text>().text = scores[i].rank + ") " + scores[i].player.name + ": " + scores[i].score;
                             }
-
-                            Debug.Log("Leaderboard cargado " + leaderboardID);
                         }
                         else
                         {
@@ -173,7 +179,22 @@ public class LeaderBoardControllerEcosistema : MonoBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            entradas[i].GetComponent<Text>().text = "";
+            entradas[i].GetComponent<Text>().text = (i+1) + ") ";
+        }
+    }
+
+    public void aclararBotones(int number)
+    {
+        for (int i = 0; i < botones.Length; i++)
+        {
+            if (i != number)
+            {
+                botones[i].GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            }
+            else
+            {
+                botones[i].GetComponent<Image>().color = new Color32(154, 154, 154, 154);
+            }
         }
     }
 

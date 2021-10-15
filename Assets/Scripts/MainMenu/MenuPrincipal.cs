@@ -13,7 +13,8 @@ public class MenuPrincipal : MonoBehaviour
     public InputField PlayerNameInputField;
     public GameObject nameText;
     public GameObject idText;
-
+    public GameObject messageText;
+    public GameObject confirmacionUI;
     public void Siguiente()
     {
         principalUI.SetActive(false);
@@ -26,7 +27,23 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void cerrarConfiguracion()
     {
+        messageText.GetComponent<Text>().text = "";
         configuracionUI.SetActive(false);
+    }
+
+    public void abrirConfirmacion()
+    {
+        confirmacionUI.SetActive(true);
+    }
+
+    public void cerrarConfirmacion()
+    {
+        confirmacionUI.SetActive(false);
+    }
+
+    public void cerrarJuego()
+    {
+        Application.Quit();
     }
     
     public void guardarConfiguracion()
@@ -40,7 +57,11 @@ public class MenuPrincipal : MonoBehaviour
                 {
                     if (PlayerNameInputField.text == null || PlayerNameInputField.text == "")
                     {
-                        Debug.Log("Sin cambios");
+                        messageText.GetComponent<Text>().text = "El nombre no puede estar vacío. Ingresa un nombre.";
+                    }
+                    else if (PlayerNameInputField.text.Length > 12)
+                    {
+                        messageText.GetComponent<Text>().text = "El nombre debe tener un máximo de 12 caracteres.";
                     }
                     else
                     {
@@ -48,16 +69,18 @@ public class MenuPrincipal : MonoBehaviour
                         PlayerPrefs.SetString("NameGUID", PlayerNameInputField.text);
                         Debug.Log("Cambiando nombre...");
                         LootLockerSDKManager.GetPlayerName((response) => {
-                        if (response.success)
-                        {
-                            Debug.Log("Nombre cambiado: " + PlayerNameInputField.text);
-                            nameText.GetComponent<Text>().text = "Nombre: " + PlayerNameInputField.text;
-                        }
-                        else
-                        {
-                            Debug.Log("Error al obtener el nombre");
-                        }
-                    });
+                            if (response.success)
+                            {
+                                Debug.Log("Nombre cambiado: " + PlayerNameInputField.text);
+                                nameText.GetComponent<Text>().text = "Nombre: " + PlayerNameInputField.text;
+                            }
+                            else
+                            {
+                                Debug.Log("Error al obtener el nombre");
+                            }
+                        });
+                        messageText.GetComponent<Text>().text = "";
+                        configuracionUI.SetActive(false);
                     }
                 }
                 else
@@ -66,7 +89,6 @@ public class MenuPrincipal : MonoBehaviour
                 }
             });
         }
-        configuracionUI.SetActive(false);
     }
 
     public void Ecosistema()
@@ -92,6 +114,7 @@ public class MenuPrincipal : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         if (PlayerPrefs.HasKey("GUID"))
         {
             string ID = PlayerPrefs.GetString("GUID");

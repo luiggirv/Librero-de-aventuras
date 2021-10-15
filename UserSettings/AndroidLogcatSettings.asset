@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RQ300618GD",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 8795,
+        "processId": 28289,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -96,6 +96,60 @@
             "deviceId": "RQ300618GD",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 8795,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 7109,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 10475,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 16191,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 19019,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 21113,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 22602,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 24133,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26311,
+            "exited": false
+        },
+        {
+            "deviceId": "RQ300618GD",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 28289,
             "exited": false
         }
     ],

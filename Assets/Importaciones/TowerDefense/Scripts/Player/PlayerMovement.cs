@@ -57,12 +57,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (harvesting)
         {
-            Debug.Log("cosechando");
             //rigidbody.velocity = Vector2.zero;
         }
         else
         {
-            Debug.Log("NO cosechando");
             normVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if(normVector.sqrMagnitude > 1)
             {

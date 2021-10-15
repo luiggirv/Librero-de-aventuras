@@ -68,6 +68,7 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         Time.timeScale = 1f;
         GameIsPause = false;
         AudioListener.pause = false;
@@ -499,7 +500,7 @@ public class GameplayManager : MonoBehaviour
                             {
                                 if (getPersistentStoragResponse.success)
                                 {
-                                    Debug.Log("Puntaje del nivel actualizado");
+                                    //Debug.Log("Puntaje del nivel actualizado");
                                 }
                                 else
                                 {
@@ -533,7 +534,7 @@ public class GameplayManager : MonoBehaviour
                             {
                                 if (response.success)
                                 {
-                                    Debug.Log("Puntaje guardado en el Leaderboard");
+                                    //Debug.Log("Puntaje guardado en el Leaderboard");
                                 }
                                 else
                                 {

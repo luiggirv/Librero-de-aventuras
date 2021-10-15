@@ -168,12 +168,9 @@ public class LugarGlobal : MonoBehaviour
                 }
             }
         }
-        //Debug.Log("longitud: " + lugaresConfigurados.ToArray().Length);
         var rand = new System.Random();
         int index = rand.Next(0, lugaresConfigurados.ToArray().Length);
-        //Debug.Log("Numero Aleatorio:" + lugaresConfigurados[index]);
         numLugar = lugaresConfigurados[index];
-        Debug.Log("Numero Aleatorio:" + numLugar);
         if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
         {
             if (numLugar == 4)
@@ -222,7 +219,6 @@ public class LugarGlobal : MonoBehaviour
             int index = rand.Next(0, lugaresConfigurados.ToArray().Length - exclude.Count);
             numLugar = range.ElementAt(index);
 
-            //Debug.Log("Nuevo lugar:" + numLugar);
             if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
             {
                 if (numLugar == 4)
@@ -245,7 +241,6 @@ public class LugarGlobal : MonoBehaviour
                 preguntaText.GetComponent<Text>().text = preguntasNervioso[numLugar - 1];
             }
             
-            //Debug.Log("NumLugar: " + numLugar);
             numVirusRequeridos = numVirusRequeridos * 2;
         }
     }

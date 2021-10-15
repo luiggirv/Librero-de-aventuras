@@ -8,9 +8,10 @@ using LootLocker.Requests;
 public class LeaderBoardController : MonoBehaviour
 {
     int leaderboardID = 571;
-    int count = 10;
+    int count = 30;
     public GameObject[] entradas;
     public GameObject loadingUI;
+    public GameObject[] botones;
     void Start()
     {
         if (SistemaSelect.SistemaRespiratorioEntrar)
@@ -26,6 +27,7 @@ public class LeaderBoardController : MonoBehaviour
             leaderboardID = 522;
 
         }
+        aclararBotones(0);
         getLeaderboard();
     }
 
@@ -44,6 +46,7 @@ public class LeaderBoardController : MonoBehaviour
             leaderboardID = 522;
 
         }
+        aclararBotones(0);
         getLeaderboard();
     }
 
@@ -61,6 +64,7 @@ public class LeaderBoardController : MonoBehaviour
         {
             leaderboardID = 538;
         }
+        aclararBotones(1);
         getLeaderboard();
     }
 
@@ -78,6 +82,7 @@ public class LeaderBoardController : MonoBehaviour
         {
             leaderboardID = 539;
         }
+        aclararBotones(2);
         getLeaderboard();
     }
 
@@ -95,6 +100,7 @@ public class LeaderBoardController : MonoBehaviour
         {
             leaderboardID = 540;
         }
+        aclararBotones(3);
         getLeaderboard();
     }
 
@@ -112,6 +118,7 @@ public class LeaderBoardController : MonoBehaviour
         {
             leaderboardID = 541;
         }
+        aclararBotones(4);
         getLeaderboard();
     }
 
@@ -129,6 +136,7 @@ public class LeaderBoardController : MonoBehaviour
         {
             leaderboardID = 542;
         }
+        aclararBotones(5);
         getLeaderboard();
     }
 
@@ -152,8 +160,6 @@ public class LeaderBoardController : MonoBehaviour
                             {
                                 entradas[i].GetComponent<Text>().text = scores[i].rank + ") " + scores[i].player.name + ": " + scores[i].score;
                             }
-
-                            Debug.Log("Leaderboard cargado " + leaderboardID);
                         }
                         else
                         {
@@ -175,7 +181,22 @@ public class LeaderBoardController : MonoBehaviour
     {
         for (int i = 0; i < count; i++)
         {
-            entradas[i].GetComponent<Text>().text = "";
+            entradas[i].GetComponent<Text>().text = (i + 1) + ") ";
+        }
+    }
+
+    public void aclararBotones(int number)
+    {
+        for (int i = 0; i < botones.Length; i++)
+        {
+            if (i != number)
+            {
+                botones[i].GetComponent<Image>().color = new Color32(255, 255, 255,255);
+            }
+            else
+            {
+                botones[i].GetComponent<Image>().color = new Color32(154, 154, 154, 154);
+            }
         }
     }
 

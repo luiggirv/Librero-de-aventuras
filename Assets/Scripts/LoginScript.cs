@@ -40,14 +40,17 @@ public class LoginScript : MonoBehaviour
 
     public void setNickname()
     {
-        if (PlayerNameInputField.text == null)
+        if (PlayerNameInputField.text == null || PlayerNameInputField.text == "")
         {
-            messageText.text = "El campo Nombre está vacío. Escribe tu nombre.";
+            messageText.text = "El nombre no puede estar vacío. Ingresa un nombre.";
+        }
+        else if (PlayerNameInputField.text.Length > 12)
+        {
+            messageText.text = "El nombre debe tener un máximo de 12 caracteres.";
         }
         else
         {
             CreatePlayer();
-            Debug.Log(PlayerPrefs.GetString("GUID"));
             SceneManager.LoadScene(80);
         }
     }
@@ -63,7 +66,6 @@ public class LoginScript : MonoBehaviour
             {
                 LootLockerSDKManager.SetPlayerName(PlayerNameInputField.text, null);
                 PlayerPrefs.SetString("NameGUID", PlayerNameInputField.text);
-                Debug.Log("Sucess");
             }
             else
             {
@@ -83,7 +85,7 @@ public class LoginScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame

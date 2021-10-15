@@ -53,7 +53,6 @@ public class CorazonGlobal : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Sprite Clicked");
         vidaCorazon -= 1;
         if (vidaCorazon == 0)
         {
@@ -65,7 +64,6 @@ public class CorazonGlobal : MonoBehaviour
             {
                 HealthSistema.currentHealth += 40;
             }
-            Debug.Log("Curarvida");
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
@@ -84,7 +82,6 @@ public class CorazonGlobal : MonoBehaviour
             {
                 HealthSistema.currentHealth += 40;
             }
-            Debug.Log("Curarvida");
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

@@ -10,7 +10,7 @@ public class SistemaSelect : MonoBehaviour
     public static bool SistemaCirculatorioEntrar;
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
