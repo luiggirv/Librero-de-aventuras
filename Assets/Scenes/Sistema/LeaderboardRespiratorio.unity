@@ -1212,7 +1212,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 0
-  m_HDR: 1
+  m_HDR: 0
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -1662,8 +1662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.296, y: 200.05}
-  m_SizeDelta: {x: 740.65, y: 49.898}
+  m_AnchoredPosition: {x: 5.296, y: 197.00995}
+  m_SizeDelta: {x: 740.65, y: 43.818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656842130
 MonoBehaviour:
@@ -1687,7 +1687,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
-    m_FontSize: 35
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2895,7 +2895,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 6.6169, y: -5.739}
-  m_SizeDelta: {x: 854.6897, y: 503.355}
+  m_SizeDelta: {x: 1023, y: 608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187850987
 MonoBehaviour:
@@ -3302,7 +3302,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 900, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

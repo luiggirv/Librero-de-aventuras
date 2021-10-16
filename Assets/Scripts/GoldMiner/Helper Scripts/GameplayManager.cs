@@ -192,6 +192,7 @@ public class GameplayManager : MonoBehaviour
             else
             {
                 StopCoroutine("Countdown");
+                HookScript.itemValue = "";
                 SoundManager.instance.GameEnd();
                 SoundManager.instance.TimeRunningOut(false);
                 GameObject lossTxt = GameObject.Find("loseTxt");

@@ -1830,8 +1830,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235443903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.959, y: 0.5028, z: 11.100054}
-  m_LocalScale: {x: 0.6839451, y: 0.51093227, z: 1}
+  m_LocalPosition: {x: -4.2015, y: 0.2992, z: 11.100054}
+  m_LocalScale: {x: 0.76465064, y: 0.5690749, z: 1}
   m_Children: []
   m_Father: {fileID: 792923489}
   m_RootOrder: 2
@@ -3205,7 +3205,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 900, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
