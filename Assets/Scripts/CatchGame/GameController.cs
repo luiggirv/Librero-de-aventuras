@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
 	private bool playing;
 	private int ballCount;
 
-	bool esLluvioso = true;
+	bool esLluvioso = false;
 	bool esTormenta = false;
 	bool esNevoso = false;
 	bool esSoleado = false;

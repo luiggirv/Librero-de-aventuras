@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Test Runner
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 577, y: 471}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 579, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 106
+  controlID: 36
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,16 +64,16 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1102
+    x: 1101.6
     y: 0
-    width: 434
+    width: 434.40002
     height: 771
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
-  - {fileID: 12}
+  - {fileID: 18}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &4
@@ -95,11 +95,11 @@ MonoBehaviour:
     y: 0
     width: 376.8
     height: 434.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -112,24 +112,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 434.4
-    width: 1102
+    width: 1101.6
     height: 336.6
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
+  - {fileID: 17}
+  - {fileID: 21}
   - {fileID: 16}
-  - {fileID: 20}
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 12}
+  m_Selected: 3
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,8 +181,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 21}
-  m_MainToolbar: {fileID: 21}
+  - {fileID: 22}
+  m_MainToolbar: {fileID: 22}
   m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
@@ -223,12 +224,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1102
+    width: 1101.6
     height: 771
-  m_MinSize: {x: 302, y: 471}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 303, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 72410
+  controlID: 37
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,12 +249,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1102
+    width: 1101.6
     height: 434.4
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 72411
+  controlID: 38
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,18 +272,689 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.8
     y: 0
-    width: 725.2
+    width: 724.8
     height: 434.4
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 13}
+  - {fileID: 20}
   - {fileID: 14}
+  - {fileID: 15}
   m_Selected: 1
-  m_LastSelected: 2
+  m_LastSelected: 0
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 508
+    width: 1100.6
+    height: 315.6
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 1383
+    splitterInitialOffset: 235
+    currentActiveSplitter: -1
+    realSizes:
+    - 165.2
+    - 80.40001
+    relativeSizes:
+    - 0.6726384
+    - 0.32736158
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 245.6
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 12}
+    newResultList:
+    - id: 1004
+      uniqueId: '[Librero de aventuras][suite]'
+      name: Librero de aventuras
+      fullName: Librero de aventuras
+      resultStatus: 1
+      duration: 14.323547
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1020
+      uniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 14.271316
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[Librero de aventuras][suite]'
+    - id: 1005
+      uniqueId: Tests.dll/[Tests][TestAventura1][suite]
+      name: TestAventura1
+      fullName: TestAventura1
+      resultStatus: 1
+      duration: 14.145459
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1006
+      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1HealthSystem]
+      name: TestAventura1HealthSystem
+      fullName: TestAventura1.TestAventura1HealthSystem
+      resultStatus: 1
+      duration: 8.04402
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
+    - id: 1008
+      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1SScoreGlobal]
+      name: TestAventura1SScoreGlobal
+      fullName: TestAventura1.TestAventura1SScoreGlobal
+      resultStatus: 1
+      duration: 1.0122873
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
+    - id: 1007
+      uniqueId: Tests.dll/TestAventura1/[Tests][TestAventura1.TestAventura1STimeGlobal]
+      name: TestAventura1STimeGlobal
+      fullName: TestAventura1.TestAventura1STimeGlobal
+      resultStatus: 1
+      duration: 5.063305
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][TestAventura1][suite]
+    - id: 1009
+      uniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
+      name: TestAventura2Bosque
+      fullName: TestAventura2Bosque
+      resultStatus: 1
+      duration: 5.094742
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1010
+      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueHealthSystem]
+      name: TestAventura2BosqueHealthSystem
+      fullName: TestAventura2Bosque.TestAventura2BosqueHealthSystem
+      resultStatus: 1
+      duration: 5.074682
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
+    - id: 1012
+      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueScoreGlobal]
+      name: TestAventura2BosqueScoreGlobal
+      fullName: TestAventura2Bosque.TestAventura2BosqueScoreGlobal
+      resultStatus: 1
+      duration: 11.084401
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
+    - id: 1011
+      uniqueId: Tests.dll/TestAventura2Bosque/[Tests][TestAventura2Bosque.TestAventura2BosqueTimeGlobal]
+      name: TestAventura2BosqueTimeGlobal
+      fullName: TestAventura2Bosque.TestAventura2BosqueTimeGlobal
+      resultStatus: 1
+      duration: 5.066397
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Bosque][suite]
+    - id: 1013
+      uniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
+      name: TestAventura2Lago
+      fullName: TestAventura2Lago
+      resultStatus: 1
+      duration: 14.262139
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1015
+      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoQuestionsGenerate]
+      name: TestAventura2LagoQuestionsGenerate
+      fullName: TestAventura2Lago.TestAventura2LagoQuestionsGenerate
+      resultStatus: 1
+      duration: 0.0428225
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
+    - id: 1016
+      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoScoreGlobal]
+      name: TestAventura2LagoScoreGlobal
+      fullName: TestAventura2Lago.TestAventura2LagoScoreGlobal
+      resultStatus: 1
+      duration: 4.1023445
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
+    - id: 1014
+      uniqueId: Tests.dll/TestAventura2Lago/[Tests][TestAventura2Lago.TestAventura2LagoTimeGlobal]
+      name: TestAventura2LagoTimeGlobal
+      fullName: TestAventura2Lago.TestAventura2LagoTimeGlobal
+      resultStatus: 1
+      duration: 10.089297
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: Tests.dll/[Tests][TestAventura2Lago][suite]
+    - id: 1017
+      uniqueId: "Tests.dll/[Tests][TestAventura2Monta\xF1a][suite]"
+      name: "TestAventura2Monta\xF1a"
+      fullName: "TestAventura2Monta\xF1a"
+      resultStatus: 1
+      duration: 4.141864
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1020
+      parentUniqueId: '[Tests][D:/Luiggi/Documents/GitHub/Librero de aventuras/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1015
+      uniqueId: "Tests.dll/TestAventura2Monta\xF1a/[Tests][TestAventura2Monta\xF1a.TestAventura2Monta\xF1aScoreGlobal]"
+      name: "TestAventura2Monta\xF1aScoreGlobal"
+      fullName: "TestAventura2Monta\xF1a.TestAventura2Monta\xF1aScoreGlobal"
+      resultStatus: 1
+      duration: 4.1067247
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+        300
+
+        There are
+        no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+        There are no audio listeners in the scene.
+        Please ensure there is always one audio listener in the scene
+
+        There
+        are no audio listeners in the scene. Please ensure there is always one audio
+        listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: "Tests.dll/[Tests][TestAventura2Monta\xF1a][suite]"
+    - id: 1018
+      uniqueId: "Tests.dll/TestAventura2Monta\xF1a/[Tests][TestAventura2Monta\xF1a.TestAventura2Monta\xF1aTimeGlobal]"
+      name: "TestAventura2Monta\xF1aTimeGlobal"
+      fullName: "TestAventura2Monta\xF1a.TestAventura2Monta\xF1aTimeGlobal"
+      resultStatus: 1
+      duration: 6.0699406
+      messages: 
+      output: 'There are no audio listeners in the scene. Please ensure there is
+        always one audio listener in the scene
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: "Tests.dll/[Tests][TestAventura2Monta\xF1a][suite]"
+    m_ResultText: "TestAventura2Monta\xF1a (4.142s)"
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: bc9382df
+      m_LastClickedID: -545090628
+      m_ExpandedIDs: fbaa2acabc9382df72b2a96dffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 12}
+    newResultList:
+    - id: 1000
+      uniqueId: '[Librero de aventuras][suite]'
+      name: Librero de aventuras
+      fullName: Librero de aventuras
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: fbaa2acaffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,7 +979,7 @@ MonoBehaviour:
     width: 432.59998
     height: 750
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,7 +1001,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.80002
     y: 73.6
-    width: 723.2
+    width: 722.8
     height: 413.4
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -338,7 +1010,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2960, y: 1440}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -347,16 +1019,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 0000000000000000000000000c000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000006000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1184
-    m_HBaseRangeMax: 1184
-    m_VBaseRangeMin: -576
-    m_VBaseRangeMax: 576
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -374,29 +1046,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 723.2
+      width: 722.8
       height: 392.4
-    m_Scale: {x: 0.3054054, y: 0.3054054}
-    m_Translation: {x: 361.6, y: 196.2}
+    m_Scale: {x: 0.45416662, y: 0.45416665}
+    m_Translation: {x: 361.4, y: 196.2}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1184
-      y: -642.42474
-      width: 2368
-      height: 1284.8495
+      x: -795.74316
+      y: -432
+      width: 1591.4863
+      height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.3054054
-  m_LastWindowPixelSize: {x: 904, y: 516.75}
+  m_defaultScale: 0.45416665
+  m_LastWindowPixelSize: {x: 903.5, y: 516.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -576,7 +1248,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,14 +1269,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 492
-    width: 1101
-    height: 331
+    y: 508
+    width: 1100.6
+    height: 315.6
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 160476
---- !u!114 &16
+  m_LastSelectedObjectID: 51684
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,7 +1298,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 508
-    width: 1101
+    width: 1100.6
     height: 315.6
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -642,22 +1314,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GoldMiner/Helper Scripts
+    - Assets/Scenes/Ecosistema/GoldMiner
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/GoldMiner/Helper Scripts
+  - Assets/Scenes/Ecosistema/GoldMiner
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Luiggi\Documents\GitHub\Librero de aventuras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 232.4}
-    m_SelectedIDs: f2450000
-    m_LastClickedID: 17906
-    m_ExpandedIDs: 00000000be450000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d045000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: ee450000
+    m_LastClickedID: 17902
+    m_ExpandedIDs: 00000000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d0450000d2450000e84500000a46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,7 +1357,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be450000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d0450000
+    m_ExpandedIDs: 00000000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d0450000d2450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -716,18 +1388,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c623000050480000ec620000a45c000032860000d6480000ba3a0100ac3a0100bc440000fecb00000e43000060d10000184f0000f0c000002e7600008e4f0000786600001444000076510000cc9d000038450000c44d0000b28f0000686c0000d86b000092a5000074a5000066270100686e0000105c0000624400004cc90100284600005e56000064560000be4400005645000000ae0000425f010050450000384a00003c4a0000f447000086db00008efa0000fee101000c490000d44a0000b4600000965e0100944600007e4500002a4b0000144600004047000032dc000000000000a2560000aa65000084130200384900009c58000096890000ccc500008ec400001c5a0100cc8f0100c68f0100d6a30100b0470000044c0000624700006a7600003484000014540000a016010094160100ca4d0000c6690000a2690000ba5c000098460000ce5c0000aa4e0000125d000016600000064900006a4800006eba00001e130100ceb1000086450000245c00006e5d0000465d0000825c00007e5c00008c5c0000145c0000e85b0000f25b0000d25c0000645e0000764e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Login
-      m_OriginalName: Login
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 17932
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -741,7 +1413,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 215
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -761,9 +1433,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1102.4
+    x: 1101.6
     y: 73.6
-    width: 433
+    width: 433.40002
     height: 750
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -778,7 +1450,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -808,21 +1480,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: b619f9ffcc19f9ffce19f9ffd219f9ffd619f9ffda19f9ffde19f9ffe219f9ffe619f9ffea19f9ff781af9ff7c1af9ff801af9ffaa1bf9ffae1bf9ffb21bf9ff8a1cf9ff8e1cf9ff921cf9ffc21df9ffc61df9ffca1df9ff261ff9ff2a1ff9ff2e1ff9ffdc1ff9ffe01ff9ffe41ff9ffe81ff9ffec1ff9fff01ff9fff41ff9fff81ff9fffc1ff9ff5c20f9ffe020f9ff5e21f9ffd621f9ff4822f9ffba22f9ffba35f9ffba48f9ffba5bf9ffba6ef9ffba81f9ffba94f9ffbaa7f9ff5ea8f9ff02a9f9ff06a9f9ff0aa9f9ff0ea9f9ff12a9f9ff16a9f9ff1aa9f9ff92a9f9ff36aaf9ff3aaaf9ff3eaaf9ff42aaf9ff46aaf9ff4aaaf9ffc2aaf9ffc6aaf9ff6aabf9ff90abf9ffc4acf9ffeaacf9ffeeacf9fff2acf9fff6acf9fffaacf9fffeacf9ff76adf9ffeeadf9ff66aef9ff6aaef9ff9eaef9ffa2aef9ffa6aef9ff1eaff9ff7eaff9ff82aff9ff86aff9ff8aaff9ff8eaff9ff68b8f9ff6cb8f9ff70b8f9ffcabaf9ffe0baf9ffd0bbf9ffd8bbf9ffe2bbf9ffeabbf9fff2bbf9ff04bcf9ff0ebcf9ff16bcf9ffaabcf9ffb4bcf9ffbcbcf9ffeabdf9fff2bdf9fffabdf9ffd6bef9ffdebef9ffe6bef9ff1ac0f9ff22c0f9ff2ac0f9ff8cc1f9ff94c1f9ff9cc1f9ff4ec2f9ff56c2f9ff60c2f9ff68c2f9ff70c2f9ff78c2f9ff80c2f9ff88c2f9ff92c2f9fff8c2f9ff80c3f9ff02c4f9ff7ec4f9fff4c4f9ff6ac5f9ff70d8f9ff74ebf9ff78fef9ff7c11faff8024faff8437faffb84afaff604bfaff084cfaff104cfaff184cfaff204cfaff284cfaff304cfaff384cfaffb44cfaff5c4dfaff644dfaff6c4dfaff744dfaff7c4dfaff844dfaff004efaff084efaffb44efaffe04efaff3650faff6250faff6e50faff7850faff8050faff8850faff9050faff0c51faff8851faff0852faff1252faff4c52faff5452faff5c52faffdc52faff5253faff6453faff8253faff8c53faff9653faff905cfaff9a5cfaffa25cfaff2663faffa263faff1c64faffaa64faff1e65faffbe65faff5466faffe066faff6667faffec67faff5c68faffd868faffa869fafffe7cfaff147dfaffc27dfaffe07dfaff067efaff347efaff5e7efaff8a7efaffa87efaffc67efaffe47efafff27efaff107ffaff3e7ffaff5c7ffaff7a7ffaffa67ffaffc67ffaffea7ffaff1280faff3280faff5a80faff7e80faffa280faffc680faff0081faff2c81faff5081faff7481faff9481faffbc81faffec81faff1882faffaa84faffc084faffc684faffce84faffd684faffde84faffe684faffee84fafff684fafffe84faff9085faff9885faffa085faffce86faffd686faffde86faffba87faffc287faffca87fafffe88faff0689faff0e89faff6e8afaff768afaff7e8afaff308bfaff388bfaff408bfaff488bfaff508bfaff588bfaff608bfaff688bfaff708bfaffd48bfaff5c8cfaffde8cfaff5a8dfaffd08dfaff468efaff4aa1faff4eb4faff52c7faff56dafaff5aedfaff5e00fbff6213fbff0a14fbffb214fbffba14fbffc214fbffca14fbffd214fbffda14fbffe214fbff5e15fbff0616fbff0e16fbff1616fbff1e16fbff2616fbff2e16fbffaa16fbffb216fbff5a17fbff8417fbffbc18fbffe618fbffee18fbfff618fbfffe18fbff0619fbff0e19fbff8a19fbff061afbff821afbff8a1afbffc21afbffca1afbffd21afbff4e1bfbffb21bfbffba1bfbffc21bfbffca1bfbffd21bfbffb024fbffb824fbffc024fbffda24fbff8425fbff9c25fbff2826fbffb426fbff4027fbff5e27fbff7e27fbffaa27fbffd227fbfff027fbff0e28fbff9a28fbff2429fbffb029fbff5a2afbfff22afbff4e2efbff642efbff662efbff6a2efbff6e2efbff722efbff762efbff7a2efbff7e2efbff822efbff102ffbff142ffbff182ffbff4230fbff4630fbff4a30fbff2231fbff2631fbff2a31fbff5a32fbff5e32fbff6232fbffbe33fbffc233fbffc633fbff7434fbff7834fbff7c34fbff8034fbff8434fbff8834fbff8c34fbff9034fbff9434fbfff434fbff7835fbfff635fbff6e36fbffe036fbff5237fbff524afbff525dfbff5270fbff5283fbff5296fbff52a9fbff52bcfbfff6bcfbff9abdfbff9ebdfbffa2bdfbffa6bdfbffaabdfbffaebdfbffb2bdfbff2abefbffcebefbffd2befbffd6befbffdabefbffdebefbffe2befbff5abffbff5ebffbff02c0fbff28c0fbff5cc1fbff82c1fbff86c1fbff8ac1fbff8ec1fbff92c1fbff96c1fbff0ec2fbff86c2fbfffec2fbff02c3fbff36c3fbff3ac3fbff3ec3fbffb6c3fbff16c4fbff1ac4fbff1ec4fbff22c4fbff26c4fbff00cdfbff04cdfbff08cdfbff3ccdfbfff6cffbff0cd0fbff0ed0fbff12d0fbff16d0fbff1ad0fbff1ed0fbff22d0fbff26d0fbff2ad0fbffb8d0fbffbcd0fbffc0d0fbffead1fbffeed1fbfff2d1fbffcad2fbffced2fbffd2d2fbff02d4fbff06d4fbff0ad4fbff66d5fbff6ad5fbff6ed5fbff1cd6fbff20d6fbff24d6fbff28d6fbff2cd6fbff30d6fbff34d6fbff38d6fbff3cd6fbff9cd6fbff20d7fbff9ed7fbff16d8fbff88d8fbfffad8fbfffaebfbfffafefbfffa11fcfffa24fcfffa37fcfffa4afcfffa5dfcff9e5efcff425ffcff465ffcff4a5ffcff4e5ffcff525ffcff565ffcff5a5ffcffd25ffcff7660fcff7a60fcff7e60fcff8260fcff8660fcff8a60fcff0261fcff0661fcffaa61fcffd061fcff0463fcff1e63fcff2263fcff2663fcff2a63fcff2e63fcff3263fcffaa63fcff2264fcff9a64fcff9e64fcffd264fcffd664fcffda64fcff5265fcffb265fcffb665fcffba65fcffbe65fcffc265fcff9c6efcffa06efcffa46efcff6a9bfcff889bfcffa29bfcffb89bfcffce9bfcffea9bfcff029cfcff1e9cfcff3a9cfcff529cfcff6a9cfcff269dfcff4e9dfcff669dfcff829dfcff9e9dfcffba9dfcffd29dfcff8a9efcff989efcffb89efcffdc9efcfff69efcff0e9ffcff329ffcff4a9ffcff929ffcff42a3fcff58a3fcff5aa3fcff5ea3fcff62a3fcff66a3fcff6aa3fcff6ea3fcff72a3fcff76a3fcff04a4fcff08a4fcff0ca4fcff36a5fcff3aa5fcff3ea5fcff16a6fcff1aa6fcff1ea6fcff4ea7fcff52a7fcff56a7fcffb2a8fcffb6a8fcffbaa8fcff68a9fcff6ca9fcff70a9fcff74a9fcff78a9fcff7ca9fcff80a9fcff84a9fcff88a9fcffe8a9fcff6caafcffeaaafcff62abfcffd4abfcff46acfcff46bffcff46d2fcff46e5fcff46f8fcff460bfdff461efdff4631fdffea31fdff8e32fdff9232fdff9632fdff9a32fdff9e32fdffa232fdffa632fdff1e33fdffc233fdffc633fdffca33fdffce33fdffd233fdffd633fdff4e34fdff5234fdfff634fdff1c35fdff5036fdff7636fdff7a36fdff7e36fdff8236fdff8636fdff8a36fdff0237fdff7a37fdfff237fdfff637fdff2a38fdff2e38fdff3238fdffaa38fdff0a39fdff0e39fdff1239fdff1639fdff1a39fdfff441fdfff841fdfffc41fdff8444fdff9c44fdff8845fdff8c45fdff9245fdff9645fdff9a45fdffa845fdffae45fdffb245fdff4246fdff4846fdff4c46fdff7647fdff7a47fdff7e47fdff5648fdff5a48fdff5e48fdff8e49fdff9249fdff9649fdfff44afdfff84afdfffc4afdffaa4bfdffae4bfdffb44bfdffb84bfdffbc4bfdffc04bfdffc44bfdffc84bfdffce4bfdff304cfdffb44cfdff324dfdffaa4dfdff1c4efdff8e4efdff9061fdff9074fdff9087fdff909afdff90adfdff90c0fdffc0d3fdff64d4fdff08d5fdff0cd5fdff10d5fdff14d5fdff18d5fdff1cd5fdff20d5fdff98d5fdff3cd6fdff40d6fdff44d6fdff48d6fdff4cd6fdff50d6fdffc8d6fdffccd6fdff74d7fdff9cd7fdffeed8fdff16d9fdff1ed9fdff24d9fdff28d9fdff2cd9fdff30d9fdffa8d9fdff20dafdff9cdafdffa2dafdffd8dafdffdcdafdffe0dafdff5cdbfdffcedbfdffdcdbfdfff6dbfdfffcdbfdff02dcfdfff8e4fdfffee4fdff02e5fdff06e6fdffd4ebfdff78ecfdff92ecfdffacecfdffe8ecfdfff6ecfdff60edfdfff8edfdff34eefdff70eefdff8aeefdffa4eefdffc2eefdffdceefdfff6eefdff10effdffe2effdffc2f0fdff42f4fdfff8f7fdff1afbfdff5afcfdff3cfdfdfff2fffdffb600feff3202feff5a05feff7406feffa60afeffaa0bfeff100dfeffa010feffea11feffe812feff7214feff2a15feffe069feff986afeffd66bfeff8e6cfeff5e6efeffae6efeffea6efeff1e6ffeff526ffeffa66ffefffc6ffeff6471feffc071feff6a73feffb873feff0a74feff0877feff3c79feff408dfeffb4a1feff98b5feff84c9feff96ddfeff52f2feff7806ffff8619ffff0430ffff4432ffff9e34ffffac35ffff2238ffff1a39ffffa839ffffba3bffff343effffca3effff9242ffff5a43ffffe243ffff4a49ffff0a4bffff2a4bffff764cffff104dffff5e4dfffff24dffff3e4effffda4ffffff450ffffae53ffffda53ffff1254ffff0457ffff3857ffffa458ffffd858fffff458ffffaa5bffffcc70ffff1a71ffff3671ffff6a71ffff7871ffffca71ffff2674ffff1876ffff7676ffff3078ffffbc78fffff87affff067dffff1a7dffff787effff367fffff6a7fffff3483ffff1a89ffffa28dffff268fffff3a90ffff7491ffff6c92ffff7093ffff2694ffff8e95fffffa96ffffa897ffff5a98ffff2899ffff109afffffa9affff069cffff889cffff969cffffa49cffffb29cffffc09cffffda9fffffcca0ffffd0a1ffff1ea3ffff02a4ffff42a5ffff9ca5ffffc0a5ffffa6b3ffffe4b3ffff9eb4ffffacb4ffff56b5ffff00b6ffff20b7ffff68b7ffffb2b8fffff2bbffffb6c2ffff8ac7ffff58c9ffff5ccbffff9adaffffceddffffd4deffff12dfffffdadfffffd4e8ffffa6efffffc2f1ffff80f4ffffb2f4ffff0af7ffff3afbffff16480000126f0000447100007c73000052740000a2740000b6740000e27400009c780000a08200000a84000034840000388400004c840000508400005e840000de840000388500006085000086850000a4850000a8850000b48500004a8b00004c8c0000ca90000074940000789400008c940000909400009e940000229500004c95000082950000aa950000d0950000e8950000ec950000f8950000fc98000000990000149900001899000026990000a6990000ca990000009a0000289a00004e9a0000669a00006a9a0000769a0000289e0000b6a400009aa800007caa00007cae0000bcb000002ab6000054b8000094c5000058c8000096cd00001ed3000078d8000008de0000fee3000078fb0000ec0001008e060100120c01009811010078170100841d0100fc2401000a2b010086300100003601006e3b010002410100f8460100f84d0100fc4d0100064e01001a4e01005a4e01007c4e0100924e0100f850010012510100345101003a51010066510100865101008a5101009e5101008c530100b6530100d6530100e25301002e5401006e540100ac540100c6540100f85a01004a5d0100d662010046640100b2680100d66a01006e6f010070720100e2730100a47701001c84010064840100369f010072a701008aa80100f0ac0100bcae0100ecb401005cb9010028bb0100fabc010042be010034c6010098c70100a4cb0100cacd010052d2010052d601007af101009afa010008000200680602008e080200bc0a0200460e0200302702007438020004390200463902003c430200ac440200b04402002e450200065102001651020070550200385602003c560200ba560200565f02005a5f0200d45f0200966b02009a6b0200246c02002077020024770200ae770200fe790200027a02008c7a0200d4830200f4840200a08e02002291020098a60200e0c7020056ca02006c85030096c80300a2c80300d0c80300fac803000ef40300c8f40300d4f403009ef503002afa030034fa0300f8fa0300920404001606040022060400e4060400140704009a0e04005e0f0400b2110400bc11040086120400e6180400021d0400ca1d040050230400e8240400f2240400b8250400f02b0400fa2b0400be2c04002032040042320400e0330400266b04005e6b0400686b0400e62d0600142e06005433060068340600903806003c390600dc3d0600163e0600da3e060082430600464406002446060068470600984b0600a24b0600465406006c560600a85b0600e45b06001a6106003e6206008a660600a2660600246c06001e6d0600a87106005073060070770600ba780600d87c06007a7d0600ee84060080860600fa8a0600148b06005c900600fe910600d4950600fa9506005a9b0600889c0600ee9c0600bca0060074a2060068a606002ca7060004a90600b0a90600c0ab060004ad0600fcaf06004c9109007a910900ec9209000e930900ba960900ce9709005098090086980900f69b0900a29c09008c9d0900b49d09007ca109002ca309004ea30900d4a60900b8a80900caa8090048ac09000cae09003aae0900f4b1090086b30900c0b3090062b709001cb9090036b90900e4bc090080be0900b4be090068c2090030c4090070c4090030c80900cec909001aca090002ce0900f2cf09000cd009000ed4090050d50900b6d509005ad9090070d9090044db0900dade0900e6de09006ce0090048e4090054e4090038e60900c4e90900d0e9090088eb09008ceb090076ef090016f1090038f109003af20900d0f3090006f40900c0f409006cf5090056f609007ef6090090f7090040f9090062f90900e8fc0900ccfe0900defe090096ff09005a010a0088010a0080020a0012040a004c040a003a050a00da060a000e070a00c20a0a007c0c0a00960c0a007e0d0a001a0f0a004e0f0a003c100a0004120a0044120a0030130a00ce140a001a150a001e1d0a00b21f0a0074200a00ea270a0050280a0060280a009a300a0006360a004c360a00a23b0a00e83b0a004e410a0090410a0002470a0044470a00be4c0a00004d0a0078520a00f0520a00765d0a008e5d0a00
+      m_ExpandedIDs: 1073ffff2673ffffa674ffff0e75ffff1a88ffff3088ffffde88ffffe49bfffffa9bffffdc9cffffe2affffff8afffff04b1ffff40c4ffffaec4ffffc4c4ffffa6c5ffffb0c5ffffc6c5fffffec6ffff5cc7ffff72c7ffff98c8fffff8c8ffff0ec9ffff56caffffbacaffffd0caffff38ccffff42ccffff58ccffff8ecdffff98cdffffaecdffffd4ceffff8acfffffa0cfffffbad0ffff18d1ffff2ed1ffff68d2ffffbad4ffffd0d4ffff1cd6ffff7ad6ffff90d6ffff9cd7ffff1ad9ffff30d9ffff38daffffa8daffffbedaffffc6dbffff3cdcffff52dcffff54ddffffb2ddffffc8ddffffcadeffff2adfffff40dfffff42e0ffffa0e0ffffb6e0ffffb8e1ffff1ae2ffff30e2ffff12e3ffff72e3ffff88e3ffff6ae4ffffc8e4ffffdee4ffffc0e5ffff1ee6ffff34e6ffff0ce7ffffe2e7fffff8e7fffffae9ffff58eaffff6eeaffff50ebffffb2ebffffc8ebffffaaecffffb4ecffffcaecffff4eedffffaaedffffc0edffff98eeffff30f0ffff46f0ffff28f1ffff8af1ffffa0f1ffff82f2ffffe0f2fffff6f2fffff8f3fffffcf4ffff12f5fffff4f5fffffef5ffff14f6ffff9af6ffff02f8ffff98faffff3afbffffae7800009e790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameOver
-        m_OriginalName: GameOver
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 657166
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -832,7 +1504,7 @@ MonoBehaviour:
       m_IsLocked: 1
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -854,8 +1526,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.80002
     y: 73.6
-    width: 723.2
-    height: 413.4
+    width: 723
+    height: 413
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -948,7 +1620,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -973,7 +1645,7 @@ MonoBehaviour:
     width: 1101
     height: 315.6
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -41,4 +41,9 @@ public class PauseMenuCatch : MonoBehaviour
         LevelSelectEcosistema.lvlTutorialMountain = false;
     }
 
+    public bool isPause()
+    {
+        return GameIsPause;
+    }
+
 }

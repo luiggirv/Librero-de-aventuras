@@ -45,4 +45,24 @@ public class Score : MonoBehaviour {
 		scoreText.text = "Puntaje\n" + score;
 		scoreCompartido = score;
 	}
+
+	public void addScore()
+    {
+		score += ballValue;
+		UpdateScore();
+	}
+
+	public void subtractScore()
+    {
+		if (score - ballValue * 2 < 0)
+			score = 0;
+		else
+			score -= ballValue * 2;
+		UpdateScore();
+	}
+
+	public int showScore()
+    {
+		return score;
+	}
 }
