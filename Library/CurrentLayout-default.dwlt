@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 36
+  controlID: 96
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,9 +64,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1101.6
+    x: 1102
     y: 0
-    width: 434.40002
+    width: 434
     height: 771
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 376.8
-    height: 434.4
+    width: 377
+    height: 434
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -112,25 +112,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 434.4
-    width: 1101.6
-    height: 336.6
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+    y: 434
+    width: 1102
+    height: 337
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 21}
   - {fileID: 16}
   - {fileID: 12}
-  m_Selected: 3
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 821
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -224,12 +224,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1101.6
+    width: 1102
     height: 771
-  m_MinSize: {x: 303, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 37
+  controlID: 74
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,12 +249,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1101.6
-    height: 434.4
-  m_MinSize: {x: 303, y: 221}
+    width: 1102
+    height: 434
+  m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 38
+  controlID: 75
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,24 +265,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 376.8
+    x: 377
     y: 0
-    width: 724.8
-    height: 434.4
-  m_MinSize: {x: 102, y: 121}
+    width: 725
+    height: 434
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,12 +304,12 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 508
-    width: 1100.6
-    height: 315.6
+    y: 507.2
+    width: 1101
+    height: 316
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 1383
+    ID: 121
     splitterInitialOffset: 235
     currentActiveSplitter: -1
     realSizes:
@@ -619,226 +619,226 @@ MonoBehaviour:
 
         300
 
-        There are
-        no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no
+        audio listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
-        There are no audio listeners in the scene.
-        Please ensure there is always one audio listener in the scene
+        There are no audio listeners in the scene. Please ensure
+        there is always one audio listener in the scene
 
-        There
-        are no audio listeners in the scene. Please ensure there is always one audio
-        listener in the scene
+        There are no audio
+        listeners in the scene. Please ensure there is always one audio listener
+        in the scene
 
 '
       stacktrace: 
@@ -1001,8 +1001,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.80002
     y: 73.6
-    width: 722.8
-    height: 413.4
+    width: 723
+    height: 413
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1920, y: 1080}
+  m_TargetSize: {x: 1280, y: 720}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1019,16 +1019,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000006000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000004000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -768
-    m_HBaseRangeMax: 768
-    m_VBaseRangeMin: -432
-    m_VBaseRangeMax: 432
+    m_HBaseRangeMin: -512
+    m_HBaseRangeMax: 512
+    m_VBaseRangeMin: -288
+    m_VBaseRangeMax: 288
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1046,23 +1046,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 722.8
-      height: 392.4
-    m_Scale: {x: 0.45416662, y: 0.45416665}
-    m_Translation: {x: 361.4, y: 196.2}
+      width: 723
+      height: 392
+    m_Scale: {x: 0.6805556, y: 0.6805556}
+    m_Translation: {x: 361.5, y: 196}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -795.74316
-      y: -432
-      width: 1591.4863
-      height: 864
+      x: -531.18365
+      y: -288
+      width: 1062.3673
+      height: 576
     m_MinimalGUI: 1
-  m_defaultScale: 0.45416665
-  m_LastWindowPixelSize: {x: 903.5, y: 516.75}
+  m_defaultScale: 0.6805556
+  m_LastWindowPixelSize: {x: 903.75, y: 516.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -1297,9 +1297,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 508
-    width: 1100.6
-    height: 315.6
+    y: 507.2
+    width: 1101
+    height: 316
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1314,22 +1314,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Ecosistema/GoldMiner
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Ecosistema/GoldMiner
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Luiggi\Documents\GitHub\Librero de aventuras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: ee450000
-    m_LastClickedID: 17902
-    m_ExpandedIDs: 00000000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d0450000d2450000e84500000a46000000ca9a3b
+    m_SelectedIDs: 9e480000
+    m_LastClickedID: 18590
+    m_ExpandedIDs: 000000009c4800009e480000a0480000a2480000a4480000a6480000a8480000aa480000ac480000ae48000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1357,7 +1357,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0450000c2450000c4450000c6450000c8450000ca450000cc450000ce450000d0450000d2450000
+    m_ExpandedIDs: 000000009c4800009e480000a0480000a2480000a4480000a6480000a8480000aa480000ac480000ae480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1433,9 +1433,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1101.6
+    x: 1102.4
     y: 73.6
-    width: 433.40002
+    width: 433
     height: 750
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -1472,15 +1472,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 375.8
-    height: 413.4
+    width: 376
+    height: 413
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1073ffff2673ffffa674ffff0e75ffff1a88ffff3088ffffde88ffffe49bfffffa9bffffdc9cffffe2affffff8afffff04b1ffff40c4ffffaec4ffffc4c4ffffa6c5ffffb0c5ffffc6c5fffffec6ffff5cc7ffff72c7ffff98c8fffff8c8ffff0ec9ffff56caffffbacaffffd0caffff38ccffff42ccffff58ccffff8ecdffff98cdffffaecdffffd4ceffff8acfffffa0cfffffbad0ffff18d1ffff2ed1ffff68d2ffffbad4ffffd0d4ffff1cd6ffff7ad6ffff90d6ffff9cd7ffff1ad9ffff30d9ffff38daffffa8daffffbedaffffc6dbffff3cdcffff52dcffff54ddffffb2ddffffc8ddffffcadeffff2adfffff40dfffff42e0ffffa0e0ffffb6e0ffffb8e1ffff1ae2ffff30e2ffff12e3ffff72e3ffff88e3ffff6ae4ffffc8e4ffffdee4ffffc0e5ffff1ee6ffff34e6ffff0ce7ffffe2e7fffff8e7fffffae9ffff58eaffff6eeaffff50ebffffb2ebffffc8ebffffaaecffffb4ecffffcaecffff4eedffffaaedffffc0edffff98eeffff30f0ffff46f0ffff28f1ffff8af1ffffa0f1ffff82f2ffffe0f2fffff6f2fffff8f3fffffcf4ffff12f5fffff4f5fffffef5ffff14f6ffff9af6ffff02f8ffff98faffff3afbffffae7800009e790000
+      m_SelectedIDs: 265b0500
+      m_LastClickedID: 351014
+      m_ExpandedIDs: c290fdffe090fdff9a91fdffb891fdff0894fdff2494fdff1095fdff1495fdff1a95fdff1e95fdff2295fdff3095fdff3495fdff3895fdffc895fdffce95fdffd295fdfffc96fdff0097fdff0497fdffdc97fdffe097fdffe497fdff1499fdff1899fdff1c99fdff7a9afdff7e9afdff829afdff309bfdff349bfdff3a9bfdff3e9bfdff429bfdff469bfdff4a9bfdff4e9bfdff549bfdffb69bfdff3a9cfdffb89cfdff309dfdffa29dfdff149efdff16b1fdff16c4fdff16d7fdff16eafdff16fdfdff1610feff4623feffea23feff8e24feff9224feff9624feff9a24feff9e24feffa224feffa624feff1e25feffc225feffc625feffca25feffce25feffd225feffd625feff4e26feff5226fefffa26feff2227feff7428feff9c28feffa428feffaa28feffae28feffb228feffb628feff2e29feffa629feff222afeff282afeff5e2afeff622afeff662afeffe22afeff542bfeff622bfeff7c2bfeff822bfeff882bfeff7e34feff8434feff8a34feff0635feffb83cfeff0a3dfeff323dfeff723dfeffb63dfeff003efeff023ffeffb03ffeff6240feffb040feffd040feff8a41feffe241feff2242feff6c42feff1e43feffcc43feff8044feffe844feffaa45feffbc45feffce45feffe045fefff245feff0446feffb646feffc846feffda46feffec46fefffe46feff1647feff2847feff9e47feffe447feff2048feff9448feffd848feffea48feff2e49feff8849feff9a49feffac49feffbe49feffd449feffe649fefff849feff0a4afeff204afeff644afeffc44afefff44afeff484bfeffa44bfeff264cfeff4c4cfeff604cfeff124dfeff244dfeff364dfeff484dfeff5e4dfeff704dfeff844dfeff964dfeffa84dfeff5a4efeff6c4efeff804efeff944efeffa64efeffb84efeffca4efeffde4efefff04efeff024ffeff144ffeff264ffeff384ffeffea4ffeff5450feffaa50feffbc50feffce50feff3251feff9251feffa451feff2c52feff4052feff5252feff6452feffb452fefff052feff0253feff1453feff2653feff3853feff4a53feff5e53feff7053feff2254feff3454feff4654feff5854feff6a54feff7e54feff9054feffa254feffb454feffc654feffd854feffee54feff6a55feff7c55feff8e55feffa055feff2056feff3256feff4456feff5656feff6856feff7a56feff8e56feff2a57feff3c57feff4e57feff6057feff7257feff0658feffc058feffd458fefff458feffa659feffb859feffca59feffdc59feffee59feff005afeff145afeffc65afeff805bfeff325cfeff9a5cfeffac5cfeffc25cfeff7a5dfeffec5dfefffe5dfeff105efeff225efeff785efefffc5efeff3e5ffeff505ffeff625ffeff745ffeff1261feff2461feff3a61feff9c61feffb061feffc261feffd461feffee61feff8462feffc262feff4063feff5263feff6463feff7663feff8863feff9c63feffb263feff3864feff4a64feff6064feff7264feff8464feff9664feffa864feffbc64feffd464feff3c65feff4e65feff6265feff3666feffa066feffb266feffc466feffd666feffea66fefffc66feff0e67feff2067feff3267feff4867feffd467feff7268feff2069feffb869feff1c6afeffae6afeff806bfeff986cfeff4a6dfeff586dfeff666dfeff746dfeff826dfeff906dfeff9e6dfeffb46dfeffc26dfeffd06dfeffde6dfeffec6dfeff1a6efeff746efeffc06ffeff0483feff2c96feff68a9feff92bcfeffbccffeff96e3feff38f7feff2c0bffff2a20ffff5433ffff6246ffff9259ffff626dffff7481ffff2a95fffffca8fffff0bcffff14d0ffff22e3ffff1ef7ffffa0f7ffff12f8ffffa4f8ffff30f9ffffb0f9ffff32faffff3afbffff18450000764a0000ae4d0000e450000036540000aa570000105d00008662000040630000f26e000084740000a87f000062800000d68a0000908b00000e970000e097000056a2000020a30000e2ad0000a4ae00004cb900005aca00008ed6000072d70000d8e300009ae4000020ef0000eaef000082fa000054fb0000d00501008a0601001c110100421c0100fc1c01007627010038280100aa3301008e340100b241010074430100ce6d01003c7301008c780100507b01008c80010014860100708b01000091010020af0100bab1010092bc0100b0d7010036ed0100faef010094f20100a6020200be0d0200dc0d0200f61b02006221020080210200c42102003a24020064240200442f0200cc3402000e350200d63f02005a450200e04a0200c8500200607002001671020002740200ae750200a6840200e8840200cc9a0200089b020078a80200c0a80200b8e202004ae3020088e502000ee6020084f002000af10200b6f802003ef902003efe0200c0fe020056090300d0090300140f0300980f0300945b0300805e0300e26303005a690300e26e0300a4710300067703005e92030014930300009603008c9e030038a10300f8a30300e2a60300cea90300c8d5030088d603008cdb03001ee003009ae40300eee80300bcec030096f00300a2f3030088f60300d4f80300fefb030046ff0300fc020400ee0604003c0b0400940f0400106b04003e560500
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1540,9 +1540,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3335023, y: -0.93984306, z: -0.38189256}
+    m_Target: {x: -1.5494545, y: 0.011520107, z: 62.578754}
     speed: 2
-    m_Value: {x: 1.3335023, y: -0.93984306, z: -0.38189256}
+    m_Value: {x: -1.4246004, y: 0.010591824, z: 64.921486}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1593,9 +1593,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.9569187
+    m_Target: 6.4354095
     speed: 2
-    m_Value: 4.9569187
+    m_Value: 6.738649
   m_Ortho:
     m_Target: 1
     speed: 2
