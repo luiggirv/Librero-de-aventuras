@@ -133,4 +133,9 @@ public class LevelManager : MonoBehaviour
     {
         return inPlayMode;
     }
+
+    public bool isGoalReached()
+    {
+        return goalReached;
+    }
 }
