@@ -48,43 +48,41 @@ public class MenuPrincipal : MonoBehaviour
     
     public void guardarConfiguracion()
     {
-        if (PlayerPrefs.HasKey("GUID"))
+        if (PlayerNameInputField.text == null || PlayerNameInputField.text == "")
+        {
+            messageText.GetComponent<Text>().text = "El nombre no puede estar vacío. Ingresa un nombre.";
+        }
+        else if (PlayerNameInputField.text.Length > 12)
+        {
+            messageText.GetComponent<Text>().text = "El nombre debe tener un máximo de 12 caracteres.";
+        }
+        else if (PlayerPrefs.HasKey("GUID"))
         {
             string ID = PlayerPrefs.GetString("GUID");
             LootLockerSDKManager.StartSession(ID, (response) =>
             {
                 if (response.success)
                 {
-                    if (PlayerNameInputField.text == null || PlayerNameInputField.text == "")
-                    {
-                        messageText.GetComponent<Text>().text = "El nombre no puede estar vacío. Ingresa un nombre.";
-                    }
-                    else if (PlayerNameInputField.text.Length > 12)
-                    {
-                        messageText.GetComponent<Text>().text = "El nombre debe tener un máximo de 12 caracteres.";
-                    }
-                    else
-                    {
-                        LootLockerSDKManager.SetPlayerName(PlayerNameInputField.text, null);
-                        PlayerPrefs.SetString("NameGUID", PlayerNameInputField.text);
-                        Debug.Log("Cambiando nombre...");
-                        LootLockerSDKManager.GetPlayerName((response) => {
-                            if (response.success)
-                            {
-                                Debug.Log("Nombre cambiado: " + PlayerNameInputField.text);
-                                nameText.GetComponent<Text>().text = "Nombre: " + PlayerNameInputField.text;
-                            }
-                            else
-                            {
-                                Debug.Log("Error al obtener el nombre");
-                            }
-                        });
-                        messageText.GetComponent<Text>().text = "";
-                        configuracionUI.SetActive(false);
-                    }
+                   LootLockerSDKManager.SetPlayerName(PlayerNameInputField.text, null);
+                   PlayerPrefs.SetString("NameGUID", PlayerNameInputField.text);
+                   //Debug.Log("Cambiando nombre...");
+                   LootLockerSDKManager.GetPlayerName((response) => {
+                       if (response.success)
+                       {
+                          Debug.Log("Nombre cambiado: " + PlayerNameInputField.text);
+                          nameText.GetComponent<Text>().text = "Nombre: " + PlayerNameInputField.text;
+                       }
+                       else
+                       {
+                          Debug.Log("Error al obtener el nombre");
+                       }
+                   });
+                   messageText.GetComponent<Text>().text = "";
+                   configuracionUI.SetActive(false);
                 }
                 else
                 {
+                    messageText.GetComponent<Text>().text = "Hubo un error. Verifica la conexión a internet del dispositivo.";
                     Debug.Log("Failed" + response.Error);
                 }
             });

@@ -69,6 +69,7 @@ public class LoginScript : MonoBehaviour
             }
             else
             {
+                messageText.GetComponent<Text>().text = "Hubo un error. Verifica la conexión a internet del dispositivo.";
                 Debug.Log("Failed" + response.Error);
             }
         });
