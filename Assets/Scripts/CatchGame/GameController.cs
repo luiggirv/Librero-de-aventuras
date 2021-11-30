@@ -48,6 +48,42 @@ public class GameController : MonoBehaviour {
 			cam = Camera.main;
 		}
 
+		if (PlayerPrefs.GetInt("isOtoño") == 1)
+		{
+			esLluvioso = true;
+        }
+        else
+        {
+			esLluvioso = false;
+		}
+
+		if (PlayerPrefs.GetInt("isInvierno") == 1)
+        {
+			esNevoso = true;
+		}
+		else
+		{
+			esNevoso = false;
+		}
+
+		if (PlayerPrefs.GetInt("isPrimavera") == 1)
+		{
+			esTormenta = true;
+		}
+		else
+		{
+			esTormenta = false;
+		}
+
+		if (PlayerPrefs.GetInt("isVerano") == 1)
+		{
+			esSoleado = true;
+		}
+		else
+		{
+			esSoleado = false;
+		}
+
 		if (esLluvioso)
         {
 			instructionsLluvioso.SetActive(true);

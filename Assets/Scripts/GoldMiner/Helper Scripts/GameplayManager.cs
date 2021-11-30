@@ -77,6 +77,20 @@ public class GameplayManager : MonoBehaviour
         sumScoreInThisLvl = 0f;
         PreguntaBG.SetActive(false);
 
+        if (PlayerPrefs.GetInt("isReciclaje") == 1) {
+            preguntasSonAcuaticas = false;
+        }
+        else if (PlayerPrefs.GetInt("isAcuaticos") == 1)
+        {
+            preguntasSonAcuaticas = true;
+        }
+
+        if ((PlayerPrefs.GetInt("isReciclaje") == 1 && PlayerPrefs.GetInt("isAcuaticos") == 1) || (PlayerPrefs.GetInt("isReciclaje") == 0 && PlayerPrefs.GetInt("isAcuaticos") == 0))
+        {
+            System.Random rng = new System.Random();
+            preguntasSonAcuaticas = rng.Next(0, 2) > 0;
+        }
+
         formula(false);
         done = false;
 

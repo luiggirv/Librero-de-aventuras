@@ -616,6 +616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178c06d35fec90c4b9d4f0845951631b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BosqueObject: {fileID: 2097975791}
+  LagoObject: {fileID: 544592852}
+  MontanaObject: {fileID: 1782317230}
 --- !u!1 &949947399
 GameObject:
   m_ObjectHideFlags: 0

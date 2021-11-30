@@ -131,7 +131,7 @@ public class QuestionsGenerate : MonoBehaviour
                                                     respuesta1 = "Papel",
                                                     respuesta2 = "Botellas de vidrio",
                                                     respuesta3 = "Cartón",
-                                                    respuesta4 = "Desechos de comida",
+                                                    respuesta4 = "Foco / Bombilla",
                                                     numRespuesta = 4
                                                 },
                                                 new PreguntasAcuaticos

@@ -1587,6 +1587,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2973103405273698913, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
   m_PrefabInstance: {fileID: 1151580254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1151580256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2821837974116270271, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
+  m_PrefabInstance: {fileID: 1151580254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1300633348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1777,6 +1782,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2973103405273698913, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
   m_PrefabInstance: {fileID: 1300633348}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1300633350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2821837974116270271, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
+  m_PrefabInstance: {fileID: 1300633348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1346440435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2275c26b1b561b46b6c08fadbcca6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respiratorioObject: {fileID: 5069702652687081867}
+  circulatorioObject: {fileID: 1151580256}
+  nerviosoObject: {fileID: 1300633350}
 --- !u!1 &1368562934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,3 +2738,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
+--- !u!1 &5069702652687081867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2821837974116270271, guid: 9a0cc968c6dfa404b87a35c1d1c9a6ee, type: 3}
+  m_PrefabInstance: {fileID: 5069702652687081866}
+  m_PrefabAsset: {fileID: 0}

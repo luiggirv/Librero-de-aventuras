@@ -67,6 +67,41 @@ public class LugarGlobal : MonoBehaviour
     {
         if (!LevelSelect.lvlTutorialCirculatorio && !LevelSelect.lvlTutorialNervioso && !LevelSelect.lvlTutorialRespiratorio) {
             if (SistemaSelect.SistemaRespiratorioEntrar){
+
+                if (PlayerPrefs.GetInt("isPulmonIzq") == 1)
+                {
+                    lugar1 = true;
+                }
+                else
+                {
+                    lugar1 = false;
+                }
+
+                if (PlayerPrefs.GetInt("isPulmonDer") == 1)
+                {
+                    lugar2 = true;
+                }
+                else
+                {
+                    lugar2 = false;
+                }
+                if (PlayerPrefs.GetInt("isTraquea") == 1)
+                {
+                    lugar3 = true;
+                }
+                else
+                {
+                    lugar3 = false;
+                }
+                if (PlayerPrefs.GetInt("isFosas") == 1)
+                {
+                    lugar4 = true;
+                }
+                else
+                {
+                    lugar4 = false;
+                }
+
                 if (lugar1)
                 {
                     lugaresConfigurados.Add(1);
@@ -101,6 +136,40 @@ public class LugarGlobal : MonoBehaviour
             }
             else if (SistemaSelect.SistemaCirculatorioEntrar)
             {
+                if (PlayerPrefs.GetInt("isArterias") == 1)
+                {
+                    lugar1 = true;
+                }
+                else
+                {
+                    lugar1 = false;
+                }
+
+                if (PlayerPrefs.GetInt("isVenas") == 1)
+                {
+                    lugar2 = true;
+                }
+                else
+                {
+                    lugar2 = false;
+                }
+                if (PlayerPrefs.GetInt("isCorazon") == 1)
+                {
+                    lugar3 = true;
+                }
+                else
+                {
+                    lugar3 = false;
+                }
+                if (PlayerPrefs.GetInt("isCapilares") == 1)
+                {
+                    lugar4 = true;
+                }
+                else
+                {
+                    lugar4 = false;
+                }
+
                 if (lugar1)
                 {
                     lugaresConfigurados.Add(1);
@@ -135,6 +204,40 @@ public class LugarGlobal : MonoBehaviour
             }
             else
             {
+                if (PlayerPrefs.GetInt("isEncefalo") == 1)
+                {
+                    lugar1 = true;
+                }
+                else
+                {
+                    lugar1 = false;
+                }
+
+                if (PlayerPrefs.GetInt("isNervios") == 1)
+                {
+                    lugar2 = true;
+                }
+                else
+                {
+                    lugar2 = false;
+                }
+                if (PlayerPrefs.GetInt("isMedula") == 1)
+                {
+                    lugar3 = true;
+                }
+                else
+                {
+                    lugar3 = false;
+                }
+                if (PlayerPrefs.GetInt("isGanglios") == 1)
+                {
+                    lugar4 = true;
+                }
+                else
+                {
+                    lugar4 = false;
+                }
+
                 if (lugar1)
                 {
                     lugaresConfigurados.Add(1);
@@ -211,13 +314,24 @@ public class LugarGlobal : MonoBehaviour
             menuButton.SetActive(false);
             regresarButton.SetActive(true);
 
-            var exclude = new HashSet<int>() { numLugar };
-            //var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
-            var range = lugaresConfigurados.ToArray().Where(i => !exclude.Contains(i));
+            if (lugaresConfigurados.Count <= 1)
+            {
+                var range = lugaresConfigurados.ToArray();
 
-            var rand = new System.Random();
-            int index = rand.Next(0, lugaresConfigurados.ToArray().Length - exclude.Count);
-            numLugar = range.ElementAt(index);
+                var rand = new System.Random();
+                int index = rand.Next(0, lugaresConfigurados.ToArray().Length);
+                numLugar = range.ElementAt(index);
+            }
+            else
+            {
+                var exclude = new HashSet<int>() { numLugar };
+                //var range = Enumerable.Range(1, 5).Where(i => !exclude.Contains(i));
+                var range = lugaresConfigurados.ToArray().Where(i => !exclude.Contains(i));
+
+                var rand = new System.Random();
+                int index = rand.Next(0, lugaresConfigurados.ToArray().Length - exclude.Count);
+                numLugar = range.ElementAt(index);
+            }
 
             if (LevelSelect.lvl1Entrar || LevelSelect.lvl2Entrar || LevelSelect.lvl3Entrar || LevelSelect.lvl4Entrar || LevelSelect.lvl5Entrar || LevelSelect.lvl6Entrar)
             {

@@ -57,10 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Tests\TestAventura2Montaña.cs" />
+    <Compile Include="Assets\Tests\TestAventura3.cs" />
     <Compile Include="Assets\Tests\TestAventura2Bosque.cs" />
     <Compile Include="Assets\Tests\TestAventura2Lago.cs" />
     <Compile Include="Assets\Tests\TestAventura1.cs" />
-    <Compile Include="Assets\Tests\TestAventura3.cs" />
+    <Compile Include="Assets\Tests\TestIntegracion.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Tests\Tests.asmdef" />
